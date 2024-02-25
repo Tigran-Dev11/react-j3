@@ -1,0 +1,37 @@
+nav {
+    width: 100%;
+    min-height: 100px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+nav p{
+    font-size: 36px;
+    color: #2e9dff;
+    width: 500px;
+  
+}
+nav .menu-liner{
+    width: 220px;
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+nav .menu-liner ul{
+    width: 400px;
+    font-size: 16px;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-weight: 400;
+    font-family: sans-serif;
+    line-height: 20px;
+}
+nav .menu-liner ul a{
+text-decoration: none;
+color: #2e9dff;
+}

@@ -1,0 +1,90 @@
+footer{
+    width: 100%;
+    min-height: 300px;
+    background-color:rgba(106, 133, 156, 0.4);
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .about{
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 15px;
+    
+}
+footer .about h1{
+    color: rgb(103, 103, 112);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+footer .about p{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #6a859c;
+}
+footer .links{
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    gap: 28px;
+    padding: 0 15px;
+    
+}
+footer .links h1{
+    color: rgb(103, 103, 112);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+footer .links a{
+   text-decoration: none;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #6a859c;
+}
+
+footer  .social-media-line{
+    width: 300px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+    gap: 23px;
+    padding: 0 15px;
+} 
+footer  .social-media-line h1{
+    color: rgb(103, 103, 112);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+footer  .social-media-line .social-media{
+    display: flex;
+    gap: 15px;
+}
+footer  .social-media-line .social-media img{
+  width: 15px;
+  height: 15px;
+}
+footer  .social-media-line .social-media h1{
+    border-bottom: 1px solid rgb(213, 213, 224);
+    color: rgb(102, 140, 173);
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+  

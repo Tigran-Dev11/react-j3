@@ -1,0 +1,232 @@
+.home-container {
+    width: 100%;
+    min-height: 600px;
+   
+
+}
+.sectionOne{
+width: 100%;
+min-height: 600px;
+background-image: linear-gradient(rgba(46, 157, 255, 0.5), rgba(46, 157, 255, 0.22)), url(./../../images/home/65d9cf99ff5fcdc97ca9dce0_photo-1416359658663-73a3834895eb.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+gap: 20px;
+}
+
+.home-container .title {
+    color: white;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 4px;
+    font-weight: 100;
+    font-family: 'Open Sans';
+}
+
+.home-container .infoTitle {
+    color: rgb(46, 157, 255);
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: 300;
+    letter-spacing: 3px;
+    font-family: 'Open Sans';
+
+}
+
+.btn-line{
+    width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.home-container .sectionTwo{
+    width: 100%;
+    min-height: 400px;
+    border: 1px solid black;
+    display: flex;
+  flex-direction: column;
+   align-items: center;
+    gap: 15px;
+} 
+.home-container .sectionTwo h1{
+font-size: 30px;
+font-weight: 300;
+color: #676770;
+font-family: 'Open Sans';
+letter-spacing: 3px;
+}  
+.home-container .sectionTwo p{
+font-size: 18px;
+color: #8e8e9c;
+font-weight: 300;
+font-family: 'Open Sans';
+
+}
+.home-container .sectionTwo div{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.home-container .sectionTwo .box-line .boxes{
+    width: 37%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 200px;
+    border: 1px solid #dcebf7 ;
+}
+.home-container .sectionTwo .box-line .boxes img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(105, 185, 255);
+    box-shadow: rgb(46, 157, 255) 0px 0px 0px 1px;
+    border:1px solid rgb(46, 157, 255);
+    padding: 20px;
+}
+.home-container .sectionTwo .box-line .boxes h1{
+font-style: regular;
+letter-spacing: capitalize;
+letter-spacing: 3px;
+}
+.home-container .sectionTwo .box-line .boxes p{
+    width: 300px;
+    text-align: center;
+
+}
+.home-container .service-section{
+    width: 100%;
+    min-height: 400px;
+    background-color: #192024;
+}
+.home-container .service-section h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.home-container .service-section p{
+    padding-bottom: 0px;
+    color: rgb(232, 232, 232);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.home-container .service-section{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    
+
+}
+.home-container .service-section  div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    
+}
+.home-container .service-section .serviceBox{
+    width: 500px;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.home-container .service-section .serviceBox img{
+    width: 400px;
+    height: 250px;
+}
+.home-container .service-section .serviceBox h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.home-container .service-section .serviceBox p{
+    color: rgb(232, 232, 232);
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-transform:none;
+    
+
+}
+.home-container .tab-section{
+    width: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+.home-container .tab-section h1{
+    color: black;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.home-container .tab-section p{
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    text-transform:none;
+}
+
+.home-container .tab-section .tab-section-btns{
+width: 100%;
+min-height: 100px;
+display: flex;
+justify-content:center;
+align-items: center;
+gap: 25px;
+}
+
+.home-container .tab-section .img-section{
+    width: 100%;
+    min-height: 550px;
+    background-image: url(./../../images/tabSection/tabImg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home-container .tab-section h2{
+    margin-bottom: 10px;
+    color: rgb(103, 103, 112);
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+.home-container .tab-section p{
+    width: 650px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #676770;
+}
