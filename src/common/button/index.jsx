@@ -1,13 +1,13 @@
 import "./style.css";
 
-export const Button = ({ title, style }) => {
+export const Button = ({ title, style, hoverClass }) => {
   return (
-    <button style={style} className="btnConst">
+    <button style={style}  className={`btnConst ${hoverClass}`}>
       {title}
     </button>
   );
 };
-export const ButtonStyleOne = {
+export const ButtonLearn = {
   padding: "10px 30px",
   borderStyle: "solid",
   borderWidth: "1px",
@@ -19,7 +19,7 @@ export const ButtonStyleOne = {
   textTransform: "uppercase",
   lineHeight: "21px",
 };
-export const ButtonStyleTwo = {
+export const ButtonSign = {
   padding: " 12px 30px",
   borderRadius: "4px",
   backgroundColor: "rgb(105, 185, 255)",
@@ -28,20 +28,15 @@ export const ButtonStyleTwo = {
   lineHeight: "21px",
   textAlign: "center",
   textTransform: "uppercase",
+  cursor: "pointer",
   border: "none",
 
   
   
 };
 
- export const buttonHoverStyle ={
-    backgroundColor: 'rgb(105, 185, 255)',
-        // borderColor:'#69b9ff',
-        // color: '#69b9ff',
 
-       
-}
-export const ButtonStyleThree = {
+export const ButtonAllLearn = {
   padding: "12px 30px",
   borderRadius: "4px",
   backgroundColor: "rgb(146, 160, 173)",
@@ -52,8 +47,5 @@ export const ButtonStyleThree = {
   letterSpacing: "2px",
   textTransform: "uppercase",
 
- ':hover':{
-       
-    }
   
 };

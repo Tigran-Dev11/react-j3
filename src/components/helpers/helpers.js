@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "./../../common/button";
-import {ButtonStyleOne} from './../../common/button/index'
+import {ButtonAllLearn} from './../../common/button/index'
 export const menu = [
   {
     name: "Home",
@@ -82,7 +82,7 @@ export const CreateServiceBox = () => {
           <img src={elem.img} alt={elem.title} />
           <h1>{elem.title}</h1>
           <p>{elem.description}</p>
-          <Button title="Learn More" style={ButtonStyleOne} />
+          <Button title="Learn More" style={ButtonAllLearn} />
         </div>
       ))}
     </div>

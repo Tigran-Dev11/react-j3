@@ -4,7 +4,7 @@ import {
   CreateBoxTemplate,
   CreateServiceBox,
 } from "./../../components/helpers/helpers";
-import {ButtonStyleOne,ButtonStyleTwo,ButtonStyleThree} from './../../common/button/index';
+import {ButtonLearn,ButtonSign,ButtonAllLearn} from './../../common/button/index';
 
 const Home = () => {
   return (
@@ -13,8 +13,8 @@ const Home = () => {
         <p className="title">THIS IS VELOCITY</p>
         <p className="infoTitle">A FREE REPSONSIVE TEMPLATE BY WEBFLOW</p>
         <div className="btn-line">
-          <Button title="sign up" style={ButtonStyleTwo} />
-          <Button title="learn more"  style={ButtonStyleOne} />
+          <Button title="sign up" style={ButtonSign} hoverClass='signHover' />
+          <Button title="learn more"  style={ButtonLearn} />
         </div>
       </div>
 
@@ -34,9 +34,9 @@ const Home = () => {
         <h1>Tab Section</h1>
         <p>This is some text inside of a div block.</p>
         <div className=" tab-section-btns">
-          <Button title="Tab Button 1" style={ButtonStyleThree} />
-          <Button title="Tab Button 2" style={ButtonStyleThree}/>
-          <Button title="Tab Button 3" style={ButtonStyleThree} />
+          <Button title="Tab Button 1" style={ButtonAllLearn} />
+          <Button title="Tab Button 2" style={ButtonAllLearn}/>
+          <Button title="Tab Button 3" style={ButtonAllLearn} />
         </div>
         <div className="img-section"></div>
         <h2>Heading</h2>
