@@ -13,10 +13,10 @@ const Footer = () => {
       </div>
       <div className="links">
         <h1>useful links</h1>
-        <a href="#">Phasellus gravida semper nisi</a>
-        <a href="#">Suspendisse nisl elit</a>
-        <a href="#">Dellentesque habitant morbi</a>
-        <a href="#">Etiam sollicitudin ipsum</a>
+        <p >Phasellus gravida semper nisi</p>
+        <p >Suspendisse nisl elit</p>
+        <p>Dellentesque habitant morbi</p>
+        <p>Etiam sollicitudin ipsum</p>
       </div>
       <CreateSocialMediaLine />
     </footer>

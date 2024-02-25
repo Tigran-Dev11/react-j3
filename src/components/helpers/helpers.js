@@ -64,8 +64,8 @@ export const Serviceboxes = [
 export const CreateBoxTemplate = () => {
   return (
     <div>
-      {boxes.map((elem) => (
-        <div className="boxes">
+      {boxes.map((elem, index) => (
+        <div key={index} className="boxes">
           <img src={elem.icon} alt={elem.title} />
           <h1>{elem.title}</h1>
           <p>{elem.description}</p>
@@ -77,8 +77,8 @@ export const CreateBoxTemplate = () => {
 export const CreateServiceBox = () => {
   return (
     <div>
-      {Serviceboxes.map((elem) => (
-        <div className="serviceBox">
+      {Serviceboxes.map((elem, index) => (
+        <div key = {index} className="serviceBox">
           <img src={elem.img} alt={elem.title} />
           <h1>{elem.title}</h1>
           <p>{elem.description}</p>
@@ -116,8 +116,8 @@ export  const CreateSocialMediaLine = () => {
    
     <div className="social-media-line">
          <h1>social</h1>
-      {SocialMedia.map((elem) => (
-        <div className="social-media">
+      {SocialMedia.map((elem, index) => (
+        <div key ={index}  className="social-media">
           <img src={elem.icon} alt={elem.title} />
           <h1>{elem.title}</h1>
         </div>
