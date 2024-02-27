@@ -3,7 +3,7 @@ import { Button ,} from "./../../common/button";
 import {
   CreateBoxTemplate,
   CreateServiceBox,
-} from "./../../components/helpers/helpers";
+} from "./../../components/creatingFunctions/index";
 import {ButtonLearn,ButtonSign,ButtonAllLearn} from './../../common/button/index';
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
         <h1>Tab Section</h1>
         <p>This is some text inside of a div block.</p>
         <div className=" tab-section-btns">
-          <Button title="Tab Button 1" style={ButtonAllLearn} />
+          <Button title="Tab Button 1" style={ButtonAllLearn} hoverClass='ButtonAllLearn' />
           <Button title="Tab Button 2" style={ButtonAllLearn}/>
           <Button title="Tab Button 3" style={ButtonAllLearn} />
         </div>

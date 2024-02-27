@@ -2,7 +2,7 @@ import "./style.css";
 
 export const Button = ({ title, style, hoverClass }) => {
   return (
-    <button style={style}  className={`btnConst ${hoverClass}`}>
+    <button style={style} className={hoverClass}>
       {title}
     </button>
   );

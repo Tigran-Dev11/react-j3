@@ -1,4 +1,7 @@
 .signHover:hover {
-    border-bottom: 4px solid rgb(105, 185, 255);
     background-color: #092a48;
+}
+
+.ButtonAllLearn :hover{
+    background-color: chartreuse;
 }

@@ -1,5 +1,5 @@
 import "./style.css";
-import  CreateMenuNavbar from './../helpers/helpers.js'
+import  CreateMenuNavbar from "./../creatingFunctions/index"
 const Navbar = () => {
   return (
     <nav>

@@ -1,5 +1,5 @@
 import "./style.css";
-import {CreateSocialMediaLine} from './../helpers/helpers.js'
+import {CreateSocialMediaLine} from"./../creatingFunctions/index"
 const Footer = () => {
   return (
     <footer>
