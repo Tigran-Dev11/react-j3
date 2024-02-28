@@ -1,13 +1,13 @@
-
+import {IMAGES} from './../assets/images'
 export const Serviceboxes = [
     {
-      img:"https://uploads-ssl.webflow.com/65d9cf98ff5fcdc97ca9dc2a/65d9cf99ff5fcdc97ca9dcd3_city-scape.jpg",
+      img:IMAGES.serviceOne,
       title: "SERVICES ONE",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique",
     },
     {
-      img: "https://uploads-ssl.webflow.com/65d9cf98ff5fcdc97ca9dc2a/65d9cf99ff5fcdc97ca9dcd1_photo-1416400639808-f41f0c149b09.jpg",
+      img: IMAGES.serviceTwo,
       title: "SERVICES TWO",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique",
