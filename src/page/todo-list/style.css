@@ -1,0 +1,15 @@
+
+
+.todo-items-container{
+    width: 400px;
+    height: 600px;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.item-container{
+    display: flex;
+   gap: 20px;
+}
