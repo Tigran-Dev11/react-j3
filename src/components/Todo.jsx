@@ -12,12 +12,12 @@ export const Todo = ({ task, deleteTodo, editTodo, toggleComplete }) => {
       </p>
       <div className="todo-icons">
         <img
-          src={ICONS.editIcon}
+          src={ICONS.editIcon} alt= 'img-edit'
           className="edit-icon"
           onClick={() => editTodo(task.id)}
         />
         <img
-          src={ICONS.deleteIcon}
+          src={ICONS.deleteIcon} alt='img-delete'
           className="delete-icon"
           onClick={() => deleteTodo(task.id)}
         />
