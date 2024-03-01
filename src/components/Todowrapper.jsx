@@ -3,7 +3,7 @@ import { Todo } from "./Todo";
 import { TodoForm } from "./Todoform";
 import { v4 as uuidv4 } from "uuid";
 import { EditTodoForm } from "./Editformtodo";
-
+import "./style.css"
 export const TodoWrapper = () => {
   const [todos, setTodos] = useState([]);
 
