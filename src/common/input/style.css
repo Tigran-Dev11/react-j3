@@ -1,0 +1,15 @@
+.input{
+    padding: 12px 40px;
+    background: none;
+    border: 1px solid #fff;
+    font-size: 16px;
+}
+.input::placeholder{
+    color: #fff; ;
+}
+
+.input-message{
+    padding: 12px 40px;
+    background: none;
+    border: 1px solid black;
+}

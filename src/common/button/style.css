@@ -1,0 +1,25 @@
+.btn{
+    padding: 12px 40px;
+    border: 1px solid white;
+    background: none;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+}
+.btn:hover{
+background-color: #99AB91;
+}
+
+
+.btn-section{
+    padding: 12px 40px;
+    border: 1px solid black;
+    color: black;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+.btn-section:hover{
+    background-color: #99AB91; 
+}
