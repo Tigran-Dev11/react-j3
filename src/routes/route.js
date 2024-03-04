@@ -3,6 +3,7 @@ import ContactUs from "../pages/contact";
 import Home from "../pages/home";
 import NotFound from "../pages/not-found";
 import Product from "../pages/product";
+import Register from "../pages/register";
 import { ROUTES } from "../utils/constants";
 
 
@@ -24,7 +25,12 @@ export const routes  = [
         href: ROUTES.product,
         component: <Product/>
     },
-    {   id:5,
+    {
+        id:5,
+        href: ROUTES.register,
+        component: <Register/>
+    },
+    {   id:6,
         href: "*",
         component: <NotFound/>
     },
