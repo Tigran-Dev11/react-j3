@@ -1,15 +1,7 @@
-import "./footer.css"
-
-
+import "./footer.css";
 
 const footer = () => {
-
-    return (
-    <div> Footer </div>
-    )
-
+  return <div> Footer </div>;
 };
 
-
-
-export default Footer
+export default Footer;

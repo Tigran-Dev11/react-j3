@@ -1,15 +1,7 @@
-import "./about.css"
-
-
+import "./about.css";
 
 const About = () => {
-
-    return (
-    <div> about </div>
-    )
-
+  return <div> about </div>;
 };
 
-
-
-export default About
+export default About;

@@ -1,15 +1,7 @@
-import "./carriers.css"
-
-
+import "./carriers.css";
 
 const Carriers = () => {
-
-    return (
-    <div> carriers</div>
-    )
-
+  return <div> carriers</div>;
 };
 
-
-
-export default Carriers
+export default Carriers;

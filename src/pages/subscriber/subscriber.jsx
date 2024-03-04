@@ -1,15 +1,7 @@
-import "./subscriber.css"
-
-
+import "./subscriber.css";
 
 const Subscriber = () => {
-
-    return (
-    <div> subcribers</div>
-    )
-
+  return <div> subcribers</div>;
 };
 
-
-
-export default Subscriber
+export default Subscriber;
