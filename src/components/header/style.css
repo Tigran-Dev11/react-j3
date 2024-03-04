@@ -70,7 +70,7 @@ nav .menu-container {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(247, 247, 247); 
     z-index: 2; 
     display: flex;
     justify-content: center;
@@ -92,6 +92,7 @@ nav .menu-container {
     top: 15px;
     right: 30px;
     cursor: pointer;
+    color: #000000;
   }
  
 
@@ -101,7 +102,7 @@ nav .menu-container {
     }
    .nav-link{
     font-size: 36px;
-    color: #fff;
+    color: #000000;
    }
    .burger-menu{
     display: block;

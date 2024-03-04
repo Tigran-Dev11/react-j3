@@ -1,0 +1,154 @@
+.aboutUsSection {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .aboutSection {
+    width: 100%;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background-color: rgb(251, 242, 232);
+
+    .aboutTitle {
+      width: 100%;
+      min-height: 70px;
+      text-align: center;
+      color: black;
+      font-family: " normal normal 700 14px/1.4em heebo-light,sans-serif";
+    }
+    .aboutDescription {
+      width: 600px;
+      min-height: 50px;
+      color: black;
+      font-family: " normal normal normal 20px/1.8em heebo-light,sans-serif;";
+    }
+  }
+  .aboutMenu {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+
+    .aboutSectionLeft {
+      width: 50%;
+      min-height: 500px;
+      background-image: url(./../../assets/images/about-section-left-background.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .aboutSectionRight {
+      width: 50%;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      gap: 20px;
+      padding: 0 20px;
+
+      .aboutTitle {
+        width: 100%;
+        min-height: 70px;
+        text-align: center;
+        color: black;
+        font-family: " normal normal 700 14px/1.4em heebo-light,sans-serif";
+      }
+      .aboutDescription {
+        width: 600px;
+        min-height: 50px;
+        color: black;
+        font-family: " normal normal normal 20px/1.8em heebo-light,sans-serif;";
+      }
+
+    }
+  }
+  .post {
+    width: 100%;
+    min-height: 70px;
+    background-color: rgb(64, 77, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutService {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+
+    .serviceSectionLeft {
+      width: 50%;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      gap: 20px;
+      padding: 0 20px;
+      .serviceTitle {
+        width: 100%;
+        min-height: 70px;
+        text-align: center;
+        color: black;
+        font-family: " normal normal 700 14px/1.4em heebo-light,sans-serif";
+      }
+      .serviceDescription {
+        width: 600px;
+        min-height: 50px;
+        color: black;
+        font-family: " normal normal normal 20px/1.8em heebo-light,sans-serif;";
+      }
+    }
+
+    .serviceSectionRight{
+        width: 50%;
+    min-height: 500px;
+    background-image: url(./../../assets/images/service-section-right-background.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+  }
+}
+
+@media screen and (max-width:628px) {
+    .aboutTitle ,.ServiceTitle  {
+        font-size: 36px;
+    }
+
+    .aboutDescription,.serviceDescription {
+        width: 350px !important;
+        min-height: 100px;
+        font-size: 20px;
+    }
+    .aboutSection  {
+        flex-direction: column;
+    }
+    .aboutService,.aboutMenu{
+        flex-direction: column;
+    }
+    .aboutService{
+        flex-direction: column-reverse;
+    }
+
+    .about-section-left,.service-section-right  {
+        width: 100% !important;
+    }
+    .aboutSectionRight,.serviceSectionLeft{
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+    .post{
+        min-height: 100px !important;
+    }
+   h3{
+    font-size: 24px !important;
+   }
+
+}
