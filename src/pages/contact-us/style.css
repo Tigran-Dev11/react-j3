@@ -1,3 +1,25 @@
+@media screen  and (max-width: 768px) {
+    .paragraph {
+        font-size: 18px !important;
+        width: 100% !important;
+    
+    }
+    .contact-container-info .contact-container-title {
+        font-size: 30px !important;
+    }
+    .contact-container .contact-container-section .section-right{
+    
+        display: none !important;
+      
+    }
+    .contact-container .contact-container-section .section-left{
+        width: 100% !important;
+        justify-content: center;
+        align-items: center;
+        border-right: none !important; 
+    }
+}
+
 .contact-container {
     width: 100%;
     min-height: 600px;
@@ -19,6 +41,7 @@
     width: 500px;
     color: black;
     font-size: 30px;
+    min-height: 100px;
 }
 
 .contact-container-info .contact-container-title {

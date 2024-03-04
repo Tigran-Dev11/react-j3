@@ -5,6 +5,7 @@ import bacgroundImgTwo from "./background-section-img-two.webp";
 import bacgroundImgThree from "./background-section-img-three.webp";
 import bacgroundImgFour from "./background-section-img-four.webp";
 import bacgroundImgFive from "./background-section-img-five.webp";
+import menuBar from "./menu-bar.png"
 export const IMAGES = {
   logo,
   userIcon,
@@ -13,5 +14,6 @@ export const IMAGES = {
   bacgroundImgThree,
   bacgroundImgFour,
   bacgroundImgFive,
+  menuBar
 };
 

@@ -1,3 +1,41 @@
+@media screen and (max-width: 768px) {
+    .menu-title {
+        font-size: 28px;
+    }
+
+    .menu-descraption-info {
+        font-size: 18px;
+        min-height: 40px;
+        width: 400px;
+    }
+
+    h4 {
+        font-size: 30px !important;
+    }
+
+    .menu-item {
+        width: 250px !important;
+        
+
+    }
+
+    .menu-description,
+    .title{
+        font-size: 20px !important;
+    }
+    .breakfast{
+        justify-content: center;
+        gap: 5px;
+    }
+    .bakery{
+        flex-direction: column;
+        gap: 5px;
+    }
+    p{
+        text-align: center;
+    }
+}
+
 .menu-section {
     width: 100%;
     min-height: 100vh;
