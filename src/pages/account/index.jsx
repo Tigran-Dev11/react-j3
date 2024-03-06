@@ -9,13 +9,13 @@ const Account = () => {
       <h1>Welcome To 47th Cafe</h1>
       <p>
         You can log in to your account, and if you are not registered on our
-        website, you can register{" "}
+        website, you can register
       </p>
       <div className={css.loginRegistr}>
         <NavLink className={css.navLink} to={ROUTES.login}>
           <Button title={"Login"} secondary></Button>
         </NavLink>
-        <NavLink className={css.navLink} to={ROUTES.registr}>
+        <NavLink className={css.navLink} to={ROUTES.register}>
           <Button title={"Registration"} secondary></Button>
         </NavLink>
       </div>

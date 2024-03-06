@@ -1,13 +1,13 @@
 import AboutUs from "../pages/about-us";
 import ContactUs from "../pages/contact-us";
 import Home from "../pages/home";
-
 import Menu from "../pages/menu";
 import { ROUTES } from "../utils/constants";
 import NotFound from './../pages/not-found';
 import Login from './../pages/login/index';
-import Registr from "../pages/registr";
+
 import Account from "../pages/account";
+import Register from "../pages/registr";
 
 export const routes =[
     {
@@ -37,8 +37,8 @@ export const routes =[
     },
     {
         id: 6,
-        path:ROUTES.registr,
-        component: <Registr />
+        path:ROUTES.register,
+        component: <Register/>
     },
     {
         id: 7,

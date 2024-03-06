@@ -6,6 +6,6 @@ export const ROUTES ={
     menu:'/menu',
     login:'/login',
     account:'/account',
-    registr:"/registr",
+    register:"/register",
     notFound:'/not-found',
 }

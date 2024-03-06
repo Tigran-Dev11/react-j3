@@ -21,6 +21,8 @@ footer {
         font-size: 28px;
     }
     .form{
+        width: 300px;
+        min-height: 5px;
         display: flex;
     }
   }
@@ -52,6 +54,11 @@ footer {
     }
   }
  
+}
+@media screen and (max-width: 1200px){
+    .form{
+        flex-direction: column;
+    }
 }
 @media screen and (max-width: 628px) {
     footer{

@@ -1,0 +1,23 @@
+.loginContainer {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: antiquewhite;
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    color: black;
+  }
+  .loginForm {
+    width: 250px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
