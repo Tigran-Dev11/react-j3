@@ -1,14 +1,13 @@
-import './style.css'
+import css from "./styled.module.scss";
 
-const Input = ({placeholder})=>{
-    return(
-        <input  placeholder={placeholder} type="email" className='input'/>
-    )
-}
-export default Input
-
-export const InputMessage = ({placeholder})=>{
-    return(
-        <input type="text" placeholder={placeholder} className='input-message'/>
-    )
-}
+const Input = ({ placeholder, primary, secondary, type }) => {
+  const inputClass = primary
+    ? css.InputPrimary
+    : secondary
+    ? css.inputSecondary
+    : css.input;
+  return (
+    <input placeholder={placeholder} className={inputClass} type={type} ></input>
+  );
+};
+export default Input;

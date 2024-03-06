@@ -1,81 +1,80 @@
 import { NavLink } from "react-router-dom";
-import "./style.css";
 import { ROUTES } from "../../utils/constants";
-import ButtonForSection, { Button } from "../../common/button";
-
+import  Button  from "../../common/button";
+import css from "./styled.module.scss";
 const Home = () => {
   return (
-    <div className="home-container">
+    <div className={css.homeContainer}>
       <header>
         <p>Cafe & Restaurant Est. 2035</p>
         <h1>Your Go-to Spot for Delicious Eats & Coffee</h1>
-        <div className="home-btn">
-          <Button title={"Order Online"} />
-          <NavLink className="nav-link" to={ROUTES.menu}>
-            <Button title={"Our Menu"} />
+        <div className={css.homeBtn}>
+          <Button title={"Order Online"} primary />
+          <NavLink className={css.navLink} to={ROUTES.menu}>
+            <Button title={"Our Menu"} primary />
           </NavLink>
         </div>
       </header>
-      <section className="home-section">
-        <div className="section-eat">
-          <div className="section-eat-left">
-            <h1 className="section-title">Eat.</h1>
+      <section className={css.homeSection}>
+        <div className={css.sectionEat}>
+          <div className={css.sectionEatLeft}>
+            <h1 className={css.sectionTitle}>Eat.</h1>
             <h2>Breakfast, Lunch and Artisanal Pastries</h2>
-            <p className="description">
+            <p className={css.description}>
               I'm a paragraph. Click here to add your own text and edit me. I’m
               a great place for you to tell a story and let your users know a
               little more about you",
             </p>
-            <NavLink className="nav-link" to={ROUTES.menu}>
-              <ButtonForSection title={"See More"} />
+            <NavLink className={css.navLink} to={ROUTES.menu}>
+              <Button title={"See More"} secondary/>
             </NavLink>
           </div>
-          <div className="section-eat-right"></div>
+          <div className={css.sectionEatRight}></div>
         </div>
-        <div className="section-drink">
-          <div className="section-drink-left"></div>
-          <div className="section-drink-right">
-            <h1 className="section-title">Drink.</h1>
+        <div className={css.sectionDrink}>
+          <div className={css.sectionDrinkLeft}></div>
+          <div className={css.sectionDrinkRight}>
+            <h1 className={css.sectionTitle}>Drink.</h1>
             <h2>The Freshest Cup in Town</h2>
-            <p className="description">
+            <p className={css.description}>
               I'm a paragraph. Click here to add your own text and edit me. I’m
               a great place for you to tell a story and let your users know a
               little more about you",
             </p>
-            <NavLink className="nav-link" to={ROUTES.menu}>
-              <ButtonForSection title={"See More"} />
+            <NavLink className={css.navLink} to={ROUTES.menu}>
+              <Button title={"See More"} secondary />
             </NavLink>
           </div>
         </div>
-        <div className="section-enjoy">
-          <div className="section-enjoy-left">
-            <h1 className="section-title">Enjoy.</h1>
+        <div className={css.sectionEnjoy}>
+          <div className={css.sectionEnjoyleft}>
+            <h1 className={css.sectionTitle}>Enjoy.</h1>
             <h2>Make Yourself at Home</h2>
-            <p className="description">
+            <p className={css.description}>
               I'm a paragraph. Click here to add your own text and edit me. I’m
               a great place for you to tell a story and let your users know a
               little more about you",
             </p>
-            <NavLink className="nav-link" to={ROUTES.menu}>
-              <ButtonForSection title={"See More"} />
+            <NavLink className={css.navLink} to={ROUTES.menu}>
+              <Button title={"See More"} secondary/>
             </NavLink>
           </div>
-          <div className="section-enjoy-right"></div>
+          <div className={css.sectionEnjoyRight}></div>
         </div>
       </section>
-      <div className="section-info">
-        <h1 className="section-title-info">Drop By for a Bite.</h1>
-        <div className="information-section">
-          <div className="addres">
-            <p className="info-title">Addres</p>
-            <p className="info">
+      <div className={css.sectionInfo}>
+        <h1 className={css.sectionTitleInfo}>Drop By for a Bite.</h1>
+        <div className={css.informationSection}>
+          <div className={css.addres}>
+            <p className={css.infoTitle}>Addres</p>
+            <p className={css.info}>
               500 Terry Francine St.
               <br /> San Francisco, CA 94158
             </p>
           </div>
-          <div className="opening-hours">
-            <p className="info-title">Opening Hours</p>
-            <p className="info">
+          <div className={css.openingHours}>
+            <p className={css.infoTitle}>Opening Hours</p>
+            <p className={css.info}>
               Mon - Fri: 9am - 6pm
               <br />
               ​​Saturday: 10am - 2pm
@@ -84,12 +83,12 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="backgrounds-line">
-          <div className="backgrounds-line-one"></div>
-          <div className="backgrounds-line-two"></div>
-          <div className="backgrounds-line-three"></div>
-          <div className="backgrounds-line-four"></div>
-          <div className="backgrounds-line-five"></div>
+        <div className={css.backgroundsLine}>
+          <div className={css.backgroundsLineOne}></div>
+          <div className={css.backgroundsLineTwo}></div>
+          <div className={css.backgroundsLineThree}></div>
+          <div className={css.backgroundsLineFour}></div>
+          <div className={css.backgroundsLineFive}></div>
         </div>
       </div>
     </div>

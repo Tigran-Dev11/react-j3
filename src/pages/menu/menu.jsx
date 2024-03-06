@@ -1,5 +1,5 @@
 import React from "react";
-
+import css from "./styled.module.scss"
 export const MenuBaker = [
   {
     name: "Croissant (Plain/Chocolate)",
@@ -69,12 +69,12 @@ export const menuBreakfast = [
 ];
 const MenuItem = ({ items }) => {
   return (
-    <div className="bakery">
+    <div className={css.bakery}>
       {items.map((item, index) => (
-        <div key={index} className="menu-item">
-          <p className="menu-title">{item.name}</p>
-          <p className="menu-description">{item.description}</p>
-          <p className="menu-description">Price: ${item.price}</p>
+        <div key={index} className={css.menuItem}>
+          <p className={css.menuTitle}>{item.name}</p>
+          <p className={css.menuDescription}>{item.description}</p>
+          <p className={css.menuDescription}>Price: ${item.price}</p>
         </div>
       ))}
     </div>
@@ -84,12 +84,12 @@ export default MenuItem;
 
 export const MenuItemBreakfast = ({ items }) => {
     return (
-      <div className="breakfast">
+      <div className={css.breakfast}>
         {items.map((item, index) => (
-          <div key={index} className="menu-item-break">
-            <p className="title">{item.name}</p>
-            <p className="description">{item.description}</p>
-            <p className="description">Price: ${item.price}</p>
+          <div key={index} className={css.menuItemBreak}>
+            <p className={css.title}>{item.name}</p>
+            <p className={css.description}>{item.description}</p>
+            <p className={css.description}>Price: ${item.price}</p>
           </div>
         ))}
       </div>

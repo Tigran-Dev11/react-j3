@@ -1,0 +1,27 @@
+
+.btnPrimary{
+    padding: 12px 40px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+    border: 1px solid white;
+}
+
+.btnSecondary{
+    padding: 12px 40px;
+    background: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid black;
+    color: black;
+    border: 1px solid black;
+}
+
+.btnSecondary:hover{
+background-color: #99AB91;
+}
+.btnPrimary:hover{
+    background-color: #99AB91;
+}
+

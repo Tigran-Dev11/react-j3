@@ -1,0 +1,24 @@
+.registrContainer{
+width: 100%;
+min-height: 500px;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+.registrForm{
+width: 500px;
+min-height: 400px;
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+.cheboxContainer{
+    display: flex;
+    gap: 5px;
+}
+}
+}

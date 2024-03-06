@@ -1,9 +1,7 @@
-import { InputMessage } from "../../common/input/input";
-import "./style.css";
+import  Input from "../../common/input/input";
 import { useState } from "react";
-
-import ButtonForSection from "../../common/button";
-
+import css from "./styled.module.scss"
+import Button  from "../../common/button";
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -28,28 +26,28 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="contact-container">
-      <div className="contact-container-info">
-        <h2 className="contact-container-title">Let's Connect</h2>
-        <p className="paragraph">
+    <div className={css.contactContainer}>
+      <div className={css.contactContainerInfo}>
+        <h2 className={css.contactContainerTitle}>Let's Connect</h2>
+        <p className={css.paragraph}>
           I'm a paragraph. Click here to add your own text and edit me. Let your
           users get to know you.
         </p>
       </div>
-      <section className="contact-container-section">
-        <div className="section-left">
-          <form className="form-contact" onSubmit={handleSubmit}>
-            <InputMessage
-              name="firstName"
+      <section className={css.contactContainerSection}>
+        <div className={css.sectionLeft}>
+          <form className={css.formContact} onSubmit={handleSubmit}>
+            <Input secondary
+              name="firstName" type={'text'}
               placeholder={"First Name"}
               onChange={handleChange}
             />
-            <InputMessage
-              name="lastName"
+            <Input secondary
+              name="lastName" type={'text'}
               placeholder={"Last Name"}
               onChange={handleChange}
             />
-            <InputMessage
+            <Input secondary type={'email'}
               name="email"
               placeholder={"Email"}
               onChange={handleChange}
@@ -62,11 +60,11 @@ const ContactUs = () => {
               placeholder="Message"
               onChange={handleChange}
             ></textarea>
-            <ButtonForSection type={"submit"} title={"Send"} />
+            <Button type={"submit"} title={"Send"}  secondary/>
           </form>
         </div>
-        <div className="section-right">
-          <div className="section-top">
+        <div className={css.sectionRight}>
+          <div className={css.sectionTop}>
             <span>
               Address <br /> 500 Terry Francine St.
               <br /> San Francisco, CA 94158
@@ -77,7 +75,7 @@ const ContactUs = () => {
               123-456-7890
             </span>
           </div>
-          <div className="section-bottom">
+          <div className={css.sectionBottom}>
           <span><br/>Email <br/> info@mysite.com</span>
       
           </div>

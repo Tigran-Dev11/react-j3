@@ -1,15 +1,9 @@
-import "./style.css"
+ import css from './styled.module.scss'
 
- export const Button =({title})=>{
-    return (
-        <button  className="btn">{title}</button>
-    )
-}
+ const Button = ({ title, primary, secondary }) => {
+    const btnClass = primary ? css.btnPrimary : secondary ? css.btnSecondary : css.btn;
+  
+    return <button className={btnClass}>{title}</button>;
+  };
 
-
-const ButtonForSection =({title, type})=>{
-    return(
-        <button type={type} className="btn-section">{title}</button>
-    )
-}
-export default ButtonForSection
+export default Button

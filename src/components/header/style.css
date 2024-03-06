@@ -94,7 +94,13 @@ nav .menu-container {
     cursor: pointer;
     color: #000000;
   }
- 
+ .loginSection{
+  width: 50px;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+ }
 
 @media screen and (max-width: 628px) {
     nav .menu-container {

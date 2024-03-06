@@ -31,6 +31,9 @@ const BurgerMenu = () => {
             <NavLink className="nav-link" to={ROUTES.contactUs} onClick={toggleMenu}>
               Contact Us
             </NavLink>
+            <NavLink className="nav-link" to={ROUTES.login} onClick={toggleMenu}>
+            Account
+            </NavLink>
           </div>
         </div>
       )}

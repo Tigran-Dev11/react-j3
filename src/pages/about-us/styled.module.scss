@@ -52,7 +52,7 @@
       padding: 0 20px;
 
       .aboutTitle {
-        width: 100%;
+        width: 500px;
         min-height: 70px;
         text-align: center;
         color: black;
@@ -64,7 +64,6 @@
         color: black;
         font-family: " normal normal normal 20px/1.8em heebo-light,sans-serif;";
       }
-
     }
   }
   .post {
@@ -104,51 +103,75 @@
       }
     }
 
-    .serviceSectionRight{
-        width: 50%;
-    min-height: 500px;
-    background-image: url(./../../assets/images/service-section-right-background.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    .serviceSectionRight {
+      width: 50%;
+      min-height: 500px;
+      background-image: url(./../../assets/images/service-section-right-background.webp);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }
 
-@media screen and (max-width:628px) {
-    .aboutTitle ,.ServiceTitle  {
-        font-size: 36px;
+@media screen and (max-width: 628px) {
+  .aboutSection {
+    flex-direction: column;
+    .aboutTitle {
+      font-size: 36px;
     }
-
-    .aboutDescription,.serviceDescription {
-        width: 350px !important;
-        min-height: 100px;
-        font-size: 20px;
+    .aboutDescription {
+      width: 350px !important;
+      min-height: 100px;
+      font-size: 20px;
     }
-    .aboutSection  {
-        flex-direction: column;
-    }
-    .aboutService,.aboutMenu{
-        flex-direction: column;
-    }
-    .aboutService{
-        flex-direction: column-reverse;
-    }
-
-    .about-section-left,.service-section-right  {
+    .aboutMenu {
+      flex-direction: column;
+      gap: 5px;
+      .aboutSectionLeft {
         width: 100% !important;
-    }
-    .aboutSectionRight,.serviceSectionLeft{
+      }
+      .aboutSectionRight {
         width: 100% !important;
         justify-content: center !important;
         align-items: center !important;
-
+        .aboutTitle {
+          font-size: 36px;
+        }
+        .aboutDescription {
+          width: 350px !important;
+          min-height: 100px;
+          font-size: 20px;
+        }
+      }
     }
-    .post{
-        min-height: 100px !important;
+    .post {
+      min-height: 100px !important;
+      h3 {
+        font-size: 24px !important;
+      }
     }
-   h3{
-    font-size: 24px !important;
-   }
+  }
 
+  .aboutService {
+    flex-direction: column-reverse;
+    .ServiceTitle {
+      font-size: 36px;
+    }
+
+    .serviceDescription {
+      width: 350px !important;
+      min-height: 100px;
+      font-size: 20px;
+    }
+  }
+
+  .serviceSectionRight {
+    width: 100% !important;
+  }
+  .serviceSectionLeft {
+    width: 100% !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 }

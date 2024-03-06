@@ -2,10 +2,11 @@ import { IMAGES } from "../../assets/images";
 import { NavLink } from "react-router-dom";
 import "./style.css";
 import { ROUTES } from "../../utils/constants";
-
 import BurgerMenu from "./burgerMenu";
 
+
 const Header = () => {
+ 
   return (
     <nav>
       <NavLink className="nav-link" to={ROUTES.home}>
@@ -24,11 +25,16 @@ const Header = () => {
         <NavLink className="nav-link" to={ROUTES.contactUs}>
           Contact Us
         </NavLink>
+        <NavLink className="nav-link" to={ROUTES.account}>
+          <div className="loginSection">
+            <span className="material-symbols-outlined">account_circle </span>{" "}
+          Account
+          </div>
+        </NavLink>
       </div>
-    <BurgerMenu/>
+      <BurgerMenu />
+      
     </nav>
   );
 };
 export default Header;
-
-
