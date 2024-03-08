@@ -1,0 +1,23 @@
+.container {
+  justify-content: center;
+}
+
+.reg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 30px;
+
+  .input {
+    width: 130px;
+    height: 50px;
+  }
+
+  .submit {
+    border-radius: 20px;
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+  }
+}

@@ -4,5 +4,6 @@ export const ROUTES = {
     about: "/about",
     carriers: "/carriers",
     subscriber: "/subscriber",
-    
+    registration: "/registration",
+    login: "/login" , 
 }
