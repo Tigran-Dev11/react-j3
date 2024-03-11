@@ -25,7 +25,7 @@ const AboutUs = () => {
             to tell a story and let your users know a little more about you.
           </p>
           <NavLink className={css.navLink} to={ROUTES.menu}>
-            <Button title={"View Menu"}  secondary/>
+            <Button title={"View Menu"}  variant={'secondary'}/>
           </NavLink>
         </div>
       </div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
             to tell a story and let your users know a little more about you.
           </p>
           <NavLink className={css.navLink} to={ROUTES.home}>
-            <Button title={"Visit Us"} secondary/>
+            <Button title={"Visit Us"} variant={'secondary'}/>
           </NavLink>
         </div>
         <div className={css.serviceSectionRight}></div>

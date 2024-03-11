@@ -37,17 +37,17 @@ const ContactUs = () => {
       <section className={css.contactContainerSection}>
         <div className={css.sectionLeft}>
           <form className={css.formContact} onSubmit={handleSubmit}>
-            <Input secondary
+            <Input  variant={'secondary'}
               name="firstName" type={'text'}
               placeholder={"First Name"}
               onChange={handleChange}
             />
-            <Input secondary
+            <Input  variant={'secondary'}
               name="lastName" type={'text'}
               placeholder={"Last Name"}
               onChange={handleChange}
             />
-            <Input secondary type={'email'}
+            <Input  variant={'secondary'} type={'email'}
               name="email"
               placeholder={"Email"}
               onChange={handleChange}
@@ -60,7 +60,7 @@ const ContactUs = () => {
               placeholder="Message"
               onChange={handleChange}
             ></textarea>
-            <Button type={"submit"} title={"Send"}  secondary/>
+            <Button type={"submit"} title={"Send"}  variant={'secondary'}/>
           </form>
         </div>
         <div className={css.sectionRight}>

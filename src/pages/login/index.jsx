@@ -8,9 +8,9 @@ const Login = () => {
     <div className={css.loginContainer}>
       <h1>Welcome to the website</h1>
       <form className={css.loginForm}>
-        <Input placeholder={"Email"} type={"email"} secondary />
-        <Input placeholder={"Password"} type={"password"} secondary />
-        <Button title={"Log In"} secondary />
+        <Input placeholder={"Email"} type={"email"}  variant={'secondary'} />
+        <Input placeholder={"Password"} type={"password"}  variant={'secondary'} />
+        <Button title={"Log In"}  variant={'secondary'} />
       </form>
     </div>
   );

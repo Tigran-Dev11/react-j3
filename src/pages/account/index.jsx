@@ -13,10 +13,10 @@ const Account = () => {
       </p>
       <div className={css.loginRegistr}>
         <NavLink className={css.navLink} to={ROUTES.login}>
-          <Button title={"Login"} secondary></Button>
+          <Button title={"Login"}  variant={'secondary'}></Button>
         </NavLink>
         <NavLink className={css.navLink} to={ROUTES.register}>
-          <Button title={"Registration"} secondary></Button>
+          <Button title={"Registration"}  variant={'secondary'}></Button>
         </NavLink>
       </div>
     </div>

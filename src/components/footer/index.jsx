@@ -8,8 +8,8 @@ const Footer = () => {
         <h1 className={css.titleFooter}>Newsletter</h1>
         <p>Stay up to date with all the latest from 47th Cafe</p>
         <form className={css.form}>
-          <Input placeholder={"Email"} type={'email'} primary/>
-          <Button title={"Join"} primary/>
+          <Input placeholder={"Email"} type={'email'} variant={'primary'}/>
+          <Button title={"Join"} variant={'primary'}/>
         </form>
       </div>
       <div className={css.sectionTalktous}>

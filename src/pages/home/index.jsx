@@ -9,9 +9,9 @@ const Home = () => {
         <p>Cafe & Restaurant Est. 2035</p>
         <h1>Your Go-to Spot for Delicious Eats & Coffee</h1>
         <div className={css.homeBtn}>
-          <Button title={"Order Online"} primary />
+          <Button title={"Order Online"} variant={'primary'} />
           <NavLink className={css.navLink} to={ROUTES.menu}>
-            <Button title={"Our Menu"} primary />
+            <Button title={"Our Menu"} variant={'primary'} />
           </NavLink>
         </div>
       </header>
@@ -26,7 +26,7 @@ const Home = () => {
               little more about you",
             </p>
             <NavLink className={css.navLink} to={ROUTES.menu}>
-              <Button title={"See More"} secondary/>
+              <Button title={"See More"}  variant={'secondary'}/>
             </NavLink>
           </div>
           <div className={css.sectionEatRight}></div>
@@ -42,7 +42,7 @@ const Home = () => {
               little more about you",
             </p>
             <NavLink className={css.navLink} to={ROUTES.menu}>
-              <Button title={"See More"} secondary />
+              <Button title={"See More"}  variant={'secondary'} />
             </NavLink>
           </div>
         </div>
@@ -56,7 +56,7 @@ const Home = () => {
               little more about you",
             </p>
             <NavLink className={css.navLink} to={ROUTES.menu}>
-              <Button title={"See More"} secondary/>
+              <Button title={"See More"}  variant={'secondary'}/>
             </NavLink>
           </div>
           <div className={css.sectionEnjoyRight}></div>

@@ -1,5 +1,5 @@
 
-.btnPrimary{
+.primary{
     padding: 12px 40px;
     background: none;
     cursor: pointer;
@@ -8,7 +8,7 @@
     border: 1px solid white;
 }
 
-.btnSecondary{
+.secondary{
     padding: 12px 40px;
     background: none;
     cursor: pointer;
@@ -18,10 +18,10 @@
     border: 1px solid black;
 }
 
-.btnSecondary:hover{
+.secondary:hover{
 background-color: #99AB91;
 }
-.btnPrimary:hover{
+.primary:hover{
     background-color: #99AB91;
 }
 
