@@ -35,12 +35,14 @@ navigate("/login");
           placeholder="enter your name"
           className={css.input}
         />
+        <p>{errors?.firstName?.message}</p>
         <input
           {...register("lastName")}
           type="text"
           placeholder="enter your last name"
           className={css.input}
         />
+        <p>{errors?.lastName?.message}</p>
         <input
           {...register("email")}
           type="email"
