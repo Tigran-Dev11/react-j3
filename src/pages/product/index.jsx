@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import { Loader } from "../../common/loader";
 import css from "./product.module.scss";
+import { API } from "../../configs/api";
 
 const Product = () => {
   const [product, setProduct] = useState([]);
@@ -38,7 +39,7 @@ const Product = () => {
   useEffect(() => {
     const getProduct = async () => {
       try {
-        const response = await axios("https://fakestoreapi.com/products");
+        const response = await axios(`${process.env.REACT_APP_API_URI}${API.product}`);
 
         setProduct(response.data);
         setLoading(false);
@@ -50,7 +51,6 @@ const Product = () => {
     getProduct();
   }, []);
 
-  console.log(product);
 
   if (loading) {
     return <Loader />;

@@ -7,3 +7,5 @@ export const ROUTES = {
     product: '/product',
     register: '/register',
 }
+
+

@@ -5,7 +5,7 @@ import { ROUTES } from "../../utils/constants";
 const Home = ({value ,alertText}) => {
   let initialValue = 0;
 
-  const [number, setNumber] = useState(value);
+  const [number, setNumber] = useState(initialValue);
 
  // alertText()
 
