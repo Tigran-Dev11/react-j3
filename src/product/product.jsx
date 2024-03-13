@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import css from "./product.module.scss";
 import axios from "axios";
 import Button from "./../common/button/index";
+import ProductCard from "../components/product-card";
 const Product = () => {
   const [product, setProduct] = useState([]);
   const [count, setCount] = useState(0);
@@ -9,14 +10,14 @@ const Product = () => {
   const addCount = (productId) => {
     setCount((prevCounts) => ({
       ...prevCounts,
-      [productId]: (prevCounts[productId] || 0) + 1,
+      [productId]: (prevCounts[productId] || 0) + 1
     }));
   };
   const removeCount = (productId) => {
     if (count[productId] > 0) {
       setCount((prevCounts) => ({
         ...prevCounts,
-        [productId]: prevCounts[productId] - 1,
+        [productId]: prevCounts[productId] - 1
       }));
     }
   };
@@ -25,8 +26,37 @@ const Product = () => {
     const { id, title, image, price } = item;
     const newItem = { id, title, price, image };
     console.log(newItem);
-    localStorage.setItem("cartItem", JSON.stringify(newItem));
+    //
+
+    let basketItems = JSON.parse(localStorage.getItem("cartItem"));
+
+    if (!basketItems?.length) {
+      localStorage.setItem("cartItem", JSON.stringify([newItem]));
+    } else {
+      const findBasketItem = basketItems.find((item) => item.id === id);
+
+      if (!findBasketItem) {
+        localStorage.setItem(
+          "cartItem",
+          JSON.stringify([...basketItems, newItem])
+        );
+      } else {
+        let updetedItems = basketItems.map((item) => {
+          if (item.id === findBasketItem.id) {
+            return {
+              ...item,
+              count: item.count + findBasketItem.count
+            };
+          }
+
+          return item;
+        });
+
+        localStorage.setItem("cartItem", JSON.stringify(updetedItems));
+      }
+    }
   };
+
   useEffect(() => {
     const getProduct = async () => {
       try {
@@ -37,34 +67,14 @@ const Product = () => {
     getProduct();
   }, []);
 
+
+console.log(JSON.parse(localStorage.getItem("cartItem")));
+
   return (
     <div className={css.productContainer}>
+
       {product.map((item) => (
-        <div className={css.product} key={item.id}>
-          <img src={item.image} alt={item.name} />
-          <h3>{item.title}</h3>
-          <div className={css.productAdd}>
-            <p>{item.price}$</p>
-            <span
-              onClick={() => addCount(item.id)}
-              className="material-symbols-outlined"
-            >
-              add
-            </span>
-            <p>{count[item.id] || 0}</p>
-            <span
-              onClick={() => removeCount(item.id)}
-              className="material-symbols-outlined"
-            >
-              remove
-            </span>
-            <Button
-              title={"Add to card"}
-              onClick={()=>addToCart(item)}
-              variant="secondary"
-            />
-          </div>
-        </div>
+         <ProductCard item={item}/>
       ))}
     </div>
   );
