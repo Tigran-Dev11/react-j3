@@ -1,0 +1,27 @@
+nav{
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba($color: #1f3349, $alpha: 0.4);
+   
+    .menuContainer{
+        width: 500px;
+        display: flex;
+        justify-content: space-around;
+        .navLink{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 600;
+            padding: 2px;
+            border-radius: 10px;
+            &:hover{
+                background-color: rgba($color: #1f3349, $alpha: 0.6);
+            }
+        }
+
+    }
+    
+}

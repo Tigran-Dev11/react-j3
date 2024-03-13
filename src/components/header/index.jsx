@@ -1,39 +1,33 @@
 import { IMAGES } from "../../assets/images";
 import { NavLink } from "react-router-dom";
-import "./style.css";
 import { ROUTES } from "../../utils/constants";
-import BurgerMenu from "./burgerMenu";
-
-
+import css from "./header.module.scss";
+import ShoppingBag from "../../basket/basket";
 const Header = () => {
- 
   return (
     <nav>
-      <NavLink className="nav-link" to={ROUTES.home}>
+      <NavLink className={css.navLink} to={ROUTES.home}>
         <img src={IMAGES.logo} alt="logo" className="logo" />
       </NavLink>
-      <div className="menu-container">
-        <NavLink className="nav-link" to={ROUTES.home}>
+      <div className={css.menuContainer}>
+        <NavLink className={css.navLink} to={ROUTES.home}>
           Home
         </NavLink>
-        <NavLink className="nav-link" to={ROUTES.aboutUs}>
+        <NavLink className={css.navLink} to={ROUTES.shop}>
+          Shop
+        </NavLink>
+     
+
+        <NavLink className={css.navLink} to={ROUTES.aboutUs}>
           About Us
         </NavLink>
-        <NavLink className="nav-link" to={ROUTES.menu}>
-          Menu
-        </NavLink>
-        <NavLink className="nav-link" to={ROUTES.contactUs}>
+
+        <NavLink className={css.navLink} to={ROUTES.contactUs}>
           Contact Us
         </NavLink>
-        <NavLink className="nav-link" to={ROUTES.account}>
-          <div className="loginSection">
-            <span className="material-symbols-outlined">account_circle </span>{" "}
-          Account
-          </div>
-        </NavLink>
+     
+      <ShoppingBag/>
       </div>
-      <BurgerMenu />
-      
     </nav>
   );
 };

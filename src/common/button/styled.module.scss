@@ -1,27 +1,22 @@
 
-.btnPrimary{
-    padding: 12px 40px;
-    background: none;
+.primary{
+    padding: 12px 45px;
+    background-color: white;
     cursor: pointer;
     font-size: 16px;
-    color: white;
-    border: 1px solid white;
+    color: rgb(152, 149, 149);
+    border-radius: 10px;
+border: none;
 }
 
-.btnSecondary{
-    padding: 12px 40px;
-    background: none;
+.secondary{
+    padding: 10px 25px;
+    background-color: rgb(186, 170, 170);
     cursor: pointer;
     font-size: 16px;
-    border: 1px solid black;
-    color: black;
-    border: 1px solid black;
+    border:none;
+    color: rgb(255, 255, 255);
+    
 }
 
-.btnSecondary:hover{
-background-color: #99AB91;
-}
-.btnPrimary:hover{
-    background-color: #99AB91;
-}
 

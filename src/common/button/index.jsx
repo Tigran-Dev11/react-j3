@@ -1,9 +1,13 @@
  import css from './styled.module.scss'
 
- const Button = ({ title, primary, secondary }) => {
-    const btnClass = primary ? css.btnPrimary : secondary ? css.btnSecondary : css.btn;
+ const Button = ({ title, variant, onClick }) => {
+    const classes ={
+      primary:css.primary,
+      secondary:css.secondary,
+
+    }
   
-    return <button className={btnClass}>{title}</button>;
+    return <button onClick={onClick} className={classes[variant]}>{title}</button>;
   };
 
 export default Button

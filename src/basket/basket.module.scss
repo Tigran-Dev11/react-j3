@@ -1,0 +1,20 @@
+.shoppinngBagContainer {
+  
+  display: flex;
+  position: absolute;
+    .container {
+        
+        background-color: aqua;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 15px;
+    
+        span {
+          width: 100%;
+        }
+      }
+  
+ 
+}
+

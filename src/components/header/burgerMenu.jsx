@@ -2,7 +2,7 @@ import { IMAGES } from "../../assets/images";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import { ROUTES } from "../../utils/constants";
-
+import css from  './header.module.scss'
 const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -11,8 +11,8 @@ const BurgerMenu = () => {
   };
 
   return (
-    <div className="burger-menu">
-      <button className="burger-icon" onClick={toggleMenu}>
+    <div className={css.burgerMenu}>
+      <button className="burgerIcon" onClick={toggleMenu}>
         <img src={IMAGES.menuBar} alt="menuBar" className="menu-bar" />
       </button>
       {isOpen && (

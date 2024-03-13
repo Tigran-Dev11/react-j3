@@ -1,0 +1,35 @@
+.productContainer {
+  width: 100%;
+  min-height: 800px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 10px;
+
+  .product {
+    width: 350px;
+    min-height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 150px;
+      height: 150px;
+    }
+    .productAdd {
+      width: 100%;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+span{
+    cursor: pointer;
+}
+    }
+  }
+}

@@ -1,75 +1,70 @@
 footer {
   width: 100%;
-  min-height: 250px;
-  background-color: rgb(64, 77, 60);
+  min-height: 450px;
+  background-color: black;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  .footerContainer {
+    width: 100%;
+    min-height: 350px;
+    display: flex;
+    justify-content: space-around;
 
-  .sectionNewsletter {
-    width: 300px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .titleFooter {
-        font-size: 36px;
-        color: rgb(255, 255, 255);
-      }
-      p {
-        color: rgb(255, 255, 255);
-        font-size: 28px;
-    }
-    .form{
-        width: 300px;
-        min-height: 5px;
+    .containerLeft {
+      width: 46%;
+      min-height: 350px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      justify-content: center;
+      .titleLogoSection {
+        width: 100%;
+        min-height: 350px;
         display: flex;
-    }
-  }
-  .sectionTalktous{
-    width: 300px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    .titleFooter {
-        font-size: 36px;
-        color: rgb(255, 255, 255);
-      }
-      p{
-        color: rgb(255, 255, 255);
-        font-size: 28px;
-      }
-  }
-  .sectionSocial{
-    width: 300px;
-    min-height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 35px;
-    .sociMedia{
-        font-size: 40px;
-        color: rgb(255, 255, 255);
-    }
-  }
- 
-}
-@media screen and (max-width: 1200px){
-    .form{
         flex-direction: column;
-    }
-}
-@media screen and (max-width: 628px) {
-    footer{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0 20px;
-        min-height: 200px !important;
-        .socilMedia{
-            display: none;
+        justify-content: center;
+        gap: 15px;
+        img {
+          width: 200px;
+          height: 100px;
         }
-    
+        .title {
+          width: 100%;
+          min-height: 150px;
+          color: white;
+          font-size: 24px;
+          font-weight: 400;
+        }
+      }
     }
-  
+    .containerRight {
+      width: 55%;
+      min-height: 350px;
+      display: flex;
+      justify-content: space-around;
+   
+      ul {
+        width: 150px;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        gap: 10px;
+        font-size: 22px;
+        .navLink {
+          text-decoration: none;
+          color: white;
+        }
+
+        li {
+          list-style: none;
+          font-size: 18px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
