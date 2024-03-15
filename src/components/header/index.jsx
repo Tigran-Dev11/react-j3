@@ -2,7 +2,8 @@ import { IMAGES } from "../../assets/images";
 import { NavLink } from "react-router-dom";
 import { ROUTES } from "../../utils/constants";
 import css from "./header.module.scss";
-import ShoppingBag from "../../basket/basket";
+
+import Basket from "../../shopping-bag/basket";
 const Header = () => {
   return (
     <nav>
@@ -26,7 +27,7 @@ const Header = () => {
           Contact Us
         </NavLink>
      
-      <ShoppingBag/>
+      <Basket/>
       </div>
     </nav>
   );

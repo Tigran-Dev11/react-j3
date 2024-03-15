@@ -1,8 +1,9 @@
 
 import React, { useState } from "react";
-import css from "./basket.module.scss";
+import css from "./bag.module.scss";
 import Modal from "./modal";
 import { IMAGES } from "../assets/images";
+
 
 const Basket = () => {
   const [open, setOpen] = useState(false);

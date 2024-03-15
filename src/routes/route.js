@@ -2,6 +2,8 @@ import AboutUs from "../pages/about-us";
 import ContactUs from "../pages/contact-us";
 import Home from "../pages/home";
 import Shop from "../pages/shop";
+
+
 import { ROUTES } from "../utils/constants";
 import NotFound from "./../pages/not-found";
 
@@ -19,7 +21,7 @@ export const routes = [
   {
     id: 3,
     path: ROUTES.shop,
-    component: <Shop />,
+    component: <Shop/>,
   },
   {
     id: 4,

@@ -1,8 +1,6 @@
-// import { NavLink } from "react-router-dom";
-// import { ROUTES } from "../../utils/constants";
-// import  Button  from "../../common/button";
+
 import Button from "../../common/button";
-import Product from "../../product/product";
+//import Product from "../../product/product";
 import css from "./styled.module.scss";
 import React from "react";
 
@@ -20,7 +18,7 @@ const Home = () => {
       </div>
 
 
-     <Product/>
+ 
     </div>
   );
 };
