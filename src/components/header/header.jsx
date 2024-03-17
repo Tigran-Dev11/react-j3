@@ -3,11 +3,23 @@ import "./heaser.css"
 const Header =()=>{
     return (
 
-<nav>
-<div className="header-canntiner">
-    <p></p>
-    <h1>attentive</h1>
-</div>
+<nav> 
+<h1 className="everist">everist</h1>
+<ul>
+    <li>SHOP</li>
+    <li>LEARN</li>
+    <li>SUSTAINABILITY</li>
+    <li>OUR STORY</li>
+    <li>PRESS</li>
+    <li>QUIZ</li>
+</ul>
+
+
+
+
+
+
+
 </nav>
     )
 }
