@@ -4,6 +4,7 @@
     const classes ={
       primary:css.primary,
       secondary:css.secondary,
+      btn:css.btn
 
     }
   
