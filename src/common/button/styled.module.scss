@@ -1,22 +1,17 @@
-
-.primary{
-    padding: 12px 45px;
-    background-color: white;
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(152, 149, 149);
-    border-radius: 10px;
-border: none;
-}
-
-.secondary{
-    padding: 10px 25px;
-    background-color: rgb(186, 170, 170);
-    cursor: pointer;
-    font-size: 16px;
+.primary {
+  padding: 12px 50px;
+    background-color: #ABC0DB;
+    color: #000000;
     border:none;
-    color: rgb(255, 255, 255);
-    
+    cursor: pointer;
 }
 
-
+.secondary {
+padding: 12px 40px;
+  background-color: #270515;
+  color: #fff;
+  border: 2px;
+  text-transform:uppercase;
+  cursor: pointer;
+ 
+}

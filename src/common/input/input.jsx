@@ -1,14 +1,13 @@
 import css from "./styled.module.scss";
 
 
-const Input = ({ placeholder, primary, secondary, type,register }) => {
-  const inputClass = primary
-    ? css.InputPrimary
-    : secondary
-    ? css.inputSecondary
-    : css.input;
+const Input = ({ placeholder, variant, type,register }) => {
+  const inputClass = {
+    primary:css.primary,
+    secoondary:css.secondary,
+  }
   return (
-    <input placeholder={placeholder} {...register}  className={inputClass} type={type}></input>
+    <input placeholder={placeholder} {...register}  className={inputClass[variant]} type={type}></input>
   );
 };
 export default Input;

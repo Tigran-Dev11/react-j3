@@ -1,0 +1,48 @@
+footer {
+  width: 100%;
+  min-height: 400px;
+  background-color: #fbf6f0;
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  align-items: center;
+  
+  .helpful,
+  .contactUs,
+  .community,
+  .join {
+    width: 300px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+   
+
+    ul {
+      font-weight: 700;
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      li {
+        list-style: none;
+        
+        .navLink {
+          text-decoration: none;
+          color: #000;
+          font-weight: 100;
+        }
+      }
+    }
+  }
+  .join {
+    gap: 10px;
+    p {
+      width: 250px;
+      min-height: 60px;
+      font-weight: 400;
+    }
+    .joinForm {
+      display: flex;
+    }
+  }
+}

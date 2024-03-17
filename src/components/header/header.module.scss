@@ -1,27 +1,42 @@
-nav{
-    width: 100%;
-    min-height: 100px;
+nav {
+  width: 100%;
+  min-height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  .icon {
+    width: 130px;
+    height: 22px;
+  }
+  .pagesContainer {
+    width: 500px;
+    min-height: 80px;
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    background-color: rgba($color: #1f3349, $alpha: 0.4);
-   
-    .menuContainer{
-        width: 500px;
-        display: flex;
-        justify-content: space-around;
-        .navLink{
-            text-decoration: none;
-            color: white;
-            font-size: 20px;
-            font-weight: 600;
-            padding: 2px;
-            border-radius: 10px;
-            &:hover{
-                background-color: rgba($color: #1f3349, $alpha: 0.6);
-            }
-        }
+    justify-content: space-around;
 
+    .user,
+    .shoppingBag {
+      width: 22px;
+      height: 22px;
     }
-    
+    .navLink {
+      text-decoration: none;
+      color: black;
+    }
+    .bag {
+      position: relative;
+
+      .count {
+        width: 14px;
+        height: 14px;
+        background-color: #abc0db;
+        position: absolute;
+        z-index: 1;
+        left: 10px;
+        top: 10px;
+      }
+    }
+  }
 }

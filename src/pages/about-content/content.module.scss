@@ -1,0 +1,213 @@
+@mixin description {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  line-height: 23px;
+  font-weight: 400;
+  color: #270515;
+}
+@mixin title {
+  font-family: "Roboto", sans-serif;
+  font-size: 55px;
+  line-height: 57px;
+  font-weight: 400;
+
+}
+@mixin information {
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #270515;
+}
+@mixin aboutUse {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.8px;
+  font-weight: 400;
+
+}
+
+.contentContainer {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .contentIdea {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    background-image: url(./../../assets/images/content-Idea.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+
+    .contentIdeaTitle {
+      width: 470px;
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      position: absolute;
+      z-index: 1;
+      padding: 0 20px;
+
+      h1 {
+        @include title;
+      }
+      h3 {
+        @include aboutUse;
+      }
+      h6 {
+        @include information;
+      }
+      p {
+        @include description;
+      }
+    }
+  }
+  .highPerformace {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    .highBackgorund {
+      width: 50%;
+      min-height: 500px;
+      background-image: url(./../../assets/images/background-high.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .highContent {
+      width: 50%;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #fff;
+      padding: 0 20px;
+      h1 {
+        @include title;
+      }
+      h3 {
+        @include aboutUse;
+      }
+      h6 {
+        @include information;
+      }
+      p {
+        @include description;
+      }
+    }
+  }
+  .superClean {
+    width: 100%;
+    min-height: 400px;
+    background-color: #fbf6f0;
+    display: flex;
+    .aboutClean {
+      width: 50%;
+      min-height: 500px;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20px;
+      h1 {
+        @include title;
+      }
+      h3 {
+        @include aboutUse;
+      }
+      h6 {
+        @include information;
+      }
+      p {
+        @include description;
+      }
+    }
+  }
+
+  .ecoOptimist {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+
+    .ecoBackground {
+      width: 50%;
+      min-height: 500px;
+      background-image: url(./../../assets/images/eco-Optimist.jpg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .aboutEco {
+      width: 50%;
+      min-height: 500px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      padding: 0 20px;
+      h1 {
+        @include title;
+      }
+      h3 {
+        @include aboutUse;
+      }
+      h6 {
+        @include information;
+      }
+      p {
+        @include description;
+      }
+    }
+  }
+
+  .ourVision{
+    width: 100%;
+    min-height: 600px;
+    background-image:url(./../../assets/images/ourVison.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .aboutVision{
+        width: 460px;
+        min-height: 540px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #fff;
+        padding: 0 20px;
+
+        h1 {
+            @include title;
+          }
+          h3 {
+            @include aboutUse;
+          }
+          h6 {
+            @include information;
+          }
+          p {
+            @include description;
+          }
+    }
+
+}
+}

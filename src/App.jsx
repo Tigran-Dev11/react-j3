@@ -1,13 +1,15 @@
-import Footer from "./components/footer";
-import Header from "./components/header";
-import Router from "./routes/routes";
+
+ import Router from "./routes/routes";
+
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 function App() {
   return (
     <div>
-      <Header />
+<Header/>
       <Router />
-      <Footer />
+    <Footer/>
     </div>
   );
 }

@@ -1,3 +1,3 @@
 export const API = {
-    product:'./products'
+    product:'/api/v1/products.json'
 }

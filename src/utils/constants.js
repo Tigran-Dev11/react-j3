@@ -1,8 +1,13 @@
 export const ROUTES ={
 
     home:'/',
-    aboutUs: '/about-us',
-    contactUs:"/contact-us",
-    shop:'/shop',
+    shop: '/shop',
+    learn:'/learn',
+    ourStory:"/our-story",
+    press:'/press',
+    quiz:'/quiz',
+    registr:'/registr',
+    basket:'/basket',	
     notFound:'/not-found',
 }
+

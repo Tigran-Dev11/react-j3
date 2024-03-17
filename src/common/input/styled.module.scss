@@ -1,14 +1,12 @@
-.InputPrimary{
-    padding: 12px 40px;
-    background: none;
-    border: 1px solid #fff;
+.primary{
+    padding: 12px 20px;
+    background:#FFE800;
+    border: 1px solid #000000;
     font-size: 16px;
 }
-.InputPrimary::placeholder{
-    color: #fff; ;
-}
 
-.inputSecondary{
+
+.secondary{
     padding: 12px 40px;
     background: none;
     border: 1px solid black;
