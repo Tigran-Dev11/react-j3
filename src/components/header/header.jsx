@@ -3,7 +3,10 @@ import { IMAGES } from "../../assets/images";
 import css from "./header.module.scss";
 import { ROUTES } from "../../utils/constants";
 
+
+
 const Header = () => {
+
   return (
     <nav>
       <NavLink to={ROUTES.home}><img src={IMAGES.icon} alt="icon" className={css.icon} /></NavLink>

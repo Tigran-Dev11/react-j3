@@ -1,13 +1,14 @@
-
 import ProductCard from "../components/product-card/productCard";
-import css from "./product.module.scss";
 
 
-const Product = () => {
-
-    return(
-        <ProductCard/>
-    )
-}
+const Product = ({ addCount, removeCount, addToCart,updateBasketCount  }) => {
+  return (
+    <div >
+      <ProductCard updateBasketCount={updateBasketCount}
+       
+      />
+    </div>
+  );
+};
 
 export default Product;

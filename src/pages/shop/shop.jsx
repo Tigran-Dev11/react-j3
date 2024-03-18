@@ -1,9 +1,9 @@
 import React from 'react';
-//import css from './shop.module.scss'
+import css from './shop.module.scss'
 import Product from '../../product/product';
 const Shop = () => {
     return (
-        <div>
+        <div className={css.shopContainer}>
             <Product/>
         </div>
     );

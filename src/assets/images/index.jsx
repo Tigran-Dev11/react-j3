@@ -14,6 +14,7 @@ import creams  from './Creams.jpg'
 import evCream from './ev-creams.png'
 import hairWash from './hairWash.jpg'
 import loading from './loading.gif'
+import basket from './basket.png'
 export const IMAGES={
-icon,loading,shoppingBag, hairWash,evCream,userImages,elle,byrdie,popSugar,shape,winner,fastCompany,cream,losion,creamEverist,creams,
+icon,loading,basket,shoppingBag, hairWash,evCream,userImages,elle,byrdie,popSugar,shape,winner,fastCompany,cream,losion,creamEverist,creams,
 }
