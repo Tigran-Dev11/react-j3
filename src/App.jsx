@@ -1,10 +1,12 @@
+import { NavLink } from "react-router-dom";
 import Router from "./routes/routes";
+import { ROUTES } from "./utils/constants";
 
 function App() {
   return (
     <div>
       <header>
-       header
+         <NavLink to={ROUTES.basket}>Go basket</NavLink>
       </header>
       <Router/>
       <footer>

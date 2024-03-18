@@ -1,9 +1,11 @@
 import AboutUs from "../pages/about-us";
+import Basket from "../pages/basket";
 import ContactUs from "../pages/contact";
 import Home from "../pages/home";
 import NotFound from "../pages/not-found";
 import Product from "../pages/product";
 import Register from "../pages/register";
+import Shop from "../pages/shop";
 import { ROUTES } from "../utils/constants";
 
 
@@ -30,7 +32,17 @@ export const routes  = [
         href: ROUTES.register,
         component: <Register/>
     },
-    {   id:6,
+    {
+        id:6,
+        href: ROUTES.shop,
+        component: <Shop/>
+    },
+    {
+        id:7,
+        href: ROUTES.basket,
+        component: <Basket/>
+    },
+    {   id:8,
         href: "*",
         component: <NotFound/>
     },
