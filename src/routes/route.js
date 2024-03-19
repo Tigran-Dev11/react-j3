@@ -1,5 +1,6 @@
 import Basket from "../pages/basket/basket";
 import Home from "../pages/home/home";
+
 import Learn from "../pages/learn/learn";
 import NotFound from "../pages/not-found";
 import OurStory from "../pages/our-story/ourStory";
@@ -14,7 +15,7 @@ export const routes = [
   {
     id: 1,
     path: ROUTES.home,
-    component: <Home />,
+    component: <Home/>,
   },
   {
     id: 2,

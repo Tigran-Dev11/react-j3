@@ -5,7 +5,8 @@ import { ROUTES } from "../../utils/constants";
 
 
 
-const Header = () => {
+
+const Header = ({ basketItemsCount }) => {
 
   return (
     <nav>
@@ -40,7 +41,7 @@ const Header = () => {
             className={css.shoppingBag}
           />
         </NavLink>
-        <div className={css.count}></div>
+        <div className={css.count}>{ basketItemsCount }</div>
         </div>
       </div>
     </nav>

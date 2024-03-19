@@ -1,41 +1,5 @@
-.BasketContainer{
-width: 100%;
-min-height: 100vh;
-display: flex;
-justify-content: center;
 
-
-
-.basketItems {
-  width: 500px;
-  min-height: 100px;
-  display: flex;
-  justify-content: space-around;
-
-
-  img {
-    width: 40px;
-    height: 40px;
-  }
-  h3 {
-    width: 300px;
-    font-size: 16px;
-  }
-  span {
-    cursor: pointer;
-  }
-}
-}
-.basketContent{
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-.box{
-    width: 100%;
-    min-height: 100vh;
-    .noItems{
+    .emptyBasket{
         width: 100%;
         min-height: 500px;
         display: flex;
@@ -45,7 +9,6 @@ justify-content: center;
 
        
     }
-}
+
     
     
-}

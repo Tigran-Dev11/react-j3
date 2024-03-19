@@ -21,35 +21,43 @@ export const ProductCard = ({ item }) => {
   const addBasket = () => {
     const cardItem = {
       id: item.id,
-      img: item.image,
+      img: item.images,
       count,
       price: item.price,
       title: item.title,
     };
 
+    let updatedItems = [];
     if (!basketItems.length) {
-      setBasketItems([cardItem]);
+      updatedItems = [cardItem];
     } else {
-      const findItem = basketItems.find((elem) => elem.id === item.id);
+      const findItemIndex = basketItems.findIndex((elem) => elem.id === item.id);
 
-      if (findItem?.id) {
-        const updatedItems = basketItems.map((elem) => {
-          if (elem.id === item.id) {
+      if (findItemIndex !== -1) {
+        updatedItems = basketItems.map((elem, index) => {
+          if (index === findItemIndex) {
             return {
               ...elem,
               count: elem.count + count,
             };
           }
-
           return elem;
         });
-
-        setBasketItems(updatedItems);
       } else {
-        setBasketItems((prev) => [...prev, cardItem]);
+        updatedItems = [...basketItems, cardItem];
       }
     }
+
+    setBasketItems(updatedItems);
+    localStorage.setItem('basketItems', JSON.stringify(updatedItems)); // Save to local storage
   };
+ 
+  useEffect(() => {
+    const storedBasketItems = localStorage.getItem('basketItems');
+    if (storedBasketItems) {
+      setBasketItems(JSON.parse(storedBasketItems));
+    }
+  }, []);
 
   useEffect(() => {
     setPrice(item.price * count);
@@ -65,7 +73,6 @@ export const ProductCard = ({ item }) => {
         <button onClick={minusCount}>-</button>
         <span>{count}</span>
         <button onClick={addCount}>+</button>
-
         <button onClick={addBasket}>add basket</button>
       </div>
     </div>

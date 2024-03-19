@@ -1,87 +1,41 @@
-import React, { useEffect, useState } from "react";
-import css from "./basket.module.scss";
+import { useNavigate } from "react-router-dom";
+import css from './basket.module.scss'
+import { ROUTES } from "../../utils/constants";
+import { useGlobalContext } from "../../hooks/use-global-context";
+import BasketCard from "../../components/basket-card/basket-card";
 import { IMAGES } from "../../assets/images";
+
+
+
 const Basket = () => {
-  const [basketItems, setBasketItems] = useState([]);
+  const { basketItems,setBasketItems } = useGlobalContext();
 
-  const addQuantity = (itemId) => {
-    const updatedBasketItems = basketItems.map((item) => {
-      if (item.id === itemId) {
-        return {
-          ...item,
-          quantity: item.quantity + 1,
-        };
-      }
-      return item;
-    });
-    setBasketItems(updatedBasketItems.filter((item) => item.quantity > 0));
-    localStorage.setItem(
-      "cartItem",
-      JSON.stringify(updatedBasketItems.filter((item) => item.quantity > 0))
+
+
+  const navigate = useNavigate();
+  const removeFromBasket = (itemToRemove) => {
+    const updatedBasket = basketItems.filter(
+      (item) => item.id !== itemToRemove.id
     );
+    setBasketItems(updatedBasket);
   };
-  const removeQuantity = (itemId) => {
-    const updatedBasketItems = basketItems.map((item) => {
-      if (item.id === itemId) {
-        return {
-          ...item,
-          quantity: item.quantity - 1,
-        };
-      }
-      return item;
-    });
-    setBasketItems(updatedBasketItems.filter((item) => item.quantity > 0));
-    localStorage.setItem(
-      "cartItem",
-      JSON.stringify(updatedBasketItems.filter((item) => item.quantity > 0))
-    );
-  };
-  useEffect(() => {
-    const storedItems = JSON.parse(localStorage.getItem("cartItem")) || [];
-    setBasketItems(storedItems);
-  }, []);
-
-  const renderBasketItems = () => {
-    return basketItems.map((item) => (
-      <div className={css.BasketContainer}>
-        <div key={item.id} className={css.basketItems}>
-          <img src={item.image_link} alt={item.name} />
-          <h3>{item.name}</h3>
-          <p>
-            {item.price}
-            {item.price_sign}
-          </p>
-          <span
-            onClick={() => addQuantity(item.id)}
-            className="material-symbols-outlined"
-        
-          >
-            add
-          </span>
-          <p>{item.quantity}</p>
-          <span
-            onClick={() => removeQuantity(item.id)}
-            className="material-symbols-outlined"
-           
-          >
-            remove
-          </span>
-        </div>
-      </div>
-    ));
-  };
-
   return (
-    <div className={css.basketContent}>
-      <div className={css.box}>
-        {basketItems.length > 0 ? (
-          renderBasketItems()
-        ) : (
-         
-          <div className={css.noItems}>
+ 
+    <div>
+   
+      {!basketItems.length ? (
+        <div className={css.emptyBasket}>
          <img src={IMAGES.basket} alt="basket" />
-          </div>)}
-      </div>
+
+          <button onClick={() => navigate(ROUTES.shop)}>go to shop</button>
+        </div>
+      ) : (
+       
+      
+        basketItems.map((elem) => <BasketCard elem={elem} key={elem.id} onRemove={removeFromBasket} />)
+        
+     )}
+    
     </div>
   );
 };

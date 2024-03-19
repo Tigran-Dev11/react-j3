@@ -4,11 +4,14 @@ import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 import { GlobalProvider } from "./global-provider/global-provider";
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
-    <GlobalProvider>
-      <App />
-    </GlobalProvider>
-  </BrowserRouter>
+ 
+    <BrowserRouter>
+      <GlobalProvider>
+        <App />
+      </GlobalProvider>
+    </BrowserRouter>
+
 );
