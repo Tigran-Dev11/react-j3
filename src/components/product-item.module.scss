@@ -1,0 +1,19 @@
+.itemContainer{
+    width: 230px;
+    height: 320px;
+    border-radius: 8px;
+    border: 1px solid black;
+
+    img{
+        width: 100%;
+        height: 200px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .counterContainer{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

@@ -1,14 +1,14 @@
-import { Footer}  from "./components/footer/footer";
-import Header from "./components/header/header";
-import Home from "./pages/home/home";
+import Header from "./components/constants/header/header";
+import Footer from "./components/constants/footer/footer";
+import Router from "./routes/routes";
+import { ROUTES } from "./utils/constants";
 function App() {
-
-
   return (
-    <div className="App">
-      <Header />
-      <Footer/>
-       <Home/> 
+    <div>
+      <Header /> 
+      <NavLink to={ROUTES.basket}>Go basket</NavLink>
+      <Router />
+      <Footer />
     </div>
   );
 }
