@@ -4,10 +4,11 @@ import { routes } from "./route";
 const Router = () => {
   return (
     <Routes>
-      {routes.map(({ id, path, component }) => (
-        <Route key={id} path={path} element={component} />
-      ))};
+      {routes.map(({ id, href, component }) => (
+        <Route key={id} path={href} element={component} />
+      ))}
     </Routes>
-  );    
+  );
 };
-export default Router
+
+export default Router;

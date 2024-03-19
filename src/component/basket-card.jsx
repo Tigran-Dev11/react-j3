@@ -9,7 +9,7 @@ export const BasketCard = ({ elem }) => {
     const addCount = () => {
         setCount((prev) => prev + 1);
       };
-
+    
       const minusCount = () => {
         if (count > 1) {
           setCount((prev) => prev - 1);
@@ -34,7 +34,7 @@ export const BasketCard = ({ elem }) => {
             <span>{count}</span>
             <button onClick={addCount}>+</button>
 
-
+           
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import { useGlobalContext } from "../../hooks/use-global-context";
 import { ROUTES } from "../../utils/constants";
 
 const Basket = () => {
-  const { basketItems,setBasketItems } = useGlobalContext();
+  const { basketItems } = useGlobalContext();
 
   const navigate = useNavigate();
 

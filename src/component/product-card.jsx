@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import css from "./product-item.module.scss";
-import { useGlobalContext } from "../hooks/use-global-context";
+import { useGlobalContext } from "../hooks/use-global-context"; 
 
 export const ProductCard = ({ item }) => {
   const [count, setCount] = useState(1);
@@ -31,7 +31,7 @@ export const ProductCard = ({ item }) => {
       if(!basketItems.length){
         setBasketItems([cardItem])
       }else{
-
+        
         const findItem = basketItems.find((elem)=>elem.id ===item.id);
 
         if(findItem?.id){

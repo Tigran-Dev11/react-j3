@@ -1,14 +1,9 @@
-export const ROUTES ={
-
-    home:'/',
-    headers:"/headers",
-    aboutUs: '/about-us',
-    contactUs:"/contact-us",
-    menu:'/menu',
-    login:'/login',
-    account:'/account',
-    register:"/register",
-    notFound:'/not-found',
-    shop: "/shop",
-    basket:"/basket"
+export const ROUTES = {
+    home: '/',
+    aboutAs: '/about-us',
+    contactUs: '/contact-us',
+    product: '/product',
+    register: '/register',
+    shop:'/shop',
+    basket:'/basket',
 }

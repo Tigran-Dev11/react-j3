@@ -1,19 +1,15 @@
-
 import { Loader } from '../../common/loader'
-import { ProductCard } from '../../components/product-card'
-import { API } from '../../configs/api'
+import { ProductCard } from '../../component/product-card' 
+import { API } from '../../configt/api' 
 import { useFetch } from '../../hooks/use-fetch'
-import  "./shop.css"
+import css  from './shop.module.scss'
 
 const Shop  = ()=>{
 
     const [data, loading] =useFetch({url:`${API.product}`})
-
-
-
     console.log(data);
 
-
+    
     if(loading){
         return <Loader/>
     }

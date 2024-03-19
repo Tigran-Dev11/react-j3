@@ -1,14 +1,15 @@
-import Header from "./components/constants/header/header";
-import Footer from "./components/constants/footer/footer";
-import Router from "./routes/routes";
+
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { ROUTES } from "./utils/constants";
+
 function App() {
   return (
     <div>
-      <Header /> 
-      <NavLink to={ROUTES.basket}>Go basket</NavLink>
-      <Router />
-      <Footer />
+        <header>
+         <NavLink to={ROUTES.basket}>Go basket</NavLink>
+      </header>
+     
     </div>
   );
 }
