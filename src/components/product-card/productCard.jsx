@@ -1,18 +1,19 @@
 import { useEffect, useState } from "react";
 import css from "./productCard.module.scss";
 import { useGlobalContext } from "../../hooks/use-global-context";
+import Button from "../../common/button";
+
 
 export const ProductCard = ({ item }) => {
   const [count, setCount] = useState(1);
   const [price, setPrice] = useState(item.price);
-
   const { basketItems, setBasketItems } = useGlobalContext();
 
   const addCount = () => {
     setCount((prev) => prev + 1);
   };
 
-  const minusCount = () => {
+  const removeCount = () => {
     if (count > 1) {
       setCount((prev) => prev - 1);
     }
@@ -31,7 +32,9 @@ export const ProductCard = ({ item }) => {
     if (!basketItems.length) {
       updatedItems = [cardItem];
     } else {
-      const findItemIndex = basketItems.findIndex((elem) => elem.id === item.id);
+      const findItemIndex = basketItems.findIndex(
+        (elem) => elem.id === item.id
+      );
 
       if (findItemIndex !== -1) {
         updatedItems = basketItems.map((elem, index) => {
@@ -49,11 +52,11 @@ export const ProductCard = ({ item }) => {
     }
 
     setBasketItems(updatedItems);
-    localStorage.setItem('basketItems', JSON.stringify(updatedItems)); // Save to local storage
+    localStorage.setItem("basketItems", JSON.stringify(updatedItems)); // Save to local storage
   };
- 
+
   useEffect(() => {
-    const storedBasketItems = localStorage.getItem('basketItems');
+    const storedBasketItems = localStorage.getItem("basketItems");
     if (storedBasketItems) {
       setBasketItems(JSON.parse(storedBasketItems));
     }
@@ -64,17 +67,24 @@ export const ProductCard = ({ item }) => {
   }, [count]);
 
   return (
-    <div className={css.itemContainer}>
-      <img src={item.images} alt={item.title} />
-      <p>{item.title}</p>
+    <>
+      <div className={css.itemContainer}>
+        <img src={item.images} alt={item.title} />
+        <p>{item.title}</p>
 
-      <div className={css.counterContainer}>
-        <span>{price}$</span>
-        <button onClick={minusCount}>-</button>
-        <span>{count}</span>
-        <button onClick={addCount}>+</button>
-        <button onClick={addBasket}>add basket</button>
+        <div className={css.counterContainer}>
+          <span>{price}$</span>
+          <button className={css.add} onClick={removeCount}>
+            -
+          </button>
+          <span>{count}</span>
+          <button className={css.remove} onClick={addCount}>
+            +
+          </button>
+          <Button variant="btn" title={"add basket"} onClick={addBasket} />
+        </div>
       </div>
-    </div>
+   
+    </>
   );
 };

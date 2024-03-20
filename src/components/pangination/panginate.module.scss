@@ -1,0 +1,39 @@
+.paginationContainer{
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    .pagenationItem {
+        width: 100%;
+        min-height: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        
+      }
+      
+      
+      .pages{
+        width: 100%;
+            min-height: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+    
+        ul{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            list-style: none;
+            cursor: pointer;
+     
+   }
+      }
+}
+
+

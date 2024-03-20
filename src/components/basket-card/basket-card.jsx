@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import css from "./basket-card.module.scss";
+import Panginate from "../pangination/panginate";
 
 const BasketCard = ({ elem, onRemove }) => {
   const [count, setCount] = useState(() => {
@@ -28,6 +29,9 @@ const BasketCard = ({ elem, onRemove }) => {
 
   const clearItem = () => {
     localStorage.removeItem(`basket_${elem.id}`);
+    const basketItems = JSON.parse(localStorage.getItem('basketItems')) || [];
+    const updatedBasketItems = basketItems.filter(item => item.id !== elem.id);
+    localStorage.setItem('basketItems', JSON.stringify(updatedBasketItems));
     onRemove(elem);
   };
 
@@ -36,6 +40,7 @@ const BasketCard = ({ elem, onRemove }) => {
   }, [count]);
 
   return (
+
     <div className={css.basketItem}>
       <img src={elem.img} alt={elem.title} />
       <p>{elem.title}</p>
@@ -52,8 +57,9 @@ const BasketCard = ({ elem, onRemove }) => {
       <div className={css.clear} onClick={clearItem}>
         X
       </div>
+      <Panginate />
     </div>
-  );
+  )
 };
 
 export default BasketCard;

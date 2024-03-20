@@ -4,6 +4,7 @@ import { ROUTES } from "../../utils/constants";
 import { useGlobalContext } from "../../hooks/use-global-context";
 import BasketCard from "../../components/basket-card/basket-card";
 import { IMAGES } from "../../assets/images";
+import Button from './../../common/button/index';
 
 
 
@@ -20,14 +21,13 @@ const Basket = () => {
     setBasketItems(updatedBasket);
   };
   return (
- 
-    <div>
+    <div className={css.basketContainer}>
    
       {!basketItems.length ? (
         <div className={css.emptyBasket}>
          <img src={IMAGES.basket} alt="basket" />
 
-          <button onClick={() => navigate(ROUTES.shop)}>go to shop</button>
+          <Button variant='primary' title={"Go Shop"} onClick={() => navigate(ROUTES.shop)}/>
         </div>
       ) : (
        
