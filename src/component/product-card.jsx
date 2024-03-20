@@ -61,7 +61,7 @@ export const ProductCard = ({ item }) => {
 
   return (
     <div className={css.itemContainer}>
-      <img src={item.image} alt={item.title} />
+      <img src={item.images} alt={item.title} />
       <p>{item.title}</p>
 
       <div className={css.counterContainer}>

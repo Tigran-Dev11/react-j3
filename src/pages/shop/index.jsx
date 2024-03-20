@@ -7,7 +7,6 @@ import css  from './shop.module.scss'
 const Shop  = ()=>{
 
     const [data, loading] =useFetch({url:`${API.product}`})
-    console.log(data);
 
     
     if(loading){
