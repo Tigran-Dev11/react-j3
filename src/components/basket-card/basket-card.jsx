@@ -57,7 +57,7 @@ const BasketCard = ({ elem, onRemove }) => {
       <div className={css.clear} onClick={clearItem}>
         X
       </div>
-      <Panginate />
+   
     </div>
   )
 };
