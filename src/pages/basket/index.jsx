@@ -1,7 +1,8 @@
 import { useNavigate } from "react-router-dom";
-import { BasketCard } from "../../components/basket-card";
+
 import { useGlobalContext } from "../../hooks/use-global-context";
 import { ROUTES } from "../../utils/constants";
+import BasketCard from './../../component/basket-card';
 
 const Basket = () => {
   const { basketItems } = useGlobalContext();
