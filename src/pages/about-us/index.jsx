@@ -1,6 +1,6 @@
 import * as S from "./styled";
 
-export const AboutUs = () => {
+ const AboutUs = () => {
   return (
     <S.AboutUsContainer>
       <p>About Us</p>
@@ -16,3 +16,4 @@ export const AboutUs = () => {
     </S.AboutUsContainer>
   );
 };
+export default AboutUs

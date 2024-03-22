@@ -5,4 +5,5 @@ export const ROUTES ={
     stores:'/stores',
     account:'/account',
     basket:'/basket',
+    shop:'/shop',
 }

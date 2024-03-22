@@ -1,11 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import { routes } from "./routes";
+import { routes } from "./route";
 
 const Router = () => {
   return (
     <Routes>
-      {routes.map(({ id, path, component }) => (
-        <Route key={id} path={path} element={component} />
+      {routes.map(({ id, path, component:Component }) => (
+        <Route key={id} path={path} element={<Component/>} />
       ))}
     </Routes>
   );    
