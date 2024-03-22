@@ -1,8 +1,7 @@
 
 import Slider from "react-slick";
-import React from "react";
-function PauseOnHover() {
-  var settings = {
+const  PauseOnHover=()=> {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
@@ -12,6 +11,7 @@ function PauseOnHover() {
     pauseOnHover: true
   };
   return (
+ 
     <div className="slider-container">
       <Slider {...settings}>
         <div>

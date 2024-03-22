@@ -1,8 +1,9 @@
-import Home from "./pages/home";
+
+import PauseOnHover from "./pages/home";
 function App() {
   return (
     <>
-      <Home />
+      <PauseOnHover />
     </>
   );
 }
