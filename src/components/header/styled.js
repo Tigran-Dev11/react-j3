@@ -7,7 +7,7 @@ export const Nav = styled.nav`
   width: 100%;
   min-height: 100px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   background-color: ${COLORS.blueViolet};
 
@@ -30,8 +30,11 @@ export const NavLinks = styled(NavLink)`
   }
 
   @media (${BREAKPOINTS.mobile}) {
-    font-size: 16px;
-
+    font-size: 30px;
+    color: ${COLORS.black};
+    &:hover {
+      background:none;
+    }
   }
 `;
 
@@ -45,7 +48,7 @@ export const Title = styled.h1`
   color: ${COLORS.white};
 
 @media(${BREAKPOINTS.mobile}){
-  width:100px;
+  
 }
   
 `;
@@ -93,7 +96,7 @@ position: relative;
 
 `
 export const BasketLangContainer = styled.div`
-  width: 300px;
+  width: 100px;
   min-height: 100px;
   display: flex;
   align-items: center;
@@ -101,6 +104,7 @@ export const BasketLangContainer = styled.div`
   
   @media (${BREAKPOINTS.mobile}) {
     min-height: 60px;
+
     
   }
 `;
@@ -121,12 +125,27 @@ export const burgerMenuIcon = styled.img`
 width: 30px;
 height: 30px;
 `
+
 export const BurgerMenuContainer = styled.div`
+  width: 100%;
+  min-height: 100vh;
+  display: ${(props) => (props.isOpen ? 'flex' : 'none')};
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:10px;
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  width: 200px;
-  background-color: #fff;
+  left: 0;
+  background-color:${COLORS.white};
   z-index: 999;
-  display: ${props => (props.isOpen ? 'block' : 'none')}`
+`;
+
+
+export const CloseMenuButton= styled.span`
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  
+`;

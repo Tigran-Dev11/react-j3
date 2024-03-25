@@ -7,8 +7,6 @@ import { changeLanguage } from 'i18next';
 const LanguageSwitecher = () => {
  const {t} = useTranslation()
 
- const LanguageSelector = () => {
-  const history = useHistory();}
 
   const changeLanguageHandler = (leng) => {
     i18n.changeLanguage(leng);

@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Suspense fallback={<>Loading...</>}>
       <BrowserRouter>
-      <LanguageSwitecher/>
+      {/* <LanguageSwitecher/> */}
         <App />
       </BrowserRouter>
     </Suspense>
