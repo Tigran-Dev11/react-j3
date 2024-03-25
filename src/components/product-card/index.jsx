@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ROUTES } from "../../utils/constants";
-import { products } from "./../../utils/product";
 import * as S from "./styled";
+import { productsData } from "../../pages/home/data";
 
 const ProductCard = () => {
   const { t } = useTranslation();
@@ -13,8 +13,7 @@ const ProductCard = () => {
   };
   return (
     <>
-      {products?.map((product) => (
-       
+      {productsData(t)?.map((product) => (
           <S.ProductItem key={product.id} onClick={() => handleProductClick(product)}>
             <S.ProductImage src={product.img} alt="images" />
             <S.Paragraph>{product.description}</S.Paragraph>

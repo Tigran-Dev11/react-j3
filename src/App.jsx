@@ -1,22 +1,32 @@
-import { I18nextProvider, useTranslation } from "react-i18next";
+import { useEffect } from "react";
 import Footer from "./components/footer";
 import { Header } from "./components/header";
 
 import Router from "./routes/routes";
-
+import { useLocation, useNavigate } from "react-router-dom";
 
 function App() {
-  const { i18n } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
+
+    if (lngKey) {
+      const locationArray = location.pathname.split("/");
+
+      locationArray[1] = lngKey;
+
+      navigate(locationArray.join("/"));
+    }
+  }, []);
 
   return (
-    <I18nextProvider i18n={i18n}>
-      <div>
-    
-        <Header />
-        <Router />
-        <Footer />
-      </div>
-    </I18nextProvider>
+    <div>
+      <Header />
+      <Router />
+      <Footer />
+    </div>
   );
 }
 
