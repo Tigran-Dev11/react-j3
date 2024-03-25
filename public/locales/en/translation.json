@@ -1,0 +1,57 @@
+{
+  "arm": "Arm",
+  "eng": "En",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "shop": "Shop",
+    "blog": "Blog"
+  },
+  "header": {
+    "title": " Access to all kinds of skincare products",
+    "button": "Explore Now",
+    "paragraph": "A single store for all your needs.",
+    "collectionTitle": " New  summer collection",
+    "informationTitle": "Skin Bliss Smoothing serum",
+    "informationParagraph": "Skin Bliss Smoothing serum is a naturally derived retinol- alternative serum to help smooth the appearance of fine lines and wrinkles while sealing in hydration. Bakuchiol, the keyingredient, is sourced sustainably from the Ayurvedic Bauchiplant. ",
+    "btnLearn": "Learn more",
+    "btnBuy": "Buy now"
+  },
+  "product": {
+    "title": "popular right now",
+    "serum": "Serum",
+    "mousturizer": "Mousturizer",
+    "faceWash": "Face Wash",
+    "lipbalm": "Lipbalm",
+    "faceMask": "Face Mask"
+  },
+  "products":{
+    "description":{
+      
+        "serum": "Skin Bliss AHA + BHA Exfoliating Glow Serum",
+        "mousturizer": "Skin Bliss moisturizing cosmetic premium",
+        "faceWash": "Skin Bliss Clarifying Cleanser",
+        "faceMask": "Skin Bliss 10% NiacinamideNight Mask"
+      
+    } 
+  },
+  "footer":{
+    "products":"Products",
+    "skincare":"Skincare",
+    "women":"Women",
+    "newIn":"New In",
+    "weeklyPick":"Weekly Pick",
+    "blog":"Blog",
+    "dermatologistRecs":"Dermatologist recs",
+    "company":"Company Info",
+    "aboutUs":"About Us",
+    "contactUs":"Contact Us",
+    "paymentOptions":"Payment Options",
+    "trackOrder":"Track Order",
+    "support":"Support",
+    "follow":"Follow"
+
+
+  }
+  
+}

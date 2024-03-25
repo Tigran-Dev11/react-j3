@@ -1,10 +1,24 @@
-import logo from './cein-logo.png';
-import user from './User.png'
-import search from './search.png'
-import like from './like.png'
-import bag from './bag.png'
-import burgerIcon from './burger-menu.png'
-import backgroundHome from './home-background.png'
- export const IMAGES = {
-    logo,user,burgerIcon,search,like,bag,backgroundHome
-}
+import basketIcon from "./basket-icon.webp";
+import containerRightBack from "./container-right-backgorund.png";
+import collactionSkinIMages from "./skin-images.png";
+import farmacyImage from "./farmacy-img.png";
+import moskUp from "./mosk-up-img.png";
+import primeraImg from "./primera-img.png";
+import prismImg from "./prism-img.png";
+import infoContainerBack from "./info-cont-background.png"
+import instagramImg from "./instagram-icon.png";
+import facebookImg from "./facebook-icon.png";
+import youtubeImg from "./youtube-icon.png";
+import BurgerMenuIcon from "./burger-menu.png";
+export const IMAGES = {
+  basketIcon,
+  containerRightBack,
+  collactionSkinIMages,
+  farmacyImage,
+  BurgerMenuIcon,
+  moskUp,
+  primeraImg,
+  prismImg,infoContainerBack,
+  instagramImg,facebookImg,youtubeImg
+
+};

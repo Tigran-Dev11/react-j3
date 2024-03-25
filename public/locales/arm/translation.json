@@ -1,0 +1,57 @@
+{
+  "arm": "Հայ",
+  "eng": "Անգ",
+  "nav": {
+    "home": "Գլխավոր",
+    "about": "Մեր Մասին",
+    "shop": "Ապրանքներ",
+    "blog": "Բլոգ"
+  },
+  "header": {
+    "title": " Մաշկի խնամքի բոլոր տեսակների հասանելիություն",
+    "button": "Տեսնել հիմա",
+    "paragraph": "Խանութ  բոլորի համար",
+    "collectionTitle": " Նոր ամառային տեսականի",
+    "informationTitle": "Skin Bliss Smoothing շիճուկ",
+    "informationParagraph": "Skin Bliss Smoothing շիճուկը բնականից ստացված ռետինոլի այլընտրանքային շիճուկ է, որն օգնում է հարթեցնել բարակ գծերի և կնճիռների տեսքը՝ միաժամանակ խոնավացնելով: Bakuchiol-ը՝ հիմնական բաղադրիչը, ստացվում է կայուն կերպով Այուրվեդական Bauchiplant-ից: ",
+    "btnLearn": "Կարդալ ավելին",
+    "btnBuy": "Վճարել հիմա"
+  },
+  "product": {
+    "title": "Ամենահայտնի տեսականին",
+    "serum": "Շիճուկ",
+    "mousturizer": "Խոնավեցնող միջոց",
+    "faceWash": "Դեմքի լվացում",
+    "lipbalm": "Շրթունքի բալզամ",
+    "faceMask": "Դեմքի դիմակ"
+  },
+  "products": {
+    "description":{
+      "serum": "Skin Bliss AHA + BHA շերտազատող շիճուկ",
+      "mousturizer": "Skin Bliss խոնավեցնող կոսմետիկ պրեմիում",
+      "faceWash": "Skin Bliss Clarifying Cleanser",
+      "faceMask": "Skin Bliss 10% Niacinamide գիշերային դիմակ"
+    }
+   
+  },
+  "footer":{
+    "products":"Ապրանքներ",
+    "skincare":"Մաշկի խնամք",
+    "women":"Կանայք",
+    "newIn":"Նորություն",
+    "weeklyPick":"Շաբաթական ընտրություն",
+    "blog":"Բլոգ",
+    "dermatologistRecs":"Մաշկաբանի դեղատոմս",
+    "company":"Ընկերության տեղեկատվություն",
+    "aboutUs":"Մեր մասին",
+    "contactUs":"Կապ մեզ հետ",
+    "paymentOptions":"Վճարման տարբերակներ",
+    "trackOrder":"Հետևել պատվերին",
+    "support":"Աջակցություն",
+    "follow":"Հետևեք մեզ"
+
+
+  }
+
+
+}
