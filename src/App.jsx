@@ -1,5 +1,14 @@
+
+import Slider from "react-slick";
+import Navbar from "./Nav/Navbar";
 function App() {
-  return <h1>REACT JS G3</h1>;
-}
+  return(
+ <div  className=""> 
+ <Navbar/>
+<Slider/>
+</div>
+
+  );
+};
 
 export default App;
