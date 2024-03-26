@@ -2,8 +2,7 @@ import i18n from "i18next";
 import Backend from "i18next-http-backend";
 import LanguageDetector from "i18next-browser-languagedetector";
 import { initReactI18next } from "react-i18next";
-import enTranslation from './../public/locales/en/translation.json'
-import armTranslation from './../public/locales/arm/translation.json'
+
 i18n
   // load translation using http -> see /public/locales
   // learn more: https://github.com/i18next/i18next-http-backend
@@ -16,19 +15,10 @@ i18n
   // init i18next
   // for all options read: https://www.i18next.com/overview/configuration-options
   .init({
-    // lng: "arm",
-    // fallbackLng: "arm",
-    // debug: true,
-    // whitelist: ["arm", "en"],
-    resources: {
-      en: { translation:enTranslation  },
-      arm: { translation: armTranslation }
-    },
-    fallbackLng: 'en',
+   // lng: "arm",
+    fallbackLng: "arm",
     debug: true,
-    interpolation: {
-      escapeValue: false
-    }
+    whitelist: ["arm", "en"],
   });
 
 export default i18n;

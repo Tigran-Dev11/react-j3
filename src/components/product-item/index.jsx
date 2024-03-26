@@ -1,29 +1,23 @@
-import React from 'react';
+import React from "react";
 
-import { UseFetch } from '../../hooks/use-Fetch';
+import { UseFetch } from "../../hooks/use-Fetch";
 
-const ProductItem = ({ item }) => {
-  const apiUrl = "http://makeup-api.herokuapp.com/api/v1/products.json/"
-  const { data, loading, error } = UseFetch(apiUrl); 
+const ProductItem = () => {
+  console.log("render");
 
-  console.log(data);
-  if (!item) {
-    return <div>Item is undefined</div>;
-  }
+  const apiUrl = "/products.json";
+  const [data, loading, error] = UseFetch({ url: apiUrl });
+
   if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
+    return <div>loading</div>;
   }
 
   return (
     <div>
       {data && (
         <ul>
-          {data.map(product => (
-            <li key={product.id}>{product.name}</li> 
+          {data.map((product) => (
+            <li key={product.id}>{product.name}</li>
           ))}
         </ul>
       )}

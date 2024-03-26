@@ -6,10 +6,13 @@ export const UseFetch = ({ url, options }) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
+  axios.defaults.baseURL = import.meta.env.VITE_API_URL;
+
   useEffect(() => {
     const fetchData = async () => {
       setLoading(true);
       try {
+        console.log('init');
         const response = await axios.get(url, options);
         setData(response.data);
       } catch (error) {
