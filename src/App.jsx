@@ -1,11 +1,15 @@
 
-import Slider from "react-slick";
-import Navbar from "./Nav/Navbar";
+
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
+import  Router  from "react-router-dom";
 function App() {
   return(
  <div  className=""> 
- <Navbar/>
-<Slider/>
+
+<Header/>
+ <Router/>
+<Footer/>
 </div>
 
   );
