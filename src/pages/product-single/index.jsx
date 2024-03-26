@@ -1,7 +1,6 @@
 import React from 'react';
 import * as  S from "./styled"
 import { useTranslation } from 'react-i18next';
-import { products } from '../../utils/product';
 const ProductSingle = () => {
   const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
 
