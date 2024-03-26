@@ -11,10 +11,14 @@ flex-direction:column;
 align-items:center;
 justify-content:space-around;
 cursor:pointer;
+
 @media (${BREAKPOINTS.mobile}){
-    width:100%;
-    min-height:150px;
+    min-height:130px;
     flex-direction:row ;
+    width:500px;
+    justify-content:flex-start;
+    gap:15px;
+
   
 }
 `
@@ -32,6 +36,10 @@ border-radius:50%;
 }
 `
 export const Paragraph = styled.p`
+width:200px;
+min-height:100px;
+display: flex;
+align-items: center;
 font-family: PT Serif;
 font-size: 18px;
 font-weight: 400;
@@ -39,7 +47,6 @@ line-height: 30px;
 text-align: center;
 
 @media (${BREAKPOINTS.mobile}){
-
     font-size: 16px;
     line-height: 20px;
 }

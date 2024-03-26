@@ -9,6 +9,10 @@ export const ProductContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media (${BREAKPOINTS.mobile}) {
+ align-items: flex-start;
+  }
 `;
 
 export const ProductTitle = styled.h2`
@@ -48,7 +52,7 @@ align-items:center;
 gap:30px;
 
 @media(${BREAKPOINTS.mobile}){
-  width:250px;
+  width:500px;
   flex-direction:column;
   min-height:400px;
   justify-content:space-around;

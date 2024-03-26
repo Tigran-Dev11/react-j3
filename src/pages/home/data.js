@@ -1,6 +1,4 @@
 
-
-
 import { v4 as uuid } from "uuid";
 import { IMAGES } from "../../assets/images";
 
@@ -9,25 +7,25 @@ export const productsData =(t)=> [
   {
     id: uuid(),
     img:IMAGES.prismImg,
-    description:'Skin Bliss AHA + BHA Exfoliating Glow Serum',
+    description:t("products.description.serum"),
     category:'serum',
   },
   {
     id: uuid(),
     img:IMAGES.moskUp,
-    description:'Skin Bliss moisturizing cosmetic premium',
+    description:t("products.description.mousturizer"),
     category:'mousturzier',
   },
   {
     id: uuid(),
     img:IMAGES.primeraImg,
-    description:'Skin Bliss moisturizing cosmetic premium',
+    description:t("products.description.faceWash"),
     category:'face wash',
   },
   {
     id: uuid(),
     img:IMAGES.farmacyImage,
-    description:'Skin Bliss Clarifying Cleanser',
+    description:t("products.description.faceMask"),
     category:'face mask',
   },
 

@@ -55,7 +55,7 @@ line-height: 50px;
 color:${COLORS.white};
 
 @media (${BREAKPOINTS.mobile}){
-width:150px;
+width:200px;
 min-height:150px;
 justify-content: center;
 }

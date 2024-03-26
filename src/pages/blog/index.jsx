@@ -1,10 +1,10 @@
 import React from 'react';
-
+import * as S from "./styled"
 const Blog = () => {
     return (
-        <div>
-            
-        </div>
+        <S.BlogContainer>
+            hello
+        </S.BlogContainer>
     );
 }
 

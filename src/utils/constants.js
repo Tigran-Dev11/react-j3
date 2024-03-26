@@ -16,9 +16,9 @@ export const routesHref = {
 export const ROUTES = {
   home: params.lng + routesHref.home,
   aboutUs: params.lng + routesHref.aboutUs,
-  blog: "/:lng/blog",
-  basket: "/:lng/basket",
-  shop: "/:lng/shop",
-  productSingle: "/:lng/productSingle",
-  product: "/:lng/product",
+  blog: params.lng + routesHref.blog,
+  basket: params.lng + routesHref.basket,
+  shop: params.lng + routesHref.shop,
+  productSingle: params.lng + routesHref.productSingle,
+  product:params.lng + routesHref.product,
 };

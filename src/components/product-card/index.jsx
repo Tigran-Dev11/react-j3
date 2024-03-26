@@ -5,19 +5,21 @@ import { productsData } from "../../pages/home/data";
 
 const ProductCard = () => {
   const { t } = useTranslation();
-  
 
   const handleProductClick = (product) => {
-    localStorage.setItem('selectedProduct', JSON.stringify(product));
-    window.location.href = ROUTES.productSingle; // Navigate to the product single page
+    localStorage.setItem("selectedProduct", JSON.stringify(product));
+    window.location.href = ROUTES.productSingle; 
   };
   return (
     <>
       {productsData(t)?.map((product) => (
-          <S.ProductItem key={product.id} onClick={() => handleProductClick(product)}>
-            <S.ProductImage src={product.img} alt="images" />
-            <S.Paragraph>{product.description}</S.Paragraph>
-          </S.ProductItem>
+        <S.ProductItem
+          key={product.id}
+          onClick={() => handleProductClick(product)}
+        >
+          <S.ProductImage src={product.img} alt="images" />
+          <S.Paragraph>{product.description}</S.Paragraph>
+        </S.ProductItem>
       ))}
     </>
   );

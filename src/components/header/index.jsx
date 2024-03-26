@@ -24,8 +24,14 @@ export const Header = () => {
         <S.NavLinks to={`${lngKey}${routesHref.aboutUs}`}>
           {t("nav.about")}
         </S.NavLinks>
-        <S.NavLinks to={ROUTES.shop}>{t("nav.shop")}</S.NavLinks>
-        <S.NavLinks to={ROUTES.blog}>{t("nav.blog")}</S.NavLinks>
+        <S.NavLinks to={`${lngKey}${routesHref.shop}`}>
+          {" "}
+          {t("nav.shop")}
+        </S.NavLinks>
+        <S.NavLinks to={`${lngKey}${routesHref.blog}`}>
+          {" "}
+          {t("nav.blog")}
+        </S.NavLinks>
       </S.MenuContainer>
       <S.BasketLangContainer>
         <S.basketCountLine>

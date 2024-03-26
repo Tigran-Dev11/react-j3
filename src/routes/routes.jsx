@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { routes } from "./route";
 
-import { useTranslation } from "react-i18next";
+
 
 const Router = () => {
 

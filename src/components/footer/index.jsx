@@ -11,7 +11,7 @@ const Footer = () => {
         <S.Ul>
           {t("footer.products")}
           <S.Navlink>{t("footer.skincare")}</S.Navlink>
-          <S.Navlink>{t("footer.woman")}</S.Navlink>
+          <S.Navlink>{t("footer.women")}</S.Navlink>
           <S.Navlink>{t("footer.newIn")}</S.Navlink>
           <S.Navlink>{t("footer.weeklyPick")}</S.Navlink>
         </S.Ul>
@@ -20,7 +20,7 @@ const Footer = () => {
           <S.Navlink>{t("footer.dermatologistRecs")}</S.Navlink>
         </S.Ul>
         <S.Ul>
-      {t(" footer.companyInfo")}
+      {t("footer.company")}
           <S.Navlink>{t("footer.aboutUs")}</S.Navlink>
           <S.Navlink>{t("footer.contactUs")}</S.Navlink>
           <S.Navlink>{t("footer.paymentOptions")}</S.Navlink>

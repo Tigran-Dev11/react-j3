@@ -2,8 +2,8 @@ import React from 'react';
 import * as  S from "./styled"
 import { useTranslation } from 'react-i18next';
 const ProductSingle = () => {
-  const selectedProduct = JSON.parse(localStorage.getItem('selectedProduct'));
-  const {t}= useTranslation()
+const selectedProduct = JSON.parse(localStorage.getItem("selectedProduct")) ?? {};
+
   return (
     <S.SingleProductContainer>
       {selectedProduct && (
