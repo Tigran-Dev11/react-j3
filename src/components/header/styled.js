@@ -5,7 +5,7 @@ import { BREAKPOINTS } from './../../assets/style/breakpoint';
 
 export const Nav = styled.nav`
   width: 100%;
-  min-height: 100px;
+  min-height: 120px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
