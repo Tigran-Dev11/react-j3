@@ -1,4 +1,4 @@
-import styled from "styled-components";import styled from "styled-components";
+import styled from "styled-components";
 import { COLORS } from "../../assets/style/color";
 
 import { BREAKPOINTS } from './../../assets/style/breakpoint';

@@ -1,42 +1,20 @@
-
-
-import React from 'react';
+import React from "react";
 import * as S from "./styled";
-import { NavLink } from 'react-router-dom';
+import { NavLink } from "react-router-dom";
+import { ROUTES } from "../../utils/constants";
+
 const Header = () => {
+  
   return (
- 
-<nav>
-      <NavLink className={css.navLink} to={ROUTES.home}>
-      </NavLink>
-      <div className={css.menuContainer}>
-        <NavLink className={css.navLink} to={ROUTES.home}>
-          Home
-        </NavLink>
-        <NavLink className={css.navLink} to={ROUTES.shop}>
-          Shop
-        </NavLink>
-        <NavLink className={css.navLink} to={ROUTES.login}>
-          Login
-       </NavLink>
-
-        <NavLink className={css.navLink} to={ROUTES.aboutUs}>
-          About Us
-        </NavLink>
-
-        <NavLink className={css.navLink} to={ROUTES.contactUs}>
-          Contact Us
-        </NavLink>
-        <Basket/>
+    <nav>
+      <NavLink to={ROUTES.home}></NavLink>
+      <div>
+        <NavLink to={ROUTES.home}>Home</NavLink>
+        <NavLink to={ROUTES.shop}>Shop</NavLink>
+        <NavLink to={ROUTES.login}>Login</NavLink>
+        <NavLink to={ROUTES.contactUs}>Contact Us</NavLink>
       </div>
     </nav>
- 
-  )
-}
+  );
+};
 export default Header;
-
-
-
-
-
-
