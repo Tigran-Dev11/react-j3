@@ -6,7 +6,7 @@ import { ROUTES } from "../../utils/constants";
 const Header = () => {
   
   return (
-    <nav>
+    <S.Nav>
       <NavLink to={ROUTES.home}></NavLink>
       <div>
         <NavLink to={ROUTES.home}>Home</NavLink>
@@ -14,7 +14,7 @@ const Header = () => {
         <NavLink to={ROUTES.login}>Login</NavLink>
         <NavLink to={ROUTES.contactUs}>Contact Us</NavLink>
       </div>
-    </nav>
+    </S.Nav>
   );
 };
 export default Header;
