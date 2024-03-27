@@ -1,75 +1,97 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./styled";
-import { UseFetch } from "../../hooks/use-Fetch";
-import { ROUTES } from "../../utils/constants";
+import { useGlobalContext } from "../../hooks/use-global-context";
+import { COLORS } from "../../assets/style/color";
 import Button from "../../common/button";
+4;
 
-const ProductItem = () => {
-  const apiUrl = "/products.json?product_type=blush&product_category=cream";
-  const [data, loading, error] = UseFetch({ url: apiUrl });
+const ProductItem = ({ item }) => {
   const [count, setCount] = useState(1);
-  if (loading) {
-    return <div>loading</div>;
-  }
-
-  const addToCart = (item, quantity) => {
-    const { id, name, image_link, price } = item;
-    const newItem = { id, name, price, image_link, quantity };
-    let basketItems = JSON.parse(localStorage.getItem("cartItem")) || [];
-    console.log(newItem);
-    const findBasketItemIndex = basketItems.findIndex((item) => item.id === id);
-
-    if (findBasketItemIndex === -1) {
-      basketItems.push(newItem);
-    } else {
-      basketItems[findBasketItemIndex].quantity += quantity;
-    }
-
-    localStorage.setItem("cartItem", JSON.stringify(basketItems));
-  };
+  const [price, setPrice] = useState(item.price);
+  const { basketItems, setBasketItems } = useGlobalContext();
 
   const addCount = () => {
-    setCount(count + 1);
+    setCount((prev) => prev + 1);
   };
 
   const removeCount = () => {
     if (count > 1) {
-      setCount(count - 1);
+      setCount((prev) => prev - 1);
     }
   };
 
-  const handleProductClick = (item) => {
+  const addBasket = () => {
+    const cardItem = {
+      id: item.id,
+      img: item.images,
+      count,
+      price: item.price,
+      title: item.title,
+    };
 
-    localStorage.setItem("selectedProduct", JSON.stringify(item));
+    let updatedItems = [];
+    if (!basketItems?.length) {
+      updatedItems = [cardItem];
+    } else {
+      const findItemIndex = basketItems.findIndex(
+        (elem) => elem.id === item.id
+      );
 
+      if (findItemIndex !== -1) {
+        updatedItems = basketItems.map((elem, index) => {
+          if (index === findItemIndex) {
+            return {
+              ...elem,
+              count: elem.count + count,
+            };
+          }
+          return elem;
+        });
+      } else {
+        updatedItems = [...basketItems, cardItem];
+      }
+    }
 
-  }
+    setBasketItems(updatedItems);
+    localStorage.setItem("basketItems", JSON.stringify(updatedItems)); // Save to local storage
+  };
+
+  useEffect(() => {
+    const storedBasketItems = localStorage.getItem("basketItems");
+    if (storedBasketItems) {
+      setBasketItems(JSON.parse(storedBasketItems));
+    }
+  }, []);
+
+  useEffect(() => {
+    setPrice(item.price * count);
+  }, [count]);
 
   return (
     <>
-      {data && (
-        <S.ProductItemContainer>
-          {data.map((product) => (
-            <S.ProductItem key={product.id} onClick={handleProductClick}>
-              <S.ProductImage
-                src={product.image_link}
-                alt={product.name}
-              ></S.ProductImage>
-              <S.ProductTitle>{product.name}</S.ProductTitle>
+      <S.ProductItemContainer>
+        <S.ProductItem key={item.id}>
+          <S.ProductImage
+            src={item.image_link}
+            alt={item.name}
+          ></S.ProductImage>
+          <S.ProductTitle>{item.name}</S.ProductTitle>
 
-              <S.CountContainer>
-                <S.Span onClick={addCount}>&#43;</S.Span>
-                <p>{count}</p>
-                <S.Span onClick={removeCount}>&#x2212;</S.Span>
-                <Button
-                  title={"Add to basket"}
-                  onClick={() => addToCart(item, count)}
-                />
-              </S.CountContainer>
-            </S.ProductItem>
-          ))}
-        </S.ProductItemContainer>
-      )}
+          <S.CountContainer>
+            <S.Span onClick={addCount}>&#43;</S.Span>
+            <p>{count}</p>
+            <S.Span onClick={removeCount}>&#x2212;</S.Span>
+            <Button
+              padding={"5px 5px"}
+              border={COLORS.black}
+              color={COLORS.black}
+              onClick={() => addBasket(item)}
+            >
+              {"Add"}
+            </Button>
+          </S.CountContainer>
+        </S.ProductItem>
+      </S.ProductItemContainer>
     </>
   );
 };

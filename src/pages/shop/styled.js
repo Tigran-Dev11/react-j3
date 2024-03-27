@@ -1,0 +1,9 @@
+import styled from "styled-components";
+
+export const  ShopContainer = styled.div`
+padding-inline: 140px;
+min-height: 100vh;
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+`

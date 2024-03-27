@@ -33,9 +33,12 @@ export const Header = () => {
           {t("nav.blog")}
         </S.NavLinks>
       </S.MenuContainer>
+
       <S.BasketLangContainer>
         <S.basketCountLine>
-          <S.BasketIcon src={IMAGES.basketIcon}></S.BasketIcon>
+          <S.NavLinks to={`${lngKey}${routesHref.basket}`}>
+            <S.BasketIcon src={IMAGES.basketIcon}></S.BasketIcon>{" "}
+          </S.NavLinks>
           <S.BasketCount></S.BasketCount>
         </S.basketCountLine>
 

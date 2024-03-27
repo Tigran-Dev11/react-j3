@@ -1,25 +1,12 @@
-import React ,{ useEffect } from "react";
+import React  from "react";
 import Footer from "./components/footer";
 import { Header } from "./components/header";
 import Router from "./routes/routes";
-import { useLocation, useNavigate } from "react-router-dom";
+
+import { useLanguageRedirect } from './hooks/use-language/index';
 
 function App() {
-  const navigate = useNavigate();
-  const location = useLocation();
-
-  useEffect(() => {
-    const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
-    if (lngKey) {
-      const locationArray = location.pathname.split("/");
-
-      locationArray[1] = lngKey;
-
-      navigate(locationArray.join("/"));
-    }
-  }, []);
-
+  useLanguageRedirect()
   return (
     <div>
       <Header />

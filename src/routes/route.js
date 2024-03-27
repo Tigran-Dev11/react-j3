@@ -6,6 +6,7 @@ import Product from "../pages/product";
 import { ROUTES } from "../utils/constants";
 import Shop from "../pages/shop";
 import Blog from "../pages/blog";
+import Basket from "../pages/basket";
 
 export const routes = [
   {
@@ -32,6 +33,11 @@ export const routes = [
     id: uuid(),
     path: ROUTES.product,
     component: Product,
+  },
+  {
+    id: uuid(),
+    path: ROUTES.basket,
+    component: Basket,
   },
   {
     id: uuid(),

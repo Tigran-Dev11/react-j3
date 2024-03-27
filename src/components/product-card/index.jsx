@@ -1,14 +1,15 @@
 import { useTranslation } from "react-i18next";
-import { ROUTES } from "../../utils/constants";
 import * as S from "./styled";
 import { productsData } from "../../pages/home/data";
+import { useNavigate } from "react-router";
 
 const ProductCard = () => {
   const { t } = useTranslation();
-
+  
+  const navigate = useNavigate();
   const handleProductClick = (product) => {
     localStorage.setItem("selectedProduct", JSON.stringify(product));
-    window.location.href = ROUTES.productSingle; 
+   
   };
   return (
     <>
