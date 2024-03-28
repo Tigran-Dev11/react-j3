@@ -4,8 +4,8 @@ import { routes } from "./route";
 const Router = () => {
   return (
     <Routes>
-      {routes.map(({ id, href, component }) => (
-        <Route key={id} path={href} element={component} />
+      {routes.map(({ id, href, component:Component }) => (
+        <Route key={id} path={href} element={<Component/>} />
       ))}
     </Routes>
   );
