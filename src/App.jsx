@@ -1,5 +1,5 @@
 
-import Header from "./components/header/header";
+import Header from "./components/header";
 import Footer from "./components/footer/footer";
 import Router from "./routes/routes";
 
