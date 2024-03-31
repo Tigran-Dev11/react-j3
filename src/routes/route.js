@@ -20,20 +20,22 @@ export const routes  = [
         component: ContactUs
     },
     {   id:4,
-      path: ROUTES.product,
-        component: Product
+        href: ROUTES.product,
+        components: Product
     },
     {
         id:5,
-        path: ROUTES.shop,
-        component: Shop
+        href: ROUTES.shop,
+        components: Shop
 
+>>>>>>> 4769f1a41189e52e0dec03f8fc132891dc229628
     },
     {
         id:6,
-        path: ROUTES.login,
-        component: Login
+        href: ROUTES.login,
+        components: Login
 
+>>>>>>> 4769f1a41189e52e0dec03f8fc132891dc229628
     },
 
 ]

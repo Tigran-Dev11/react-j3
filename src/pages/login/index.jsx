@@ -57,7 +57,7 @@ const Login = () => {
     <div className={css.container}>
       <h1 className={css.title}>Login</h1>
       <form className={css.loginrForm} onSubmit={handleSubmit(onSubmit)}>
-        <input type="text" placeholder="last name" {...login("firstName")}/>
+        <input type="text" placeholder="last name" {...("firstName")}/>
          <p>{errors?.firstName?.message}</p>
         <input type="text" placeholder="first name" {...login("lastName")}/>
         <p>{errors?.lastName?.message}</p>
