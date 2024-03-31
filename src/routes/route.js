@@ -1,9 +1,10 @@
+import Login from "../login/login"
 import AboutUs from "../pages/about-us"
 import ContactUs from "../pages/contact"
 import Home from "../pages/home"
 import Product from "../pages/praduct"
 import Shop from "../pages/shop"
-import Login from "../pages/login"
+
 import { ROUTES } from "../utils/constants";
 
 export const routes  = [
