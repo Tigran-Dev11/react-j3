@@ -1,9 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+
 import "./footer.css";
 
 const Footer = () => {
-  return <div className="Header">Header</div>;
+  return(
+    <div>
+      <h1>Footer</h1>
+    </div>
+  )
 };
 
 export default Footer;

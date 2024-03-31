@@ -5,6 +5,7 @@ import Product from "../pages/praduct"
 import Shop from "../pages/shop"
 import Login from "../pages/login"
 import { ROUTES } from "../utils/constants";
+
 export const routes  = [
     {   id: 1,
         href: ROUTES.home,
@@ -21,6 +22,7 @@ export const routes  = [
     {   id:4,
         href: ROUTES.product,
         components: Product
+<<<<<<< HEAD
 
     
     },
@@ -36,24 +38,36 @@ export const routes  = [
         href: ROUTES.product,
         component: Product
 
+=======
+>>>>>>> 4769f1a41189e52e0dec03f8fc132891dc229628
     },
     {
         id:5,
         href: ROUTES.shop,
+<<<<<<< HEAD
 
         components: Shop
 
      
 
+=======
+        components: Shop
+
+>>>>>>> 4769f1a41189e52e0dec03f8fc132891dc229628
     },
     {
         id:6,
         href: ROUTES.login,
+<<<<<<< HEAD
 
         components: Login
 
     
 
+=======
+        components: Login
+
+>>>>>>> 4769f1a41189e52e0dec03f8fc132891dc229628
     },
 
 ]
