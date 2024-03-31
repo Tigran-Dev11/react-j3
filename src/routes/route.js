@@ -8,31 +8,31 @@ import { ROUTES } from "../utils/constants";
 
 export const routes  = [
     {   id: 1,
-        href: ROUTES.home,
-        components: Home
+      path: ROUTES.home,
+        component: Home
     },
     {   id:2,
-        href: ROUTES.aboutAs,
-        components: AboutUs
+      path: ROUTES.aboutAs,
+        component: AboutUs
     },
     {   id:3,
-        href: ROUTES.contactUs,
-        components: ContactUs
+      path: ROUTES.contactUs,
+        component: ContactUs
     },
     {   id:4,
-        href: ROUTES.product,
-        components: Product
+      path: ROUTES.product,
+        component: Product
     },
     {
         id:5,
-        href: ROUTES.shop,
-        components: Shop
+        path: ROUTES.shop,
+        component: Shop
 
     },
     {
         id:6,
-        href: ROUTES.login,
-        components: Login
+        path: ROUTES.login,
+        component: Login
 
     },
 

@@ -4,7 +4,7 @@ import { routes } from "./route";
 const Router = () => {
   return (
     <Routes>
-      {routes.map(({ id, path, components: Component }) => (
+      {routes.map(({ id, path, component: Component }) => (
         <Route key={id} path={path} element={<Component />} />
       ))}
     </Routes>
