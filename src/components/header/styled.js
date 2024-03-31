@@ -17,6 +17,12 @@ export const Nav = styled.nav`
     justify-content:space-between;
  `
   
+
+ export const MenuContainer = styled.div`
+ width:500px;
+ display: flex;
+ justify-content: space-evenly;
+ `
 // `;
 // // export const NavLinks = styled(NavLink)`
 // text-decoration: none;

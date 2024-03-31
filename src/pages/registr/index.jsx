@@ -39,10 +39,50 @@ const Login =()=>{
       <span className={css.bottom_text}>Already have an account? <label for="register_toggle" className={css.}>Sign In</label> </span>
     </form>
 
+<<<<<<< HEAD:src/pages/login/index.jsx
     
+=======
+
+import { useNavigate } from "react-router-dom";
+import { ROUTES } from "../../utils/constants";
+
+const Registr = () => {
+
+    const navigate = useNavigate();
+    const {
+    loginr,
+    handleSubmit,
+    formState: { errors }
+  } = useForm({
+    resolver: yupResolver(SCHEMAS.loginSchema)
+  });
+  const onSubmit = (data) => {
+       const {email,password } =data;
+  };
+  return (
+    <div className={css.container}>
+      <h1 className={css.title}>Login</h1>
+      <form className={css.loginrForm} onSubmit={handleSubmit(onSubmit)}>
+        <input type="text" placeholder="last name" {...("firstName")}/>
+         <p>{errors?.firstName?.message}</p>
+        <input type="text" placeholder="first name" {...loginr("lastName")}/>
+        <p>{errors?.lastName?.message}</p>
+        <input type="email" placeholder="email" {...loginr("email")}/>
+        <p>{errors?.email?.message}</p>
+        <input type="password" placeholder="password" {...loginr("password")}/>
+        <p>{errors?.password?.message}</p>
+        <input type="password" placeholder="copy password"  {...loginr("passwordConfirmation")}/>
+        <p>{errors?.passwordConfirmation?.message}</p>
+        <input type="checkbox" id="checkbox" {...loginr("isAccept")}/>
+        <label htmlFor="checkbox">Accepted privacy policy</label>
+        <p>{errors?.isAccept?.message}</p>
+        <button>Registr</button>
+      </form>
+>>>>>>> 20bfa4fd787662ac6c513a655ae86115261d592d:src/pages/registr/index.jsx
     </div>
 </div>
 
+<<<<<<< HEAD:src/pages/login/index.jsx
   )}
 
 
@@ -69,3 +109,6 @@ return(
 
 
 export default Login
+=======
+export default Registr;
+>>>>>>> 20bfa4fd787662ac6c513a655ae86115261d592d:src/pages/registr/index.jsx

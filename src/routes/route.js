@@ -6,6 +6,7 @@ import Product from "../pages/praduct"
 import Shop from "../pages/shop"
 
 import { ROUTES } from "../utils/constants";
+import Registr from './../pages/registr';
 
 export const routes  = [
     {   id: 1,
@@ -21,20 +22,27 @@ export const routes  = [
         component: ContactUs
     },
     {   id:4,
-        href: ROUTES.product,
-        components: Product
+      path: ROUTES.product,
+        component: Product
     },
     {
         id:5,
-        href: ROUTES.shop,
-        components: Shop
+        path: ROUTES.shop,
+        component: Shop
 
     },
     {
         id:6,
-        href: ROUTES.login,
-        components: Login
+        path: ROUTES.login,
+        component: Login
 
     },
+    {
+      id:7,
+      path: ROUTES.registr,
+      component: Registr
+
+  },
+
 
 ]
