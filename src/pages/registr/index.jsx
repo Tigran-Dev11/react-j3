@@ -40,7 +40,7 @@
 import { useNavigate } from "react-router-dom";
 import { ROUTES } from "../../utils/constants";
 
-const Login = () => {
+const Registr = () => {
 
     const navigate = useNavigate();
     const {
@@ -59,21 +59,21 @@ const Login = () => {
       <form className={css.loginrForm} onSubmit={handleSubmit(onSubmit)}>
         <input type="text" placeholder="last name" {...("firstName")}/>
          <p>{errors?.firstName?.message}</p>
-        <input type="text" placeholder="first name" {...login("lastName")}/>
+        <input type="text" placeholder="first name" {...loginr("lastName")}/>
         <p>{errors?.lastName?.message}</p>
-        <input type="email" placeholder="email" {...login("email")}/>
+        <input type="email" placeholder="email" {...loginr("email")}/>
         <p>{errors?.email?.message}</p>
-        <input type="password" placeholder="password" {...login("password")}/>
+        <input type="password" placeholder="password" {...loginr("password")}/>
         <p>{errors?.password?.message}</p>
-        <input type="password" placeholder="copy password"  {...login("passwordConfirmation")}/>
+        <input type="password" placeholder="copy password"  {...loginr("passwordConfirmation")}/>
         <p>{errors?.passwordConfirmation?.message}</p>
-        <input type="checkbox" id="checkbox" {...login("isAccept")}/>
+        <input type="checkbox" id="checkbox" {...loginr("isAccept")}/>
         <label htmlFor="checkbox">Accepted privacy policy</label>
         <p>{errors?.isAccept?.message}</p>
-        <button>login</button>
+        <button>Registr</button>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Registr;
