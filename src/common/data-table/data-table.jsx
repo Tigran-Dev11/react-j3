@@ -10,9 +10,10 @@ export const DataTable = ({
   style,
   columnData
 }) => {
+
   const paginatorLeft = <Button type="button" icon="pi pi-refresh" text />;
   const paginatorRight = <Button type="button" icon="pi pi-download" text />;
-  console.log(columnData);
+
   return (
     <Table
       dataKey={dataKey}
