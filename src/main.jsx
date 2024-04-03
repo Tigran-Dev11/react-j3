@@ -14,6 +14,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <Suspense fallback={<>Loading...</>}>
       <BrowserRouter>
         <PrimeReactProvider>
+   
           <App />
         </PrimeReactProvider>
       </BrowserRouter>

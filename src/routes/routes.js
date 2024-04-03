@@ -2,6 +2,7 @@ import { v4 as uuid } from "uuid";
 import { ROUTES } from "../utils/constants";
 import UserList from "../pages/users/user-list";
 import EditUser from "../pages/users/edit-user";
+import CreateUser from "../pages/users/create-user";
 
 export const routes = [
   {
@@ -13,5 +14,10 @@ export const routes = [
     id: uuid(),
     path: ROUTES.editUser,
     component: EditUser,
+  },
+  {
+    id: uuid(),
+    path: ROUTES.createUser,
+    component:CreateUser ,
   },
 ];

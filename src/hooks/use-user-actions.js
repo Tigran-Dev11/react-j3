@@ -39,7 +39,7 @@ export const useUserActions = () => {
 
   const updateUser = async (id, body) => {
     const options = {
-      method: "PUT",
+      method: "PATCH",
       body: JSON.stringify(body),
       headers: {
         Authorization: `Bearer ${token}`,

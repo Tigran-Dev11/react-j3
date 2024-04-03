@@ -10,7 +10,7 @@ export const UserListContainer = styled.div`
 
 export const UserListHeader = styled.div`
   width: 100%;
-  height: 100px;
+  min-height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -24,8 +24,8 @@ export const Title = styled.h1`
 
 export const UserTableContainer = styled.div`
   width: 100%;
+  min-height:500px;
   display: flex;
-
   .p-datatable {
     width: 100% !important;
   }
