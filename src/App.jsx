@@ -1,5 +1,12 @@
+import Router from "./routes/route";
+
+
 function App() {
-  return <h1>REACT JS G3</h1>;
+  return (
+    <>
+      <Router/>
+    </>
+  );
 }
 
 export default App;
