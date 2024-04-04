@@ -1,5 +1,14 @@
+import Profile from "./components/Profile";
+import Login from "./components/Login";
+import ChangeColor from "./components/ChangeColor";
 function App() {
-  return <h1>REACT JS G3</h1>;
-}
+  return (
+  <div>
+ 
+    <Profile/>
+       <Login/>
+       <ChangeColor/>
+  </div>
+)}
 
 export default App;
