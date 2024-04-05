@@ -5,6 +5,7 @@ import Product from "../pages/product";
 import SingleProduct from "../pages/single-product";
 import UserList from "../pages/users/user-list";
 import EditUser from "../pages/users/edit-user";
+import Todo from "../pages/todos";
 
 export const routes = [
   {
@@ -32,4 +33,9 @@ export const routes = [
     path: ROUTES.editUser,
     component: EditUser,
   },
+  {
+    id: uuid(),
+    path: ROUTES.todo,
+    component:Todo
+  }
 ];

@@ -12,15 +12,13 @@ import "./i18n";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <Suspense fallback={<>Loading...</>}>
-      <Provider store={store}>
-        <BrowserRouter>
-          <PrimeReactProvider>
-            <App />
-          </PrimeReactProvider>
-        </BrowserRouter>
-      </Provider>
-    </Suspense>
-  </React.StrictMode>
+  <Suspense fallback={<>Loading...</>}>
+    <Provider store={store}>
+      <BrowserRouter>
+        <PrimeReactProvider>
+          <App />
+        </PrimeReactProvider>
+      </BrowserRouter>
+    </Provider>
+  </Suspense>
 );
