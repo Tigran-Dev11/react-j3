@@ -3,4 +3,6 @@ export const COLORS = {
     blueViolet:"#3B3B74",
     violet:"#9A9AB8",
     blackBlue:"#18182F",
+    purple:"#DDD0F0",
+    lightPurple:"#E1D9F3"
 }

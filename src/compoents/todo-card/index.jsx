@@ -1,67 +1,73 @@
-import { useRef, useState } from "react";
+import { useState } from "react";
 import * as S from "./styled";
 import { IMAGES } from "../../assets/images";
+import { useDispatch } from "react-redux";
+import { todoActions } from "../../libs/redux/to-do-list/todo-slice";
 
 const ToDoCard = (props) => {
-  const { item, onRemove, updateTodo, complated,isChecked,handleToggleChecked  } = props;
-  const inputRef = useRef(null);
-  const [editValue, setEditValue] = useState(item.item); // State to manage the value of the input field
-  const [isEditing, setIsEditing] = useState(false); // State to track edit mode
+  const { id, name, status } = props;
+  const [activeEditTodo, setActiveEditTodo] = useState(false);
+  const [updatedTodo, setUpdatedTodo] = useState(name);
+  const dispatch = useDispatch();
 
-  const handleRemove = () => {
-    onRemove(item.id);
+  const deleteTodo = () => {
+    dispatch(todoActions.removeTodo(id));
   };
 
-  const changeFocus = () => {
-    setIsEditing(!isEditing);
+  const changeStatus = (checked) => {
+    dispatch(todoActions.changeStatus({ checked, id }));
   };
 
-
-  const handleEdit = (id, value, e) => {
-    if (e.which === "Enter") {
-      updateTodo({ id, item: editValue });
-      setIsEditing(false);
-    }
+  const editTodo = ({ id, name }) => {
+    setActiveEditTodo({
+      [id]: name
+    });
+    setUpdatedTodo(name);
   };
 
-  const handleSave = () => {
-    complated(item);
-    setIsEditing(false);
+  const saveTodo = (id) => {
+    dispatch(todoActions.editTodo({ id, name: updatedTodo }));
+    setActiveEditTodo();
+    setUpdatedTodo("");
   };
+  
 
   return (
-    <S.TodoItem key={item.id}>
-          <input
-          type="checkbox"
-          checked={isChecked}
-          onChange={() => handleToggleChecked(item.id)}
-    
-        />
-      {isEditing ? (
+    <S.TodoItem key={id}>
+      <input
+        type="checkbox"
+        checked={status}
+        onChange={(e) => changeStatus(e.target.checked,id)}
+      />
+      {activeEditTodo?.[id]? (
         <>
- 
           <S.Input
             type="text"
-            ref={inputRef}
-            onKeyPress={(e) => handleEdit(item.id, editValue, e)}
-            value={editValue}
-            onChange={(e) => setEditValue(e.target.value)}
+            value={updatedTodo}
+            onChange={(e) => setUpdatedTodo(e.target.value)}
           />
-          <S.Button onClick={handleSave}>
-            <S.Img src={IMAGES.saveIcon} alt="saveIcon"></S.Img>
-          </S.Button>
+          
         </>
       ) : (
-        <>
-          <S.TodoTitile>{item.item}</S.TodoTitile>
-          <S.Button onClick={changeFocus}>
+        <S.TodoTitile>{name}</S.TodoTitile>
+      )}
+        
+        {activeEditTodo?.[id] ? (
+          <S.Button onClick={()=>saveTodo(id)}>
+            <S.Img src={IMAGES.saveIcon} alt="saveIcon" />
+          </S.Button>
+        
+          ) : (
+           
+          <S.Button onClick={()=>editTodo({id,name})}>
             <S.Img src={IMAGES.editIcon} alt="editIcon" />
           </S.Button>
-          <S.Button onClick={handleRemove}>
+            )}
+          <S.Button onClick={()=>deleteTodo(id)}>
             <S.Img src={IMAGES.removeIcon} alt="removeIcon" />
           </S.Button>
-        </>
-      )}
+
+    
     </S.TodoItem>
   );
 };

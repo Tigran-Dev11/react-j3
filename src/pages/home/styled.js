@@ -1,28 +1,31 @@
 import styled from "styled-components";
 import { COLORS } from "../../assets/images/style/colors";
 
-export const TodoContainer = styled.div`
+export const HomeContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 800px;
+  background-color: ${COLORS.purple};
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 `;
 
-export const TodoHeader = styled.div`
-  width: 500px;
-  min-height: 600px;
+export const HomeHeader = styled.div`
+  width: 100%;
+  min-height: 400px;
   display: flex;
-  flex-direction: column;
-  border-radius:10px;
-  background-color:${COLORS.violet}
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Title = styled.h1`
-  width: 100%;
-  color: ${COLORS.blue};
-  font-size: 32px;
-  text-align: center;
-  text-transform: uppercase;
+
+  font-size: 40px;
+  color: ${COLORS.blueViolet};
+  transition: font-size 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    font-size: 60px; 
+    color: ${COLORS.violet};
+  }
 `;
