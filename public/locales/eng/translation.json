@@ -1,13 +1,17 @@
-{ 
-    "arm": "Arm", 
-    "eng": "En",
-    "nav":{
-        "home": "Home"
-
-    },
-    "HomeTitle":{
-        "Welcome":"Welcome"
-    }
-    
-    
- }
+{
+  "arm": "Arm",
+  "eng": "En",
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us"
+  },
+  "btn": {
+    "subscribe": "Subscribe",
+    "readMore": "Read More",
+    "discoverOurStory": "Discover Our Story",
+    "joinNow": "Join Now",
+    "sendMessage": "Send Message"
+  }
+}

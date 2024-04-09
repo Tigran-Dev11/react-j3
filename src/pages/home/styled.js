@@ -14,7 +14,9 @@ export const HomeHeader = styled.div`
   min-height: 400px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
   align-items: center;
+  background-color:${COLORS.darkBlue};
 `;
 
 export const Title = styled.h1`
@@ -29,3 +31,4 @@ export const Title = styled.h1`
     color: ${COLORS.violet};
   }
 `;
+

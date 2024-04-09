@@ -20,10 +20,10 @@ const LanguageSwitcher = () => {
   return (
     <S.Select onChange={(e) => changeLanguageHandler(e.target.value)}>
       <S.Option value={"arm"} selected={lngKey === "arm"}>
-        {t("arm")} {/* Translate "Armenian" */}
+        {t("arm")}
       </S.Option>
-      <S.Option value={"en"} selected={lngKey === "en"}>
-        {t("eng")} {/* Translate "English" */}
+      <S.Option value={"eng"} selected={lngKey === "en"}>
+        {t("eng")}
       </S.Option>
     </S.Select>
   );

@@ -1,24 +1,21 @@
-           
-const params  = {
-  lng: ':lng'
-}
+const params = {
+  lng: ":lng",
+};
 
 export const routesHref = {
   home: "/",
   aboutUs: "/about-us",
   blog: "/blog",
-  basket: "/basket",
-  shop: "/shop",
-  productSingle: "/product-single",
-  product: "/product",
-}
- 
+  contactUs: "/contact-us",
+  privacyPolicy: "/privacy-policy",
+  registr: "/registr",
+};
+
 export const ROUTES = {
   home: params.lng + routesHref.home,
   aboutUs: params.lng + routesHref.aboutUs,
   blog: "/:lng/blog",
-  basket: "/:lng/basket",
-  shop: "/:lng/shop",
-  productSingle: "/:lng/productSingle",
-  product: "/:lng/product",
+  contactUs: "/:lng/contact-us",
+  privacyPolicy: "/:lng/privacy-policy",
+  registr: "/:lng/registr",
 };
