@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { COLORS } from "../../assets/images/style/colors";
+import { COLORS } from "../../assets/style/colors";
 
 export const HomeContainer = styled.div`
   width: 100%;

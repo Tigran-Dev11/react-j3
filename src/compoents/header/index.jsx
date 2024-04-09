@@ -1,12 +1,14 @@
-import { ROUTES } from "../../utils/constants";
+import { useTranslation } from "react-i18next";
 import * as S from "./styled";
 const Header = () => {
+    const { t } = useTranslation();
+
+  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
+
   return (
     <S.NavBar>
-      <S.Link to={ROUTES.home}>Home</S.Link>
-      <S.Link to={ROUTES.todo}>Todo List</S.Link>
-      <S.Link to={ROUTES.album}>Album</S.Link>
-      <S.Link to={ROUTES.user}>User</S.Link>
+      <S.Link to={`/${lngKey}`}>Home</S.Link>
+    
     </S.NavBar>
   );
 };

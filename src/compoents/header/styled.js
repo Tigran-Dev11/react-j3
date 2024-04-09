@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { COLORS } from "../../assets/images/style/colors";
+import { COLORS } from "../../assets/style/colors";
 
 
 export const NavBar = styled.div`
