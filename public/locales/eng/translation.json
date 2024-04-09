@@ -1,0 +1,13 @@
+{ 
+    "arm": "Arm", 
+    "eng": "En",
+    "nav":{
+        "home": "Home"
+
+    },
+    "HomeTitle":{
+        "Welcome":"Welcome"
+    }
+    
+    
+ }
