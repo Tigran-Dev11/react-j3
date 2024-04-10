@@ -4,6 +4,7 @@ import facebookIcon from "./facebook-icon.png";
 import instagramIcon from "./instragram-icon.png";
 import twitterIcon from "./twitter-icon.png";
 import linkdinIcon from "./linkdin-icon.png";
+import postBackroundImg from "./post-background.png";
 export const IMAGES = {
   burgerMenuIcon,
   headerBackground,
@@ -11,4 +12,5 @@ export const IMAGES = {
   instagramIcon,
   twitterIcon,
   linkdinIcon,
+  postBackroundImg
 };

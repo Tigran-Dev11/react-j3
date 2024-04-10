@@ -23,7 +23,15 @@
         "title":"Տեղադրված է startup-ում",
         "subTitle": "Քայլ առ քայլ ուղեցույց տառատեսակների հիանալի զույգեր ընտրելու համար",
         "authorInfo":"Ջեյմս Ուեսթի կողմից | 23 մայիսի, 2022թ",
-        "information":""
+        "information":"",
+        "post": {
+          "title": "Առաջարկներ",
+          "authorInfo":"Ջոն Դուի կողմից 2022 թվականի մայիսի 23-ին",
+          "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+          "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+          "allTitle": "Այլ առաջարկներ"
+        }
+      
       }
    
     
