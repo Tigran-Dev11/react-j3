@@ -61,12 +61,25 @@ export const BtnSwitcherContainer = styled.div`
 export const MenuContainer = styled.div`
   width: 50px;
   height: 80px;
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
+  @media screen and (${BREAKPOINTS.mobile}) {
+    display: flex;
+  }
 `;
 
 export const MenuIcon = styled.img`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
   width: 30px;
   height: 30px;
 `;
@@ -84,6 +97,7 @@ export const BurgerMenuContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  ${({ isOpen }) => isOpen && 'transform: translateY(0);'};
 `;
 export const Spancontainer = styled.div`
 width:100%;
@@ -93,12 +107,7 @@ justify-content:flex-end
 align-items:center;
 
 `;
-export const Span = styled.span`
-  font-size: 20px;
-  font-weight: 700;
-  color: ${COLORS.darkBlue};
-  cursor: pointer;
-`;
+
 
 export const BurgerMenuLinkContainer = styled.div`
   width: 400px;
@@ -108,6 +117,7 @@ export const BurgerMenuLinkContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+
 `;
 export const BurgerMenuLink = styled(NavLink)`
   text-decoration: none;

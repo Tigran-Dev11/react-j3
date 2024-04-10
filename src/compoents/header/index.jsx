@@ -9,7 +9,7 @@ import BurgerMenu from "./burger-menu";
 const Header = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-  
+
   return (
     <S.NavBar>
       <S.Title>
@@ -26,11 +26,13 @@ const Header = () => {
         </S.Link>
       </S.LinkContainer>
       <S.BtnSwitcherContainer>
-        <Button variant="secondary" title={t("btn.subscribe")} />
+        <S.Link to={`/${lngKey}${routesHref.registr}`} >
+          <Button variant="secondary" title={t("btn.subscribe")} />
+        </S.Link>
         <LanguageSwitcher />
       </S.BtnSwitcherContainer>
- 
-     <BurgerMenu/>
+
+      <BurgerMenu />
     </S.NavBar>
   );
 };

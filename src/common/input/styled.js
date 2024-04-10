@@ -8,7 +8,9 @@ background:none;
 border:1px solid ${COLORS.yellow};
 color:${COLORS.white};
 padding:0 20px;
-
+&::placeholder{
+    color:${COLORS.white};
+}
 `
 
 export const Secondary = styled.input`

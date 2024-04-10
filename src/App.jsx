@@ -1,4 +1,5 @@
 
+import Footer from "./compoents/footer";
 import Header from "./compoents/header";
 import { useLanguageRedirect } from "./hooks/use-language";
 
@@ -11,6 +12,7 @@ function App() {
     <>
     <Header/>
       <Router/>
+      <Footer/>
     </>
   );
 }

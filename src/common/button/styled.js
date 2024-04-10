@@ -3,7 +3,9 @@ import { COLORS } from "../../assets/style/colors";
 
 export const Primary = styled.button`
   background-color: ${COLORS.yellow};
-  padding: 12px 80px;
+  // padding: 12px 80px;
+  width: 210px;
+  height: 50px;
   color: ${COLORS.white};
   cursor: pointer;
   font-family: "Inter", sans-serif;

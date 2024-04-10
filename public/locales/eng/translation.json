@@ -13,5 +13,15 @@
     "discoverOurStory": "Discover Our Story",
     "joinNow": "Join Now",
     "sendMessage": "Send Message"
+  },
+  "footer": {
+    "subscribeTitle": "Subscribe to our news letter to get latest updates and news",
+    "infoTitle": "Finstreet 118 2561 Fintown Hello@finsweet.com  020 7993 2905"
+  },
+  "home": {
+    "title": "Posted on startup",
+    "subTitle": "Step-by-step guide to choosing great font pairs",
+    "authorInfo": "By James West  |  May 23, 2022 ",
+    "information": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident."
   }
 }
