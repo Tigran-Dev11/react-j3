@@ -37,12 +37,13 @@ export const Title = styled.h4`
   font-size: 14px;
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    font-size: 20px;
+    font-size: 18px;
+  
   }
 `;
 
 export const LinkContainer = styled.div`
-  width: 400px;
+  width: 600px;
   min-height: 80px;
   display: flex;
   justify-content: space-around;
@@ -51,6 +52,7 @@ export const LinkContainer = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     padding: 0;
     gap: 2px;
+    
   }
 `;
 export const Link = styled(NavLink)`
@@ -61,10 +63,12 @@ export const Link = styled(NavLink)`
   font-family: "Inter", sans-serif;
   &:hover {
     color: ${COLORS.lightGrey};
+   
   }
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    font-size: 14px;
+    font-size: 12px; 
+    font-weight: 1;
   }
 `;
 

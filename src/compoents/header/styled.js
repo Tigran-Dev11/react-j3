@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { COLORS } from "../../assets/style/colors";
 import { BREAKPOINTS } from "../../assets/style/breakpoints";
+import { FONTS } from "../../assets/style/fonts";
 
 export const NavBar = styled.div`
   width: 100%;
@@ -19,7 +20,7 @@ export const Title = styled.h4`
 width:20px; 
 height20px;
 color: ${COLORS.white};
-font-family: "Inter", sans-serif;
+font-family: ${FONTS.inter};
 
 `;
 
@@ -38,7 +39,7 @@ export const Link = styled(NavLink)`
   font-size: 18px;
   font-weight: 800;
   color: ${COLORS.white};
-  font-family: "Inter", sans-serif;
+  font-family:${FONTS.inter};
   transition: font-size 0.2s ease;
   &:hover {
     color: ${COLORS.lightGrey};
@@ -124,7 +125,7 @@ export const BurgerMenuLink = styled(NavLink)`
   font-size: 26px;
   font-weight: 800;
   color: ${COLORS.darkGrey};
-  font-family: "Inter", sans-serif;
+  font-family: ${FONTS.inter};
 
   &:hover {
     color: ${COLORS.yellow};

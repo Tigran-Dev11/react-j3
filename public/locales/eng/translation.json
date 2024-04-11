@@ -5,14 +5,17 @@
     "home": "Home",
     "blog": "Blog",
     "aboutUs": "About Us",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "privacyPolicy": " Privacy Policy"
   },
   "btn": {
     "subscribe": "Subscribe",
     "readMore": "Read More",
-    "discoverOurStory": "Discover Our Story",
+    "discoverOurStory": "Discover Our Story >",
     "joinNow": "Join Now",
-    "sendMessage": "Send Message"
+    "sendMessage": "Send Message",
+    "learnMore": "Learn More",
+    "ourMision": "Our Mision"
   },
   "footer": {
     "subscribeTitle": "Subscribe to our news letter to get latest updates and news",
@@ -29,6 +32,63 @@
       "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
       "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
       "allTitle": "All Posts"
+    },
+    "posts": {
+      "date": "By John Deo   l   Aug 23, 2021",
+      "description": "8 Figma design systems that you can download for free today.",
+      "aboutUsDescription": "We are a community of content writers who share their learnings",
+      "ourMisisonDescription": "Creating valuable content for creatives all around the world",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+
+    "category": {
+      "title": "Choose A Catagory",
+      "busines": "Business",
+      "technology": "Technology",
+      "economy": "Economy",
+      "startUp": "Start Up"
+    },
+    "startUp": {
+      "title": "Why we started ",
+      "description": "It started out as a simple idea and evolved into our passion"
+    },
+    "author": {
+      "name": {
+        "floydMiles": "Floyd Miles",
+        "dianneRussell": "Dianne Russell",
+        "jenniWilson": "Jenni Wilson",
+        "lessileAlexandr": "Lessile Alexander"
+      },
+      "content": "Content Writer @Company"
+    },
+    "blog": {
+      "title": "TESTIMONIALs",
+      "description": "What people say about our blog",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "join": {
+      "title": "Join our team to be a part of our story",
+      "description": "Join our community to get latest updates and news"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Last Updated  on 27th January 2022"
+  },
+  "contactUs": {
+    "subtitle": "Contact Us",
+    "title": "Let’s Start a Conversation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "about": {
+      "title": "Working hours",
+      "subtitle": "Monday To Friday 9:00 AM to 8:00 PM ",
+      "description": "Our Support Team is available 24/7",
+      "contactUs": {
+        "title": "Contact Us",
+        "subtitle": "020 7993 2905",
+        "description": "hello@finsweet.com"
+      }
     }
   }
 }

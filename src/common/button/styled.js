@@ -1,9 +1,10 @@
 import styled from "styled-components";
 import { COLORS } from "../../assets/style/colors";
+import { BREAKPOINTS } from "../../assets/style/breakpoints";
 
 export const Primary = styled.button`
   background-color: ${COLORS.yellow};
-  // padding: 12px 80px;
+
   width: 210px;
   height: 50px;
   color: ${COLORS.white};
@@ -11,8 +12,11 @@ export const Primary = styled.button`
   font-family: "Inter", sans-serif;
   text-align: center;
   border: none;
-  font-size:12px;
-  
+  font-size: 12px;
+  &:hover {
+    color: ${COLORS.darkBlue};
+    font-weight: 600;
+  }
 `;
 
 export const Secondary = styled.button`
@@ -24,15 +28,21 @@ export const Secondary = styled.button`
   text-align: center;
   font-weight: 700;
   border: none;
-  font-size:12px;
+  font-size: 12px;
 `;
 
 export const Default = styled.button`
-  padding: 10px 40px;
+  width: 400px;
+  height: 50px;
   background-color: ${COLORS.yellow};
   color: ${COLORS.white};
   border-radius: 5px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   border: none;
+  @media screen and (${BREAKPOINTS.mobile}){
+    width:350px;
+    height:50px;
+
+}
 `;

@@ -22,6 +22,9 @@ const Footer = () => {
           <S.Link to={`/${lngKey}${routesHref.contactUs}`}>
             {t("nav.contactUs")}
           </S.Link>
+          <S.Link to={`/${lngKey}${routesHref.privacyPolicy}`}>
+            {t("nav.privacyPolicy")}
+          </S.Link>
         </S.LinkContainer>
       </S.FooterHeader>
       <S.SubscriberContainer>

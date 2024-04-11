@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { COLORS } from "../../assets/style/colors";
+import { BREAKPOINTS } from "../../assets/style/breakpoints";
 
 export const PostCardContainer = styled.div`
-  width: 380px;
+  width: 400px;
   min-height: 130px;
   display: flex;
   flex-direction: column;
@@ -12,11 +13,21 @@ export const PostCardContainer = styled.div`
   cursor: pointer;
 
   &:hover{
-    width:400px;
+    width:420px;
     min-height: 200px;
     background-color: ${COLORS.yellow};
     transition: 0.3s ease-in-out;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100%;
+align-items: center;
+    &:hover{
+      width:300px;
+      min-height: 100px;
+   
+    }
   }
 `;
 export const PostAuthor = styled.p`

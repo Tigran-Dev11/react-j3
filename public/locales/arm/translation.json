@@ -1,38 +1,93 @@
 {
-    "arm": "Հայ",
-    "eng": "Անգ",
-    "nav":{
-        "home": "Գլխավոր",
-        "blog": "Բլոգ",
-        "aboutUs": "Մեր մասին",
-        "contactUs": "Կապ"
-
+  "arm": "Հայ",
+  "eng": "Անգ",
+  "nav": {
+    "home": "Գլխավոր",
+    "blog": "Բլոգ",
+    "aboutUs": "Մեր մասին",
+    "contactUs": "Կապ",
+    "privacyPolicy": "Գաղտնիության քաղաքականություն"
+  },
+  "btn": {
+    "subscribe": "Միացիր մեզ",
+    "readMore": "Կարդալ ավելին",
+    "discoverOurStory": "Բացահայտեք մեր պատմությունը",
+    "joinNow": "Հետևիր մեզ հիմա",
+    "sendMessage": "Ուղարկել հաղորդագրություն",
+    "learnMore": "Կարդալ ավելին",
+    "ourMision": "Մեր առաքելությունը"
+  },
+  "footer": {
+    "subscribeTitle": "Բաժանորդագրվեք մեր տեղեկագրին՝ վերջին թարմացումներն ու նորությունները ստանալու համար ",
+    "infoTitle": "Finstreet 118 2561 Fintown Hello@finsweet.com  020 7993 2905"
+  },
+  "home": {
+    "title": "Տեղադրված է startup-ում",
+    "subTitle": "Քայլ առ քայլ ուղեցույց տառատեսակների հիանալի զույգեր ընտրելու համար",
+    "authorInfo": "Ջեյմս Ուեսթի կողմից | 23 մայիսի, 2022թ",
+    "information": "",
+    "post": {
+      "title": "Առաջարկներ",
+      "authorInfo": "Ջոն Դուի կողմից 2022 թվականի մայիսի 23-ին",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "allTitle": "Այլ առաջարկներ"
     },
-    "btn": {
-        "subscribe": "Միացիր մեզ",
-        "readMore": "Կարդալ ավելին",
-        "discoverOurStory": "Բացահայտեք մեր պատմությունը",
-        "joinNow": "Հետևիր մեզ հիմա",
-        "sendMessage": "Ուղարկել հաղորդագրություն"
+    "posts": {
+      "date": "Ջոն Դեոյի կողմից, օգոստոսի 23, 2021 թ",
+      "description": "8 Figma դիզայնի համակարգ, որոնք կարող եք անվճար ներբեռնել այսօր։",
+      "aboutUsDescription": "Մենք բովանդակություն գրողների համայնք ենք, ովքեր կիսում են իրենց գիտելիքները",
+      "ourMisisonDescription": "Ստեղծել արժեքավոր բովանդակություն ստեղծագործողների համար ամբողջ աշխարհում",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "category": {
+      "title": "Ընտրեք կատեգորիա",
+      "busines": " Բիզնես",
+      "technology": "Տեխնոլոգիա",
+      "economy": " Տնտեսություն",
+      "startUp": "Start Up"
+    },
+    "startUp": {
+      "title": "Ինչպես մենք սկսեցինք ",
+      "description": "Այն սկսվեց որպես պարզ գաղափար և վերածվեց մեր կրքի"
+    },
+    "author": {
+      "name": {
+        "floydMiles": " Ֆլոյդ Մայլս",
+        "dianneRussell": "Դիանա Ռասել",
+        "jenniWilson": "Ջենի Ուիլսոն",
+        "lessileAlexandr": "Լեսլի Ալեքսանդր"
       },
-      "footer":{
-        "subscribeTitle":"Բաժանորդագրվեք մեր տեղեկագրին՝ վերջին թարմացումներն ու նորությունները ստանալու համար ",
-        "infoTitle":"Finstreet 118 2561 Fintown Hello@finsweet.com  020 7993 2905"
-      }, 
-      "home":{
-        "title":"Տեղադրված է startup-ում",
-        "subTitle": "Քայլ առ քայլ ուղեցույց տառատեսակների հիանալի զույգեր ընտրելու համար",
-        "authorInfo":"Ջեյմս Ուեսթի կողմից | 23 մայիսի, 2022թ",
-        "information":"",
-        "post": {
-          "title": "Առաջարկներ",
-          "authorInfo":"Ջոն Դուի կողմից 2022 թվականի մայիսի 23-ին",
-          "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-          "description":"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-          "allTitle": "Այլ առաջարկներ"
-        }
-      
+      "content": "Բովանդակության հեղինակ @Company"
+    },
+    "blog": {
+      "title": "ՊԱՏՄՈՒԹՅՈՒՆՆԵՐ",
+      "description": "Ինչ են ասում մարդիկ մեր բլոգի մասին",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "join": {
+      "title": "Միացե՛ք մեր թիմին՝ դառնալու մեր պատմության մի մասը",
+      "description": "Միացե՛ք մեր համայնքին՝ վերջին թարմացումներն ու նորությունները ստանալու համար"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Գաղտնիության քաղաքականություն",
+    "subtitle": "Վերջին անգամ թարմացվել է 2022 թվականի հունվարի 27-ին"
+  },
+  "contactUs": {
+    "subtitle": "Կապ մեզ հետ",
+    "title": "Եկեք սկսենք զրույց",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "about": {
+      "title": "Աշխատանքային ժամեր",
+      "description": "Երկուշաբթիից ուրբաթ 9:00-ից մինչև 20:00",
+      "subtitle": "Մեր աջակցության թիմը հասանելի է 24/7",
+      "contactUs":{
+        "title": "Կապ մեզ հետ",
+        "subtitle": "020 7993 2905",
+        "description": "hello@finsweet.com"
       }
-   
-    
+    }
+  }
 }
