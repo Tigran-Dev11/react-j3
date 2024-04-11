@@ -1,0 +1,168 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+ *{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: "Montserrat",sans-serif;
+}
+:root{
+ --primaryColor:hsl(233,52%,19%) ;
+ --secColor:hsl(233,16%,44%) ;
+ --hoverColor:hsl(8,100%,70%) ;
+ --blackColor:#707070 ;
+ --greyText:hsl(0,0%,75%) ;
+ --bgColor:hsl(0,0%,100%) ;
+ --shadowColor:hsl(0,0%,0%,0.314) ;
+ --boxShadow:hsl(0,0%,0%,0.1) 0px10px 15px -3px;
+ --gradient:linear-gradient(to bottom ,hsl(16,100%,71%),hsl(8,100%,70%));
+  /* rgba (0 ,0, 0, 0.05) 0px 4px 6px -2px; */
+
+--biggestFontSize:2.4rem;
+--h1FontSize:2.2rem;
+--h2FontSize:1.25rem;
+--h3FontSize:1rem;
+--normalFontSize:0.938;
+--smallFontSize:0.813;
+--smallestFontSize:0.75;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 1000;
+    width: 100%;
+    padding: 1.5rem;
+    transition: .4s ease-in-out;
+}
+.logoDiv .logo{
+    color: var(--primaryColor);
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.teggleIcon, .closeIcon{
+    .icon{
+        font-size: 2rem;
+        font-weight: 700;
+
+        &:hover{
+            color: var(--hoverColor);
+        }
+    }
+}
+@media screen and (max-width: 768px){
+.menu{
+    display: flex;
+    position: absolute;
+    background: var(--gradient);
+    padding: 1.5rem;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1rem;
+    top: 7rem;
+    left: 50%;
+    right: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+    box-shadow: var(--boxShadow);
+    transition: 0.4s ease-in-out;
+
+    .list{
+        flex-direction: column;  
+     gap: .5rem; 
+       width: 100%;
+       text-align: center;
+       
+       
+       li{
+        padding: .5rem 0;
+        width: 100%;
+        border-radius: 5px;
+        border: 1.5px solid transparent;
+        cursor: pointer;
+        color: var(--blackColor);
+        &:hover{
+          color:var(--primaryColor);
+          font-weight: 700;  
+        }
+        a{
+            color: var(--primaryColor);
+             /* font-weight: 700;  */
+            font-size: var(--h3FontSize);
+            &:hover{
+            border: 1.5px dashed var(--h3FontSize);
+             a{
+                font-weight: 600;
+             }
+            }
+        }
+       }
+    }
+   }
+       .btn-flex{
+        width: 100%;
+        flex-direction: column;
+        gap: 0.5rem;
+        .btn{
+            width: 92%;
+        }
+            .lang{
+                margin-top: 0.5rem;
+                margin-bottom: 1rem;
+                background: transparent;
+                border: none;
+                outline: none;
+                color: var(--primaryColor);
+
+      }
+  }
+   .closeIcon{
+   position: absolute;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   bottom: -20px;
+   border-radius: 50%;
+   background: var(--hoverColor);
+   padding: 5px;
+   right: 50%;
+   left: 50%;
+   width: 80%;
+   transform: translateX(-50%);
+   .icon{
+    color: var(--primaryColor);
+    cursor: pointer;
+   }
+   }
+
+
+}
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
