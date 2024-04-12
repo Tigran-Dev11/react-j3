@@ -1,9 +1,10 @@
 import styled from "styled-components";
-import { COLORS } from "../../assets/style/colors";
-import { IMAGES } from "../../assets/images";
-import { BREAKPOINTS } from "../../assets/style/breakpoints";
+import { COLORS } from "../../../assets/style/colors";
+import { IMAGES } from "../../../assets/images";
+import { FONTS } from "../../../assets/style/fonts";
+import { BREAKPOINTS } from "../../../assets/style/breakpoints";
 import { NavLink } from "react-router-dom";
-import { FONTS } from "../../assets/style/fonts";
+
 
 export const HomeContainer = styled.div`
   width: 100%;

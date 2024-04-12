@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import Input from "../../common/input";
-import Button from "./../../common/button/index";
+import Input from "../../../common/input";
+import Button from "../../../common/button/index";
 
 const ContactUs = () => {
   const { t } = useTranslation();

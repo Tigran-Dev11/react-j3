@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import Button from "../../common/button";
-import PostCard from "../../compoents/post-card";
-import CategoryCard from "../../compoents/category-card";
-import AuthorCard from "../../compoents/author-card";
-import { IMAGES } from "../../assets/images";
-import Join from "../../compoents/join";
+
+import PostCard from "../../../compoents/post-card";
+import CategoryCard from "../../../compoents/category-card";
+import AuthorCard from "../../../compoents/author-card";
+import Button from "../../../common/button";
+import { IMAGES } from "../../../assets/images";
+import Join from './../../../compoents/join/index';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -63,7 +64,7 @@ const Home = () => {
       <S.CategoriContainer>
         <S.AboutDescriptions>{t("home.category.title")}</S.AboutDescriptions>
         <S.CategorySection>
-          <CategoryCard />
+          <CategoryCard/>
         </S.CategorySection>
       </S.CategoriContainer>
       <S.StartUpContainer>

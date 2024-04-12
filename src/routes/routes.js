@@ -1,43 +1,60 @@
-import { v4 as uuid } from "uuid";
-import { ROUTES } from "../utils/constants";
-import Home from "../pages/home";
-import Blog from "../pages/blogs";
-import AboutUs from "../pages/about";
-import ContactUs from "../pages/contact-us";
-import PrivacyPolicy from "../pages/Privacy-policy";
-import Registr from "../pages/registr";
+
+import {  ADMIN_ROUTES, CLIENTS_ROUTES } from "../utils/constants";
+import ClienLayout from "../layouts/clien-layout";
+//import AdminLayout from "../layouts/admin-layout";
+import Home from './../pages/client/home';
+import AboutUs from './../pages/client/about';
+import Blog from "../pages/client/blogs";
+import ContactUs from './../pages/client/contact-us';
+import PrivacyPolicy from './../pages/client/Privacy-policy';
+import Registr from './../pages/client/registr';
+// import AdminLayout from "../layouts/admin-layout";
+// import Dashboard from "../pages/admin/dashboard";
+//import Dashboard from "./../pages/admin/dashboard";
 
 
 export const routes = [
   {
-    id: uuid(),
-    path: ROUTES.home,
-    component: Home,
+    layout: ClienLayout,
+    path: "",
+    children: [
+      {
+        component: Home,
+        path: CLIENTS_ROUTES.home,
+      },
+      {
+        component: AboutUs,
+        path: CLIENTS_ROUTES.aboutUs,
+      },
+      {
+        component: Blog,
+        path: CLIENTS_ROUTES.blog,
+      },
+      {
+        component: ContactUs,
+        path: CLIENTS_ROUTES.contactUs,
+      },
+      {
+        component: PrivacyPolicy,
+        path: CLIENTS_ROUTES.privacyPolicy,
+      },
+      {
+        component: Registr,
+        path: CLIENTS_ROUTES.registr,
+      }
+    ],
   },
-  {
-    id: uuid(),
-    path: ROUTES.blog,
-    component: Blog,
-  },
-  {
-    id: uuid(),
-    path: ROUTES.aboutUs,
-    component: AboutUs,
-  },
-  {
-    id: uuid(),
-    path: ROUTES.contactUs,
-    component: ContactUs,
-  },
-  {
-    id: uuid(),
-    path: ROUTES.privacyPolicy,
-    component: PrivacyPolicy,
-  },
-  {
-    id: uuid(),
-    path: ROUTES.registr,
-    component: Registr,
-  },
- 
+
+  // {
+  //   layout: AdminLayout,
+  //   path: ADMIN_ROUTES.admin,
+  //   children: [
+  //     {
+  //       component: Dashboard  ,
+  //       path: ADMIN_ROUTES.dashboard,
+  //     },
+      
+  //   ],
+  // },
+  
 ];

@@ -4,9 +4,24 @@ import * as S from "./styled";
 import Input from "../../common/input";
 import Button from "../../common/button";
 import { IMAGES } from "../../assets/images";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { SCHEME } from "../../validation";
+import { useForm } from "react-hook-form";
 const Footer = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(SCHEME.registerScheme),
+  });
+  const onSubmit = (data) => {
+    console.log(data);
+   
+  };
   return (
     <S.FooterContainer>
       <S.FooterHeader>
@@ -29,11 +44,13 @@ const Footer = () => {
       </S.FooterHeader>
       <S.SubscriberContainer>
         <S.SubscribeTitle>{t("footer.subscribeTitle")}</S.SubscribeTitle>
-        <S.SubscribeForm>
+        <S.SubscribeForm onSubmit={handleSubmit(onSubmit)}   >
           <Input
             type="email"
             placeholder="Enter your email"
             variant="primary"
+            register={register}
+            error={errors.email}  
           />
           <Button title={t("btn.subscribe")} variant="primary" />
         </S.SubscribeForm>

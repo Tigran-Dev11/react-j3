@@ -1,4 +1,4 @@
-import * as yup from "yup";
+import * as yup from "yup"
 
 export const registerScheme = yup.object({
   firstName: yup.string().required().min(3),

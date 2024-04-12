@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import { authors } from "../../pages/home/author";
+import { authors } from "../../pages/client/home/author";
+
 
 const AuthorCard = () => {
   const { t } = useTranslation();

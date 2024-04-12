@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
-import { category } from "../../pages/home/category";
+
 import * as S from "./styled"
+import { category } from './../../pages/client/home/category';
 
 const CategoryCard = () => {
     const {t}= useTranslation()

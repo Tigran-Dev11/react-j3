@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { FONTS } from "../../assets/style/fonts";
-import { COLORS } from "../../assets/style/colors";
-import { BREAKPOINTS } from "../../assets/style/breakpoints";
+import { FONTS } from "../../../assets/style/fonts";
+import { COLORS } from "../../../assets/style/colors";
+import { BREAKPOINTS } from "../../../assets/style/breakpoints";
 
 export const Container = styled.div`
   width: 100%;
