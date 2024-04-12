@@ -1,16 +1,15 @@
 
 import {  ADMIN_ROUTES, CLIENTS_ROUTES } from "../utils/constants";
 import ClienLayout from "../layouts/clien-layout";
-//import AdminLayout from "../layouts/admin-layout";
 import Home from './../pages/client/home';
 import AboutUs from './../pages/client/about';
 import Blog from "../pages/client/blogs";
 import ContactUs from './../pages/client/contact-us';
 import PrivacyPolicy from './../pages/client/Privacy-policy';
 import Registr from './../pages/client/registr';
-// import AdminLayout from "../layouts/admin-layout";
-// import Dashboard from "../pages/admin/dashboard";
-//import Dashboard from "./../pages/admin/dashboard";
+import AdminLayout from "../layouts/admin-layout";
+import Dashboard from "../pages/admin/dashboard";
+
 
 
 export const routes = [
@@ -45,16 +44,16 @@ export const routes = [
     ],
   },
 
-  // {
-  //   layout: AdminLayout,
-  //   path: ADMIN_ROUTES.admin,
-  //   children: [
-  //     {
-  //       component: Dashboard  ,
-  //       path: ADMIN_ROUTES.dashboard,
-  //     },
+  {
+    layout: AdminLayout,
+    path: ADMIN_ROUTES.admin,
+    children: [
+      {
+        component: Dashboard  ,
+        path: ADMIN_ROUTES.dashboard,
+      },
       
-  //   ],
-  // },
+    ],
+  },
   
 ];
