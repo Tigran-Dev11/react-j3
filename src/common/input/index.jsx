@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import * as S from "./styled";
-const Input = ({ type, placeholder, variant, register, error}) => {
+const Input = ({ type, placeholder, variant, register, error }) => {
   let StyledInput;
   switch (variant) {
     case "primary":
@@ -14,13 +14,15 @@ const Input = ({ type, placeholder, variant, register, error}) => {
       StyledInput = S.Default;
   }
   return (
-    <StyledInput
-      type={type}
-      {...register}
-      error={error}
-      placeholder={placeholder}
-      variant={variant}
-    />
+    <>
+      <StyledInput
+        type={type}
+        {...register}
+        placeholder={placeholder}
+        variant={variant}
+      />
+      <p>{error}</p>
+    </>
   );
 };
 

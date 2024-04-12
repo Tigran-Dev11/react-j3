@@ -7,7 +7,7 @@ export const RegistrContainer = styled.div`
   justify-content: center;
   align-items: center;
 `;
-export const RegistrForm = styled.form`
+export const RegisterForm = styled.form`
   width: 500px;
   min-height: 500px;
   display: flex;
