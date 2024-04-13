@@ -4,12 +4,10 @@ import { IMAGES } from "../../assets/images";
 import { useTranslation } from "react-i18next";
 import { routesHref } from "../../utils/constants";
 
-
 const BurgerMenu = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   const [isOpen, setIsOpen] = useState(false);
-
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -38,5 +36,4 @@ const BurgerMenu = () => {
     </S.MenuContainer>
   );
 };
-
 export default BurgerMenu;

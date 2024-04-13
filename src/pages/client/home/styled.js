@@ -426,7 +426,6 @@ export const StartUpContainerRight = styled.div`
     min-height: 300px;
     left: 0;
     top: 0;
-  
   }
 `;
 export const AuthorContainer = styled.div`
@@ -435,7 +434,6 @@ min-height: 320px;
 display: flex;
 flex-direction: column;
 align-items: center;
-  
 `;
 export const AuthorSection = styled.div`
   width: 100%;
@@ -479,7 +477,6 @@ background-color:${COLORS.milk};
 
 @media  screen and (${BREAKPOINTS.mobile}){
   flex-direction:column;
-
 }
 `
 export const  BlogContainerLeft =styled.div`
@@ -494,7 +491,6 @@ border-right:1px solid ${COLORS.lightGrey};
   align-items:center;
   border-right:none;
   border-bottom:1px solid ${COLORS.lightGrey};
-
 }
 `
 export const AboutBlog= styled.p`
@@ -511,10 +507,7 @@ gap:15px;
 @media  screen and (${BREAKPOINTS.mobile}){
   width:100%;
   align-items:center;
-
-
 }
-
 `
 export const BlogAbout= styled.h4`
 width:450px;

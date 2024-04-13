@@ -9,7 +9,6 @@ import BurgerMenu from "./burger-menu";
 const Header = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
   return (
     <S.NavBar>
       <S.Title>
@@ -31,7 +30,6 @@ const Header = () => {
         </S.Link>
         <LanguageSwitcher />
       </S.BtnSwitcherContainer>
-
       <BurgerMenu />
     </S.NavBar>
   );

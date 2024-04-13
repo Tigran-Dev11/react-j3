@@ -7,16 +7,12 @@ const LanguageSwitcher = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
   const changeLanguageHandler = (lang) => {
     i18n.changeLanguage(lang);
-
     const locationArray = location.pathname.split("/");
     locationArray[1] = lang;
-
     navigate(locationArray.join("/"));
   };
-
   return (
     <S.Select onChange={(e) => changeLanguageHandler(e.target.value)}>
       <S.Option value={"arm"} selected={lngKey === "arm"}>

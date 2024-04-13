@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import Button from "../../common/button";
 import * as S from "./styled";
 
-
 const Join = () => {
   const { t } = useTranslation();
   return (

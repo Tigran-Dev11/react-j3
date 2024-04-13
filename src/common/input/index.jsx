@@ -1,29 +1,16 @@
 /* eslint-disable react/prop-types */
-
-import * as S from "./styled";
-const Input = ({ type, placeholder, variant, register, error }) => {
-  let StyledInput;
-  switch (variant) {
-    case "primary":
-      StyledInput = S.Primary;
-      break;
-    case "secondary":
-      StyledInput = S.Secondary;
-      break;
-    default:
-      StyledInput = S.Default;
+import css from "./styled.module.scss"
+const Input = ({ placeholder, variant, type,register,error }) => {
+  const inputClass = {
+    primary:css.primary,
+    secondary:css.secondary,
   }
   return (
-    <>
-      <StyledInput
-        type={type}
-        {...register}
-        placeholder={placeholder}
-        variant={variant}
-      />
-      <p>{error}</p>
-    </>
+ <>
+    <input placeholder={placeholder} {...register}  className={inputClass[variant]} type={type}></input>
+     <p className={css.errorMessage}>{error}</p>
+ </>
   );
+ 
 };
-
 export default Input;

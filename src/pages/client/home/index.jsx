@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-
 import PostCard from "../../../compoents/post-card";
 import CategoryCard from "../../../compoents/category-card";
 import AuthorCard from "../../../compoents/author-card";

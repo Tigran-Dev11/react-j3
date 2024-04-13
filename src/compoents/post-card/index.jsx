@@ -15,7 +15,6 @@ return(
                 <S.PostInformation>{description}</S.PostInformation>
             </S.PostCardContainer>
         )
-       
         })}
        </>
 )

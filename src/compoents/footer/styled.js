@@ -43,7 +43,7 @@ export const Title = styled.h4`
 `;
 
 export const LinkContainer = styled.div`
-  width: 600px;
+  width: 700px;
   min-height: 80px;
   display: flex;
   justify-content: space-around;

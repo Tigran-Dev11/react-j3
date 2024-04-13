@@ -10,27 +10,23 @@ const Registr = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm({
-    resolver: yupResolver(SCHEME.registerScheme)
+    resolver: yupResolver(SCHEME.registerScheme),
   });
 
-  //   const onSubmit = (data) => {
-  //     console.log(data);
-
-  //   };
+  const onSubmit = (data) => {
+    console.log(data);
+  };
   return (
     <S.RegistrContainer>
-      <S.RegisterForm>
-        <Button title={t("btn.createAccount")} variant="primary" />
-      </S.RegisterForm>
-
+      <S.RegisterForm onSubmit={handleSubmit(onSubmit)}>
       <Input
         type="text"
         placeholder={" First Name"}
         register={register}
         variant="secondary"
-        error={errors.firstName}
+        error={errors?.firstName}
       />
       <Input
         variant="secondary"
@@ -57,16 +53,20 @@ const Registr = () => {
         variant="secondary"
         type="password"
         placeholder={"Confirm Password"}
-        error={errors?.confirmPassword?.message}
+        error={errors?.confirmPassword}
         register={register}
       />
-       <Input
+      <Input
         type="checkbox"
         id="checkbox"
         register={register}
         error={errors?.isAccept}
       />
       <label htmlFor="checkbox"> Please Accssept</label>
+        <Button title={t("btn.createAccount")} variant="primary" />
+      </S.RegisterForm>
+
+   
     </S.RegistrContainer>
   );
 };

@@ -164,7 +164,6 @@ export const FormContainer = styled.form`
     width: 100%;
   }
 `;
-
 export const TextArea = styled.textarea`
 width:400px;
 min-height:120px;
@@ -172,7 +171,6 @@ padding: 20px;
 @media screen and (${BREAKPOINTS.mobile}){
     width:350px;
     min-height:50px;
-
 }
 
 

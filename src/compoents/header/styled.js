@@ -106,10 +106,7 @@ min-height:20px;
 display: flex;
 justify-content:flex-end
 align-items:center;
-
 `;
-
-
 export const BurgerMenuLinkContainer = styled.div`
   width: 400px;
   min-height: 500px;
@@ -126,7 +123,6 @@ export const BurgerMenuLink = styled(NavLink)`
   font-weight: 800;
   color: ${COLORS.darkGrey};
   font-family: ${FONTS.inter};
-
   &:hover {
     color: ${COLORS.yellow};
   }

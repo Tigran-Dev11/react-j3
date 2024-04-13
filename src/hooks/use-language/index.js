@@ -7,12 +7,9 @@ export const useLanguageRedirect = () => {
 
   useEffect(() => {
     const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
     if (lngKey) {
       const locationArray = location.pathname.split("/");
-
       locationArray[1] = lngKey;
-
       navigate(locationArray.join("/"));
     }
   }, [location.pathname, navigate]);
