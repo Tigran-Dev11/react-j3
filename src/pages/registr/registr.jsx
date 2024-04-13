@@ -27,42 +27,42 @@ const Registr = () => {
           variant="secondary"
           type="text"
           placeholder={"First Name"}
-          error={errors?.firstName}
+          error={errors?.firstName?.message}
           register={register("firstName")}
         />
         <Input
           variant="secondary"
           type="text"
           placeholder={"Last Name"}
-          error={errors?.lastName}
+          error={errors?.lastName?.message}
           register={register("lastName")}
         />
         <Input
           variant="secondary"
           type="email"
           placeholder={"Email"}
-          error={errors?.email}
+          error={errors?.email?.message}
           register={register("email")}
         />
         <Input
           variant="secondary"
           type="password"
           placeholder={"Password"}
-          error={errors?.password}
+          error={errors?.password?.message}
           register={register("password")}
         />
         <Input
           variant="secondary"
           type="password"
           placeholder={"Confirm Password"}
-          error={errors?.confirmPassword}
+          error={errors?.confirmPassword?.message}
           register={register("confirmPassword")}
         />
         <Input
           type="checkbox"
           id="checkbox"
           register={register("checkbox")}
-          error={errors?.isAccept}
+          error={errors?.isAccept?.message}
         />
         <label htmlFor="checkbox"> Please Accssept</label>
         <Button title={"Create Account"} variant="primary" />
