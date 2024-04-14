@@ -5,7 +5,6 @@ import { FONTS } from "../../../assets/style/fonts";
 import { BREAKPOINTS } from "../../../assets/style/breakpoints";
 import { NavLink } from "react-router-dom";
 
-
 export const HomeContainer = styled.div`
   width: 100%;
   min-height: 800px;
@@ -114,8 +113,10 @@ export const PostContainer = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     flex-direction: column;
+    align-items: center;
     border: none;
     gap: 5px;
+    padding: 0;
   }
 `;
 export const PostLeftContainer = styled.div`
@@ -135,6 +136,7 @@ export const PostLeftContainer = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     align-items: center;
+    padding: 2px;
   }
 `;
 
@@ -300,7 +302,7 @@ export const AboutSection = styled.div`
   background-color: ${COLORS.lightPurple};
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    width: 90%;
+    width: 100%;
     flex-direction: column;
     padding: 0 20px;
   }
@@ -345,7 +347,8 @@ export const AboutDescriptions = styled.h2`
   text-align: left;
   color: ${COLORS.darkBlue};
   @media screen and (${BREAKPOINTS.mobile}) {
-    font-size: 28px;
+    font-size: 22px;
+    widtH:350px;
   }
 `;
 
@@ -392,8 +395,8 @@ export const StartUpContainer = styled.div`
   display: flex;
   align-items: center;
   position: relative;
-  @media screen and (${BREAKPOINTS.mobile}) { 
-    min-height:500px;
+  @media screen and (${BREAKPOINTS.mobile}) {
+    min-height: 500px;
   }
 `;
 export const StartUpContainerLeft = styled.div`
@@ -407,7 +410,7 @@ export const StartUpContainerLeft = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 500px;
-    min-height: 600px;
+    min-height: 600px;  
     top: 0;
   }
 `;
@@ -423,18 +426,25 @@ export const StartUpContainerRight = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 370px;
-    min-height: 300px;
+    min-height: 250px;
     left: 0;
     top: 0;
+    background:none;
   }
 `;
 export const AuthorContainer = styled.div`
-width: 100%;
-min-height: 320px;
-display: flex;
-flex-direction: column;
-align-items: center;
+  width: 100%;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    padding: 94px 0;
+  }
 `;
+ 
+
 export const AuthorSection = styled.div`
   width: 100%;
   min-height: 280px;
@@ -443,6 +453,7 @@ export const AuthorSection = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     flex-wrap: wrap;
     gap: 5px;
+
   }
 `;
 export const LogoContainer = styled.div`
@@ -451,65 +462,56 @@ export const LogoContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  @media screen and (${BREAKPOINTS.mobile}){
+  @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
     justify-content: space-between;
   }
-  `
-
-  export const Logo = styled.img`
-  width: 180px;
-  height: 32px;
-  @media screen and (${BREAKPOINTS.mobile}) {
-    width: 50px;
-    height: 13px;
-  }
 `;
 
+export const BlogContainer = styled.div`
+  width: 100%;
+  min-height: 470px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: ${COLORS.milk};
 
-export const  BlogContainer =styled.div`
-width:100%;
-min-height:470px;
-display: flex;
-justify-content:space-around;
-align-items:center;
-background-color:${COLORS.milk};
-
-@media  screen and (${BREAKPOINTS.mobile}){
-  flex-direction:column;
-}
-`
-export const  BlogContainerLeft =styled.div`
-width:380px;
-min-height:300px;
-display: flex;
-flex-direction:column;
-gap:15px;
-border-right:1px solid ${COLORS.lightGrey};
-@media  screen and (${BREAKPOINTS.mobile}){
-  width:100%;
-  align-items:center;
-  border-right:none;
-  border-bottom:1px solid ${COLORS.lightGrey};
-}
-`
-export const AboutBlog= styled.p`
-width:280px;
-min-height:100px;
-
-`
-export const  BlogContainerRight =styled.div`
-width:500px;
-min-height:350px;
-display: flex;
-flex-direction:column;
-gap:15px;
-@media  screen and (${BREAKPOINTS.mobile}){
-  width:100%;
-  align-items:center;
-}
-`
-export const BlogAbout= styled.h4`
+  @media screen and (${BREAKPOINTS.mobile}) {
+    flex-direction: column;
+  }
+`;
+export const BlogContainerLeft = styled.div`
+  width: 380px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-right: 1px solid ${COLORS.lightGrey};
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100%;
+    min-height: 150px;
+    align-items: center;
+    border-right: none;
+    border-bottom: 1px solid ${COLORS.lightGrey};
+  }
+`;
+export const AboutBlog = styled.p`
+  width: 280px;
+  min-height: 100px;
+`;
+export const BlogContainerRight = styled.div`
+  width: 500px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100%;
+    min-height: 150px;
+    align-items: center;
+  }
+`;
+export const BlogAbout = styled.h4`
 width:450px;
 min-height:150px;
 font-size:
@@ -523,5 +525,4 @@ font-size:18px;
 text-align:center;
 }
 
-`
-
+`;

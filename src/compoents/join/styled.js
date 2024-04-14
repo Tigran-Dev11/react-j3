@@ -14,7 +14,6 @@ export const JoinContainer = styled.div`
     width: 100%;
   }
 `;
-
 export const JoinTitle = styled.h3`
   width: 410px;
   min-height: 90px;

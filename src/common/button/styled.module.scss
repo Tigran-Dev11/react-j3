@@ -1,0 +1,42 @@
+.primary {
+  background-color: #ffd050;
+  width: 210px;
+  height: 50px;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  border: none;
+  font-size: 12px;
+  &:hover {
+    color: #232536;
+    font-weight: 600;
+  }
+}
+
+.secondary {
+  padding: 12px 50px;
+  background-color: #fff;
+  color: #232536;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  text-align: center;
+  font-weight: 700;
+  border: none;
+  font-size: 12px;
+}
+
+.default {
+  width: 400px;
+  height: 50px;
+  background-color: #ffd050;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  @media screen and (max-width: 768px) {
+    width: 350px;
+    height: 50px;
+  }
+}

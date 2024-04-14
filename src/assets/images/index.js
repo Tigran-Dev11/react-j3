@@ -1,28 +1,39 @@
-import burgerMenuIcon from "./burger-menu.png";
-import headerBackground from "./header-background.png";
-import facebookIcon from "./facebook-icon.png";
-import instagramIcon from "./instragram-icon.png";
-import twitterIcon from "./twitter-icon.png";
-import linkdinIcon from "./linkdin-icon.png";
-import postBackroundImg from "./post-background.png";
-import businesIcon from "./busines-icon.png";
-import economyIcon from "./economy-icon.png";
-import technologyIcon from "./technology-icon.png";
-import startUpIcon from "./startup-icon.png";
-import startUpBackground from "./startup-background.png";
-import authorFloyd from "./author-floyd.png";
-import authorDianne from "./author-dianne.png";
-import authorJenni from "./author-jenni.png";
-import authorlessile from "./author-lessile.png";
-import logoBurger from "./logo-burger.png";
-import logoLightDark from "./logo-light-dark.png";
-import loremLogo from "./logo-lorem.png";
-import logoRound from "./logo-round.png";
-import logoSquare from "./logo-square.png";
-import logoFeatureIn from "./logo-feature-in.png";
+import headerBackground from "./header-background.jpeg";
+import facebookIcon from "./facebook-icon.jpeg";
+import instagramIcon from "./instragram-icon.jpeg";
+import twitterIcon from "./twitter-icon.jpeg";
+import linkdinIcon from "./linkdin-icon.jpeg";
+import postBackroundImg from "./post-background.jpeg";
+import businesIcon from "./busines-icon.jpeg";
+import economyIcon from "./economy-icon.jpeg";
+import technologyIcon from "./technology-icon.jpeg";
+import startUpIcon from "./startup-icon.jpeg";
+import startUpBackground from "./startup-background.jpeg";
+import authorFloyd from "./author-floyd.jpeg";
+import authorJenni from "./author-jenni.jpeg";
+import authorlessile from "./author-lessile.jpeg";
+import logoLightDark from "./logo-light-dark.jpeg";
+import loremLogo from "./logo-lorem.jpeg";
+import logoRound from "./logo-round.jpeg";
+import logoSquare from "./logo-square.jpeg";
+import logoFeatureIn from "./logo-feature-in.jpeg";
+import blogHeaderBg from "./blog-header-bbg.jpeg";
+import authorDianne from "./author-dianne.jpeg";
+import burgerMenuIcon from "./burger-menu.jpeg";
+import logoBurger from "./logo-burger.jpeg";
+import blogPostFirst from "./blogPostFirst.jpeg";
+import blogPostSecond from "./blogPostSecond.jpeg";
+import blogPostThird from "./blogPostThird.jpeg";
+import blogPostFourth from "./blogPostFourth.jpeg";
+import aboutPostLeftBg from "./about-post-left-bg.jpeg";
+import aboutPostRightBg from "./about-post-right-bg.jpeg";
 export const IMAGES = {
   logoBurger,
+  blogPostFirst,
+  blogPostFourth,
+  blogPostSecond,
   logoFeatureIn,
+  blogPostThird,
   logoLightDark,
   loremLogo,
   logoRound,
@@ -43,4 +54,7 @@ export const IMAGES = {
   authorDianne,
   authorJenni,
   authorlessile,
+  blogHeaderBg,
+  aboutPostLeftBg,
+  aboutPostRightBg
 };

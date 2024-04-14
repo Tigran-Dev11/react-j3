@@ -16,7 +16,8 @@
     "sendMessage": "Send Message",
     "learnMore": "Learn More",
     "ourMision": "Our Mision",
-    "createAccount":"Create Account"
+    "createAccount": "Create Account",
+    "signIn": "Sign In"
   },
   "footer": {
     "subscribeTitle": "Subscribe to our news letter to get latest updates and news",
@@ -42,13 +43,6 @@
       "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
     },
 
-    "category": {
-      "title": "Choose A Catagory",
-      "busines": "Business",
-      "technology": "Technology",
-      "economy": "Economy",
-      "startUp": "Start Up"
-    },
     "startUp": {
       "title": "Why we started ",
       "description": "It started out as a simple idea and evolved into our passion"
@@ -61,6 +55,13 @@
         "lessileAlexandr": "Lessile Alexander"
       },
       "content": "Content Writer @Company"
+    },
+    "category": {
+      "title": "Choose A Catagory",
+      "busines": "Business",
+      "technology": "Technology",
+      "economy": "Economy",
+      "startUp": "Start Up"
     },
     "blog": {
       "title": "TESTIMONIALs",
@@ -90,6 +91,29 @@
         "subtitle": "020 7993 2905",
         "description": "hello@finsweet.com"
       }
+    }
+  },
+  "blog": {
+    "subTitle": {
+      "design": "Design tips for designers that cover everything you need",
+      "webDesign": "How to build rapport with your web design clients",
+      "logoDesign": "Logo design trends to avoid in 2022",
+      "figmaDesign": "8 Figma design systems you can download for free today",
+      "uiDesign": "Font sizes in UI design: The complete guide to follow"
+    }
+  },
+  "aboutUs": {
+    "subTitle": "We are a team of content writers who share their learnings",
+    "mission": {
+      "description": "Creating valuable content for creatives all around the world"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "A platform that empowers individuals to improve"
+    },
+    "post": {
+      "title": "Our team of creatives",
+      "blog": "Why we started this Blog"
     }
   }
 }

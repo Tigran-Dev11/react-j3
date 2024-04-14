@@ -81,7 +81,10 @@ export const AboutWorking = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
+    min-height:300px;
     flex-direction: column;
+    padding: 20px 0;
+ 
   }
 `;
 export const AboutWorkingLeft = styled.div`
@@ -148,6 +151,7 @@ export const AboutWorkingRight = styled.div`
   min-height: 150px;
   display: flex;
   flex-direction: column;
+  padding:0 20px; 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 50%;
   }

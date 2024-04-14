@@ -9,8 +9,8 @@ const AdminLayout = () => {
       </S.AdminContainer>
       <S.AdminRighySection>
         <S.AdminHeader></S.AdminHeader>
-        <Outlet/>
-      </S.AdminRighySection>    
+        <Outlet />
+      </S.AdminRighySection>
     </>
   );
 };

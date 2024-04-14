@@ -7,10 +7,10 @@ import { IMAGES } from "../../assets/images";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { SCHEME } from "../../validation";
 import { useForm } from "react-hook-form";
+
 const Footer = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
   const {
     register,
     handleSubmit,
@@ -25,11 +25,9 @@ const Footer = () => {
     <S.FooterContainer>
       <S.FooterHeader>
         <S.Title>
-          <S.Link to={`/${lngKey}${routesHref.home}`}> &#123;Finsweet</S.Link>
+           &#123;Finsweet
         </S.Title>
         <S.LinkContainer>
-          <S.Link to={`/${lngKey}${routesHref.home}`}>{t("nav.home")}</S.Link>
-          <S.Link to={`/${lngKey}${routesHref.blog}`}>{t("nav.blog")}</S.Link>
           <S.Link to={`/${lngKey}${routesHref.aboutUs}`}>
             {t("nav.aboutUs")}
           </S.Link>

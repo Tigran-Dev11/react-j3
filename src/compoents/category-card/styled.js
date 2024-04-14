@@ -22,7 +22,7 @@ cursor:pointer;
     min-height:180px;
 }
 @media screen and (${BREAKPOINTS.mobile}){
-    width:150px;
+    width:180px;
     min-height:150px;
 }
 `;

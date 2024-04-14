@@ -8,7 +8,7 @@ const Input = ({ placeholder, variant, type,register,error }) => {
   return (
  <>
     <input placeholder={placeholder} {...register}  className={inputClass[variant]} type={type}></input>
-     <p className={css.errorMessage}>{error}</p>
+    <p className={css.errorMessage}>{error}</p>
  </>
   );
  

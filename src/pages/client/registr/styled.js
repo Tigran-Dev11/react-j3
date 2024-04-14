@@ -1,4 +1,7 @@
+import { NavLink } from "react-router-dom/dist";
 import styled from "styled-components";
+import { COLORS } from "../../../assets/style/colors";
+
 
 export const RegistrContainer = styled.div`
   width: 100%;
@@ -14,5 +17,12 @@ export const RegisterForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 10px;
 `;
+export const Link= styled(NavLink)`
+text-decoration: none;
+color:${COLORS.darkBlue};
+font-size:16px;
+&:hover{
+  color:${COLORS.violet};
+}
+`

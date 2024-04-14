@@ -4,8 +4,10 @@ import PostCard from "../../../compoents/post-card";
 import CategoryCard from "../../../compoents/category-card";
 import AuthorCard from "../../../compoents/author-card";
 import Button from "../../../common/button";
-import { IMAGES } from "../../../assets/images";
-import Join from './../../../compoents/join/index';
+import Join from "./../../../compoents/join/index";
+import { authors } from "./author";
+import { category } from "./category";
+import { posts } from "./post";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -33,10 +35,11 @@ const Home = () => {
         </S.PostLeftContainer>
         <S.PostRightContainer>
           <S.PostRightTitel>{t("home.post.allTitle")}</S.PostRightTitel>
-          <PostCard />
+          {posts(t)?.map((item) => {
+            return <PostCard key={item.id} item={item} />;
+          })}
         </S.PostRightContainer>
       </S.PostContainer>
-
       <S.AboutContainer>
         <S.ColorsLine>
           <S.ColorsLineLeft></S.ColorsLineLeft>
@@ -63,7 +66,9 @@ const Home = () => {
       <S.CategoriContainer>
         <S.AboutDescriptions>{t("home.category.title")}</S.AboutDescriptions>
         <S.CategorySection>
-          <CategoryCard/>
+          {category(t).map((item) => {
+            return <CategoryCard key={item.id} item={item} />;
+          })}
         </S.CategorySection>
       </S.CategoriContainer>
       <S.StartUpContainer>
@@ -80,17 +85,12 @@ const Home = () => {
       <S.AuthorContainer>
         <S.AboutDescriptions>{t("home.category.title")}</S.AboutDescriptions>
         <S.AuthorSection>
-          <AuthorCard />
+          {authors(t).map((item) => {
+            return <AuthorCard key={item.id} item={item} />;
+          })}
         </S.AuthorSection>
       </S.AuthorContainer>
-      <S.LogoContainer>
-        <S.Logo src={IMAGES.logoFeatureIn} alt="logoFeatureIn"></S.Logo>
-        <S.Logo src={IMAGES.loremLogo} alt="loremLogo"></S.Logo>
-        <S.Logo src={IMAGES.logoLightDark} alt="logoLightDark"></S.Logo>
-        <S.Logo src={IMAGES.logoRound} alt="logoRound"></S.Logo>
-        <S.Logo src={IMAGES.logoBurger} alt="logoBurger"></S.Logo>
-        <S.Logo src={IMAGES.logoSquare} alt="logoSquare"></S.Logo>
-      </S.LogoContainer>
+      <S.LogoContainer>{/* <CarouselFade/> */}</S.LogoContainer>
       <S.BlogContainer>
         <S.BlogContainerLeft>
           <S.AboutTitles>{t("home.blog.title")}</S.AboutTitles>
@@ -103,7 +103,7 @@ const Home = () => {
           <S.BlogAbout>{t("home.blog.about")}</S.BlogAbout>
         </S.BlogContainerRight>
       </S.BlogContainer>
-      <Join/>
+      <Join />
     </S.HomeContainer>
   );
 };

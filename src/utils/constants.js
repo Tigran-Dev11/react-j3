@@ -9,6 +9,7 @@ export const routesHref = {
   contactUs: "/contact-us",
   privacyPolicy: "/privacy-policy",
   registr: "/registr",
+  login: "/login"
 };
 
 export const CLIENTS_ROUTES = {
@@ -18,6 +19,7 @@ export const CLIENTS_ROUTES = {
   contactUs: params.lng + routesHref.contactUs,
   privacyPolicy: params.lng + routesHref.privacyPolicy,
   registr: params.lng + routesHref.registr,
+  login: params.lng + routesHref.login
 };
 export const adminRoutesHref = {
   admin: "/admin/*",

@@ -23,7 +23,8 @@ export const PostCardContainer = styled.div`
     align-items: center;
     &:hover {
       width: 300px;
-      min-height: 100px;
+      min-height: 150px;
+      padding:0 10px;
     }
   }
 `;

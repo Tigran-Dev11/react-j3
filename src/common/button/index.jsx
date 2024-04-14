@@ -1,25 +1,19 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import * as S from "./styled";
+
+import css from "./styled.module.scss"
 
 const Button = (props) => {
-    const { title, variant, onClick, children }= props
-    let StyledButton;
-    switch (variant) {
-      case 'primary':
-        StyledButton = S.Primary;
-        break;
-      case 'secondary':
-        StyledButton = S.Secondary;
-        break;
-      default:
-        StyledButton = S.Default;
-    }
-  
-    return (
-      <StyledButton onClick={onClick}>
-        {children|| title}
-      </StyledButton>
-    );
+  const { title, variant, onClick, children } = props;
+  const classBtn = {
+    primary: css.primary,
+    secondary: css.secondary,
+    default: css.default
   };
-  
-  export default Button;
+
+  return <button className={classBtn[variant]} onClick={onClick }>
+    {children || title }
+  </button>;
+};
+
+export default Button;

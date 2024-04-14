@@ -1,30 +1,20 @@
-import { useTranslation } from "react-i18next";
+/* eslint-disable react/prop-types */
+
 import * as S from "./styled";
-import { authors } from "../../pages/client/home/author";
 
-
-const AuthorCard = () => {
-  const { t } = useTranslation();
+const AuthorCard = ({ item }) => {
   return (
     <>
-      {authors(t).map(({ id, name, img, content, socialMedia }) => {
-        return (
-          <S.AuthorCardContainer key={id}>
-            <S.AuthorCardImg src={img} alt={name} />
-            <S.AuthorCardName>{name}</S.AuthorCardName>
-            <S.AuthorCardDescription>{content}</S.AuthorCardDescription>
-            <S.SocialMediaLink>
-              {socialMedia?.map((icon, index) => {
-                return (
-                  <S.IconsContainer key={index}>
-                    <S.Icons src={icon} alt={name}></S.Icons>
-                  </S.IconsContainer>
-                );
-              })}
-            </S.SocialMediaLink>
-          </S.AuthorCardContainer>
-        );
-      })}
+      <S.AuthorCardContainer key={item.id}>
+        <S.AuthorCardImg src={item.img} alt={item.name} />
+        <S.AuthorCardName>{item.name}</S.AuthorCardName>
+        <S.AuthorCardDescription>{item.content}</S.AuthorCardDescription>
+        <S.SocialMediaLink>
+          {item.socialMedia.map((iconSrc, index) => (
+            <S.Icons key={index} src={iconSrc} alt="social media icon" />
+          ))}
+        </S.SocialMediaLink>
+      </S.AuthorCardContainer>
     </>
   );
 };

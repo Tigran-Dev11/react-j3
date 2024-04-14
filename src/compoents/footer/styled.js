@@ -26,8 +26,9 @@ export const FooterHeader = styled.div`
   align-items: center;
 
   @media screen and (${BREAKPOINTS.mobile}) {
+    justify-content: space-around;
   }
-  justify-content: space-around;
+
 `;
 export const Title = styled.h4`
   width: 150px;
@@ -50,9 +51,11 @@ export const LinkContainer = styled.div`
   align-items: center;
   padding: 0 15px;
   @media screen and (${BREAKPOINTS.mobile}) {
+    width: calc(100% - 150px)
     padding: 0;
     gap: 2px;
-    
+    justify-content: center;
+                         
   }
 `;
 export const Link = styled(NavLink)`
@@ -63,12 +66,13 @@ export const Link = styled(NavLink)`
   font-family: "Inter", sans-serif;
   &:hover {
     color: ${COLORS.lightGrey};
-   
+    
   }
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    font-size: 12px; 
-    font-weight: 1;
+    font-size: 10px; 
+    font-weight: 100;
+    width:80px;
   }
 `;
 

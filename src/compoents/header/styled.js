@@ -65,9 +65,11 @@ export const MenuContainer = styled.div`
   display: none;
   justify-content: center;
   align-items: center;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     display: flex;
   }
+  
 `;
 
 export const MenuIcon = styled.img`
@@ -76,13 +78,15 @@ export const MenuIcon = styled.img`
   justify-content: space-around;
   width: 30px;
   height: 30px;
-  background: transparent;
+  background: none;
   border: none;
   cursor: pointer;
   padding: 0;
-  z-index: 10;
+  z-index: 1;
   width: 30px;
   height: 30px;
+  border-radius:5px;
+  mix-blend-mode:darken;
 `;
 
 export const BurgerMenuContainer = styled.div`
@@ -93,28 +97,22 @@ export const BurgerMenuContainer = styled.div`
   top: 0;
   right: 0;
   bottom: 0;
+  left:0
   background-color: ${COLORS.white};
-  display: ${(props) => (props.isOpen ? "block" : "none")};
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  ${({ isOpen }) => isOpen && 'transform: translateY(0);'};
+  display: ${(props) => (props.isOpen ? 'block' : 'none')};
+  transition: transform 0.3s ease;
+  transform: ${(props) => (props.isOpen ? 'translateX(0)' : 'translateX(100%)')}; 
 `;
-export const Spancontainer = styled.div`
-width:100%;
-min-height:20px;
-display: flex;
-justify-content:flex-end
-align-items:center;
-`;
+
 export const BurgerMenuLinkContainer = styled.div`
   width: 400px;
-  min-height: 500px;
+  min-height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
 
 `;
 export const BurgerMenuLink = styled(NavLink)`
@@ -127,3 +125,4 @@ export const BurgerMenuLink = styled(NavLink)`
     color: ${COLORS.yellow};
   }
 `;
+

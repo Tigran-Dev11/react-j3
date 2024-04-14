@@ -3,6 +3,7 @@ import * as S from "./styled";
 import { IMAGES } from "../../assets/images";
 import { useTranslation } from "react-i18next";
 import { routesHref } from "../../utils/constants";
+import classNames from "classnames";
 
 const BurgerMenu = () => {
   const { t } = useTranslation();
@@ -12,10 +13,15 @@ const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <S.MenuContainer >
-      <S.MenuIcon src={IMAGES.burgerMenuIcon} alt="burger-icon" onClick={openMenu}></S.MenuIcon>
-      <S.BurgerMenuContainer isOpen={isOpen} onClick={openMenu}>
-        <S.BurgerMenuLinkContainer isOpen={isOpen}>
+    <S.MenuContainer>
+      <S.MenuIcon
+        src={IMAGES.burgerMenuIcon}
+        alt="burger-icon"
+        onClick={openMenu}
+        className={classNames("burger-icon", { open: isOpen })}
+      ></S.MenuIcon>
+      <S.BurgerMenuContainer  isOpen={isOpen} onClick={openMenu}>
+        <S.BurgerMenuLinkContainer >
           <S.BurgerMenuLink to={`/${lngKey}${routesHref.home}`}>
             {t("nav.home")}
           </S.BurgerMenuLink>

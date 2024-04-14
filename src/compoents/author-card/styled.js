@@ -13,6 +13,7 @@ export const AuthorCardContainer = styled.div`
   justify-content: center;
   gap: 5px;
   margin-top:10px;
+  cursor:pointer;
 
   &:hover {
     background-color: ${COLORS.milk};
@@ -77,6 +78,8 @@ export const SocialMediaLink = styled.div`
   min-height: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap:10px;
 
   @media screen and (${BREAKPOINTS.mobile}){
     width:100px;

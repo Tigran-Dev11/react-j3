@@ -1,16 +1,14 @@
-
-import {  ADMIN_ROUTES, CLIENTS_ROUTES } from "../utils/constants";
+import { ADMIN_ROUTES, CLIENTS_ROUTES } from "../utils/constants";
 import ClienLayout from "../layouts/clien-layout";
-import Home from './../pages/client/home';
-import AboutUs from './../pages/client/about';
+import Home from "./../pages/client/home";
+import AboutUs from "./../pages/client/about";
 import Blog from "../pages/client/blogs";
-import ContactUs from './../pages/client/contact-us';
-import PrivacyPolicy from './../pages/client/Privacy-policy';
-import Registr from './../pages/client/registr';
+import ContactUs from "./../pages/client/contact-us";
+import PrivacyPolicy from "./../pages/client/Privacy-policy";
+import Registr from "./../pages/client/registr";
 import AdminLayout from "../layouts/admin-layout";
 import Dashboard from "../pages/admin/dashboard";
-
-
+import Login from "../pages/client/login";
 
 export const routes = [
   {
@@ -40,7 +38,10 @@ export const routes = [
       {
         component: Registr,
         path: CLIENTS_ROUTES.registr,
-      }
+      },
+      { component: Login, 
+        path: CLIENTS_ROUTES.login,
+      },
     ],
   },
 
@@ -49,11 +50,9 @@ export const routes = [
     path: ADMIN_ROUTES.admin,
     children: [
       {
-        component: Dashboard  ,
+        component: Dashboard,
         path: ADMIN_ROUTES.dashboard,
       },
-      
     ],
   },
-  
 ];

@@ -1,30 +1,20 @@
-import { useTranslation } from "react-i18next";
+/* eslint-disable react/prop-types */
+import * as S from "./styled";
 
-import * as S from "./styled"
-import { category } from './../../pages/client/home/category';
-
-const CategoryCard = () => {
-    const {t}= useTranslation()
-    return (
-       <>
-        {category(t).map(({id, img,title, description})=>{
-            return(
-          
-                <S.CategoryCardContainer key={id} >
-                    <S.CategoryCardImg src={img} alt={title}/>
-                    <S.CategoryCardContent>
-                        <S.CategoryCardTitle>{title}</S.CategoryCardTitle>
-                        <S.CategoryCardDescription>{description}</S.CategoryCardDescription>
-                    </S.CategoryCardContent>
-                </S.CategoryCardContainer>
-        
-            )
-        })}
-        
-</>
-            
-      
-    );
-}
+const CategoryCard = ({ item }) => {
+  return (
+    <>
+    <S.CategoryCardContainer key={item.id}>
+      <S.CategoryCardImg src={item.img} alt={item.title} />
+      <S.CategoryCardContent>
+        <S.CategoryCardTitle>{item.title}</S.CategoryCardTitle>
+        <S.CategoryCardDescription>
+          {item.description}
+        </S.CategoryCardDescription>
+      </S.CategoryCardContent>
+    </S.CategoryCardContainer>
+    </>
+  );
+};
 
 export default CategoryCard;
