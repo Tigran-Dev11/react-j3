@@ -17,6 +17,7 @@ export const RegisterForm = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap:10px;
 `;
 export const Link= styled(NavLink)`
 text-decoration: none;

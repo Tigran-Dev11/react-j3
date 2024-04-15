@@ -91,10 +91,11 @@ export const MenuIcon = styled.img`
 
 export const BurgerMenuContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height:calc(100vh - 80px);
   background-color: ${COLORS.white};
   position: fixed;
-  top: 0;
+  z-index:4;
+  top: 80;
   right: 0;
   bottom: 0;
   left:0
@@ -105,7 +106,6 @@ export const BurgerMenuContainer = styled.div`
 `;
 
 export const BurgerMenuLinkContainer = styled.div`
-  width: 400px;
   min-height: 400px;
   display: flex;
   flex-direction: column;

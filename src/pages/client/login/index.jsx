@@ -8,26 +8,27 @@ import { SCHEME } from "../../../validation";
 
 const Login = () => {
   const { t } = useTranslation();
-const {
-login,
-handleSubmit,
-formState: { errors },
+  const {
+    login,
+    handleSubmit,
+    formState: { errors },
   } = useForm({
     resolver: yupResolver(SCHEME.loginScheme),
   });
 
-
-  const loginToAccount =(data)=>{
-console.log(data);
-  }
+  const loginToAccount = (data) => {
+    console.log(data);
+  };
   return (
     <S.LoginContainer>
       <S.LoginForm onSubmit={handleSubmit(loginToAccount)}>
-        <Input type={"email"} variant="secondary"
-         placeholder={"Email"}
+        <Input
+          type={"email"}
+          variant="secondary"
+          placeholder={"Email"}
           login={login("email")}
           error={errors?.email?.message}
-          />
+        />
         <Input
           type={"password"}
           variant="secondary"
