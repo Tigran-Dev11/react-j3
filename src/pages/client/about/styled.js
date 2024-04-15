@@ -138,12 +138,16 @@ export const AboutHeaderInformation = styled.p`
   }
 `;
 export const AuthorsContainer = styled.div`
-  width: 100%;
+  width: 1400px;
   min-height: 350px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   @media screen and (${BREAKPOINTS.mobile}) {
-    flex-wrap: wrap;
+    width: 600px;
+   justify-content:center;
+   gap:10px;
+  
   }
 `;
 export const AboutPostSection = styled.div`

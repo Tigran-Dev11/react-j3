@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 
 
-import * as S from "./styled"
+import * as S from "./styled";
 const BlogCard = ({item}) => {
 
     return (
-        <S.CardItems key={item.id}>
+        <S.CardItems key={item.id}   >
             <S.CardImg src={item.img} alt={item.title}></S.CardImg>
             <S.CardInfoContainer>
                 <S.CardCategory>{item.title}</S.CardCategory>

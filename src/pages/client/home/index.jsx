@@ -2,12 +2,14 @@ import { useTranslation } from "react-i18next";
 import * as S from "./styled";
 import PostCard from "../../../compoents/post-card";
 import CategoryCard from "../../../compoents/category-card";
-import AuthorCard from "../../../compoents/author-card";
 import Button from "../../../common/button";
 import Join from "./../../../compoents/join/index";
-import { authors } from "./author";
 import { category } from "./category";
 import { posts } from "./post";
+import SilderAuthors from "../../../compoents/slider/authors-slider";
+import SliderLogos from './../../../compoents/slider/logos-slider/index';
+
+
 
 const Home = () => {
   const { t } = useTranslation();
@@ -85,12 +87,12 @@ const Home = () => {
       <S.AuthorContainer>
         <S.AboutDescriptions>{t("home.category.title")}</S.AboutDescriptions>
         <S.AuthorSection>
-          {authors(t).map((item) => {
-            return <AuthorCard key={item.id} item={item} />;
-          })}
+        <SilderAuthors/>
         </S.AuthorSection>
       </S.AuthorContainer>
-      <S.LogoContainer>{/* <CarouselFade/> */}</S.LogoContainer>
+      <S.LogoContainer>
+        <SliderLogos/>
+      </S.LogoContainer>
       <S.BlogContainer>
         <S.BlogContainerLeft>
           <S.AboutTitles>{t("home.blog.title")}</S.AboutTitles>

@@ -23,9 +23,10 @@ export const AuthorCardContainer = styled.div`
     min-height:180px;
 }
 @media screen and (${BREAKPOINTS.mobile}){
-    width:200px;
+    width:150px;
     min-height:150px;
-}
+   
+} 
 `;
 
 export const AuthorCardImg = styled.img`
@@ -36,6 +37,10 @@ export const AuthorCardImg = styled.img`
   @media screen and (${BREAKPOINTS.tablet}){
     width:100px;
     height:100px;
+}
+@media screen and (${BREAKPOINTS.mobile}){
+  width:80px;
+  height:80px;
 }
 `;
 export const AuthorCardName = styled.h3`
@@ -56,7 +61,7 @@ export const AuthorCardName = styled.h3`
 @media screen and (${BREAKPOINTS.mobile}){
     width:150px;
     min-height:20px;
-    font-size:18px;
+    font-size:14px;
 }
 `;
 export const AuthorCardDescription = styled.p`
@@ -70,6 +75,7 @@ export const AuthorCardDescription = styled.p`
 
   @media screen and (${BREAKPOINTS.mobile}){
     width:120px;
+    font-size: 12px;
 
 }
 `;
@@ -90,6 +96,11 @@ export const SocialMediaLink = styled.div`
 export const IconsContainer = styled.div`
 width: 200px;
 min-height: 20px;
+
+@media screen and (${BREAKPOINTS.mobile}){
+  width:100px;
+  min-height:20px;
+}
 `
 
 export const Icons = styled.img`

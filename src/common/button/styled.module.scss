@@ -11,7 +11,11 @@
   &:hover {
     color: #232536;
     font-weight: 600;
+    &::after{
+      content: ">";
+    } 
   }
+
 }
 
 .secondary {

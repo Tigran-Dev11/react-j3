@@ -13,5 +13,8 @@ border: 1px solid;
 export const LoginForm = styled.form`
 width: 500px;
 height: 300px;
-border: 1px solid;
+display: flex;
+flex-direction: column;
+gap:15px;
+align-items: center;
 `

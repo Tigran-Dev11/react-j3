@@ -5,11 +5,12 @@ import { BREAKPOINTS } from "../../assets/style/breakpoints";
 
 export const CategoryCardContainer = styled.div`
 width:280px;
-min-height:230px;
+min-height:180px;
 display:flex;
 flex-direction:column;
 border:1px solid ${COLORS.lightGrey};
 padding:20px;
+gap:15px;
 cursor:pointer;
 
 &:hover{
@@ -43,7 +44,8 @@ export const CategoryCardContent = styled.div`
   width: 200px;
   min-height: 100px;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
+  gap:15px;
 
   @media screen and (${BREAKPOINTS.tablet}){
     width:100px;

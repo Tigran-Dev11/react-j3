@@ -377,10 +377,11 @@ export const CategoriContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+ justify-content: space-around;
 `;
 export const CategorySection = styled.div`
   width: 100%;
-  min-height: 280px;
+  min-height: 200px;
   display: flex;
   justify-content: space-around;
   @media screen and (${BREAKPOINTS.mobile}) {
@@ -440,7 +441,8 @@ export const AuthorContainer = styled.div`
   align-items: center;
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    padding: 94px 0;
+    margin-top: 100px;
+    justify-content: space-around;
   }
 `;
  
@@ -470,7 +472,7 @@ export const LogoContainer = styled.div`
 
 export const BlogContainer = styled.div`
   width: 100%;
-  min-height: 470px;
+  min-height: 370px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -501,9 +503,10 @@ export const AboutBlog = styled.p`
 `;
 export const BlogContainerRight = styled.div`
   width: 500px;
-  min-height: 350px;
+  min-height: 300px;
   display: flex;
   flex-direction: column;
+
   gap: 15px;
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;

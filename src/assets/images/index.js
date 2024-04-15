@@ -27,7 +27,15 @@ import blogPostThird from "./blogPostThird.jpeg";
 import blogPostFourth from "./blogPostFourth.jpeg";
 import aboutPostLeftBg from "./about-post-left-bg.jpeg";
 import aboutPostRightBg from "./about-post-right-bg.jpeg";
+import authorRobertFox from "./author-robertFox.jpeg";
+import authorJacobJones from "./author-jacobJones.jpeg";
+import authorGuyHawkin from "./author-guyHawkins.jpeg";
+import authorEleanorPena from "./author-eleanorPena.jpeg";
 export const IMAGES = {
+  authorRobertFox,
+  authorJacobJones,
+  authorGuyHawkin,
+  authorEleanorPena,
   logoBurger,
   blogPostFirst,
   blogPostFourth,
@@ -56,5 +64,5 @@ export const IMAGES = {
   authorlessile,
   blogHeaderBg,
   aboutPostLeftBg,
-  aboutPostRightBg
+  aboutPostRightBg,
 };
