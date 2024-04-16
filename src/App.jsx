@@ -9,16 +9,18 @@ import Spomsors from "./components/Sponsors/Spomsors";
 import Footer from "./components/Footer/Footer";
 
 
+
 function App() {
   return(
     <div>
+      
       <Header/>
-      {/* <Home/>
+       <Home/>
       <Categories/>
-      <Destinations/>
-      <Guide/>
-      <Spomsors/>
-      <Footer/> */}
+     <Destinations/>
+       <Guide/>
+    <Spomsors/>
+      <Footer/> 
     </div>
   )
 }

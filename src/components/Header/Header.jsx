@@ -1,30 +1,33 @@
-import React from "react";
- import "./Header.css"
+
+import React, {useState} from "react";
+import "./Header.scss"
  import { AiFillCloseCircle } from "react-icons/ai";
  
  import { TbGridDots } from "react-icons/tb";
 const Header=()=>{
-  `const  [active,setActive] = useState("menu");
-  const showNavBar = ()=>{
-    setActive("menu showMenu");
-  }; 
- const removsShowNavBar=()=>{
-    setActive"menu") 
+ const [active,setActive] = useState("menu");
+ const showNavbar=()=>{
+  setActive("menu showMenu")
+ }
+  const remeveShoWNavbar=()=>{
+    setActive("menu")
   }
-  const[transparent,setTransparent]=useState("Navbar");
+  const[transparent,setTransparent]=useState("Navbar")
   const addBg=()=>{
-    if(window.scrollY>=10)
-    setTransparent("Navbar activeHeader")
+    if (window.scrollY>=10){
+      setTransparent("Navbar activeHeader")
+    }else{
+      setTransparent("Navbar")
+    }
   }
-  }
-  `
+  window.addEventListener("scroll",addBg)
 return (
-        <div className="Navbar">
+        <div className={transparent}>
      <div className="logoDiv">
-            <h2 className="logo">Yago</h2>
+             <h2 className="logo">Yago</h2> 
                 </div>
-                 <div className="active">
-              <div className="list">
+                 <div className={active}>
+              <div className="list flex">
                 <li>
                     <a href="">Destinations</a>
                 </li>
@@ -48,11 +51,11 @@ return (
                   <option value="">SP</option>
                 </select>
               </div> 
-              <div className="closeIcon" >
+              <div className="closeIcon"onClick= {remeveShoWNavbar} >
                 <AiFillCloseCircle className="icom"/>
               </div>
             </div>
-            <div className="teggleIcon" >
+            <div className="teggleIcon" onClick={showNavbar}>
                 <TbGridDots className="icon"/>
             </div>
         </div>
@@ -61,4 +64,4 @@ return (
 }
 
 export default Header
-// onClick={removsShowNavBar}onClick={ShowNavBar}
+// 

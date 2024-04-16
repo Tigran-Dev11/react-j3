@@ -1,8 +1,65 @@
 import React from "react";
-// import "./Guide.css"
+import "./Guide.scss"
+import ren from "../../Assets/iconss.png"
+import renn from "../../Assets/iconsss.png"
+import rennn from "../../Assets/iconssss.png"
+import rem from "../../Assets/toee.jpg"
 const Guide=()=>{
     return(
-        <div className="Guide">Guide</div>
+        <div className="Guide contaner section">
+            <div className="SecContaner flex">
+                <div className="rextDiv grid">
+                    <div className="secHeader">
+                        <span>Easy and Fast</span>
+                        <h2>Book Your Naxt Trip</h2>
+                    </div>
+                    <div className="secContant grind">
+                        <div className="singleSection flex">
+                              
+                            
+                            <img src={ren}alt="" className="iconn"/>
+                            <div className="text">
+                                <span>Make a choice</span>
+                                <p>Loren ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         
+                       </div>
+                    
+                 </div> 
+                 <div className="secContant grind">
+                        <div className="singleSection flex">
+                              
+                            
+                            <img src={renn}alt="" className="iconn"/>
+                            <div className="text">
+                                <span>Make a choice</span>
+                                <p>Loren ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         
+                       </div>
+                    
+                 </div> 
+                  <div className="secContant grind">
+                        <div className="singleSection flex">
+                              
+                            
+                            <img src={rennn}alt="" className="iconn"/>
+                            <div className="text">
+                                <span>Make a choice</span>
+                                <p>Loren ipsum dolor sit amet consectetur adipisicing elit.</p>
+                         
+                       </div>
+                    
+             
+                       </div>
+            </div>
+        </div>
+                       </div>
+
+        </div>
+        <div className="imgDiv">
+         <img src={rem}/>
+        </div>
+            </div>
+        </div>
     )
 }
 
