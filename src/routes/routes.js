@@ -12,7 +12,7 @@ import CategorySingle from "/src/pages/client/category-single";
 import ClienLayout from "/src/layouts/clien-layout";
 import AuthorSingle from "/src/pages/client/author-single";
 import Dashborad from "../pages/admin/dashboard";
-
+import User from "../pages/admin/user";
 
 export const routes = [
   {
@@ -21,41 +21,41 @@ export const routes = [
     children: [
       {
         component: Home,
-        path: CLIENTS_ROUTES.home,
+        path: CLIENTS_ROUTES.home
       },
       {
         component: AboutUs,
-        path: CLIENTS_ROUTES.aboutUs,
+        path: CLIENTS_ROUTES.aboutUs
       },
       {
         component: Blog,
-        path: CLIENTS_ROUTES.blog,
+        path: CLIENTS_ROUTES.blog
       },
       {
         component: ContactUs,
-        path: CLIENTS_ROUTES.contactUs,
+        path: CLIENTS_ROUTES.contactUs
       },
       {
         component: PrivacyPolicy,
-        path: CLIENTS_ROUTES.privacyPolicy,
+        path: CLIENTS_ROUTES.privacyPolicy
       },
       {
         component: Registr,
-        path: CLIENTS_ROUTES.registr,
+        path: CLIENTS_ROUTES.registr
       },
       {
         component: Login,
-        path: CLIENTS_ROUTES.login,
+        path: CLIENTS_ROUTES.login
       },
       {
         component: CategorySingle,
-        path: CLIENTS_ROUTES.categorySingle,
+        path: CLIENTS_ROUTES.categorySingle
       },
       {
         component: AuthorSingle,
-        path: CLIENTS_ROUTES.authorSingle,
-      },
-    ],
+        path: CLIENTS_ROUTES.authorSingle
+      }
+    ]
   },
 
   {
@@ -66,6 +66,10 @@ export const routes = [
         component: Dashborad,
         path: ADMIN_ROUTES.dashboard
       },
-    ],
-  },
+      {
+        component: User,
+        path: "/:lng/admin/user"
+      }
+    ]
+  }
 ];

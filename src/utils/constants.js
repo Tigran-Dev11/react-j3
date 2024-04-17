@@ -27,11 +27,11 @@ export const CLIENTS_ROUTES = {
 };
 
 export const adminRoutesHref = {
-  admin: "/admin/*",
-  dashboard: "/admin/dashboard",
+  admin: ":lng/admin",
+  dashboard: "/:lng/admin/dashboard",
 };
 
 export const ADMIN_ROUTES = {
-  admin: params.lng + adminRoutesHref.admin,
-  dashboard: params.lng + adminRoutesHref.dashboard,
+  admin: adminRoutesHref.admin,
+  dashboard: adminRoutesHref.dashboard,
 };

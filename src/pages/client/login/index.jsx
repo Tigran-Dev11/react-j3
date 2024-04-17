@@ -26,7 +26,7 @@ const Login = () => {
     const savedPassword = import.meta.env.VITE_PASSWORD;
 
     if (data.email === savedLogin && data.password === savedPassword) {
-      navigate(`/${lngKey}${adminRoutesHref.admin}`);
+      navigate(`/${lngKey}${adminRoutesHref.dashboard}`);
       console.log("admin");
     } else {
       navigate("/");
