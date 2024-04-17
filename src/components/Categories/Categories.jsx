@@ -1,8 +1,8 @@
 import React from "react";
  import "./Categories.scss";
-import sateligh from "../../Assets/sateligh.jpg";
-import rek from "../../Assets/rec.jpg";
-import rex from "../../Assets/rev.png"
+import sateligh from "../../assets/sateligh.jpg";
+import rek from "../../assets/rec.jpg";
+import rex from "../../assets/rev.png"
 const Categories=()=>{
     return(
         <div className="Categories contaner section">

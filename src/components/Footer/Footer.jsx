@@ -4,8 +4,8 @@ import React from "react";
  import { AiFillTwitterCircle } from "react-icons/ai";
  import {BsYoutube,} from "react-icons/bs";
  import {BiLogoFacebookCircle} from "react-icons/bi";
- import asd1 from "../../Assets/app.png";
- import asd2 from "../../Assets/appe.png";
+ import asd1 from "../../assets/app.png";
+ import asd2 from "../../assets/appe.png";
 const Footer=()=>{
     return(
         <div className="Footer contaner">

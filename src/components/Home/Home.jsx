@@ -1,7 +1,7 @@
 import React from "react";
  import "./Home.scss"
- import aeropians from "../../Assets/plane.jpg"
- import mainImage from "../../Assets/main.jpg"
+ import aeropians from "../../assets/plane.jpg"
+ import mainImage from "../../assets/main.jpg"
 import {FaPlay} from "react-icons/fa"
 const Home=()=>{
     return(

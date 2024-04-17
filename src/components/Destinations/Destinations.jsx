@@ -1,6 +1,6 @@
 import React from "react";
  import "./Destinations.scss"
- import srk from "../../Assets/dastination.jpg"
+ import srk from "../../assets/dastination.jpg"
  import { FaLocationArrow } from "react-icons/fa";
 const Destinations=()=>{
     return(

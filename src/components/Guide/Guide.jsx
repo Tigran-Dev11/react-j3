@@ -1,9 +1,9 @@
 import React from "react";
 import "./Guide.scss"
-import ren from "../../Assets/iconss.png"
-import renn from "../../Assets/iconsss.png"
-import rennn from "../../Assets/iconssss.png"
-import rem from "../../Assets/toee.jpg"
+import ren from "../../assets/iconss.png"
+import renn from "../../assets/iconsss.png"
+import rennn from "../../assets/iconssss.png"
+import rem from "../../assets/toee.jpg"
 const Guide=()=>{
     return(
         <div className="Guide contaner section">
