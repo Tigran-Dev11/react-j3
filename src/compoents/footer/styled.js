@@ -5,7 +5,7 @@ import { BREAKPOINTS } from "../../assets/style/breakpoints";
 
 export const FooterContainer = styled.footer`
   width: 100%;
-  min-height: 400px;;
+  min-height: 400px;
   background-color: ${COLORS.darkBlue};
   display: flex;
   flex-direction: column;
@@ -13,9 +13,8 @@ export const FooterContainer = styled.footer`
   justify-content: center;
 
   @media screen and (${BREAKPOINTS.mobile}) {
-justify-content: space-around;
-
-  
+    justify-content: space-around;
+  }
 `;
 
 export const FooterHeader = styled.div`
@@ -28,8 +27,8 @@ export const FooterHeader = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     justify-content: space-around;
   }
-
 `;
+
 export const Title = styled.h4`
   width: 150px;
   color: ${COLORS.white};
@@ -39,7 +38,6 @@ export const Title = styled.h4`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     font-size: 18px;
-  
   }
 `;
 
@@ -50,29 +48,30 @@ export const LinkContainer = styled.div`
   justify-content: space-around;
   align-items: center;
   padding: 0 15px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: calc(100% - 150px)
     padding: 0;
     gap: 2px;
-    justify-content: center;
-                         
+    justify-content: center;    
   }
 `;
+
 export const Link = styled(NavLink)`
   text-decoration: none;
   font-size: 18px;
   font-weight: 800;
   color: ${COLORS.white};
   font-family: "Inter", sans-serif;
+
   &:hover {
     color: ${COLORS.lightGrey};
-    
   }
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    font-size: 10px; 
+    font-size: 10px;
     font-weight: 100;
-    width:80px;
+    width: 80px;
   }
 `;
 
@@ -81,10 +80,12 @@ export const SubscriberContainer = styled.div`
   min-height: 250px;
   background-color: ${COLORS.darkGrey};
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 700px;
+    gap:20px;
+
   }
 
   @media screen and (${BREAKPOINTS.mobile}) {
@@ -96,7 +97,7 @@ export const SubscriberContainer = styled.div`
 `;
 
 export const SubscribeTitle = styled.h3`
-  width: 500px;
+  width: 490px;
   min-height: 90px;
   font-family: "Sen", sans-serif;
   color: ${COLORS.white};
@@ -107,33 +108,35 @@ export const SubscribeTitle = styled.h3`
 
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 300px;
-font-size:24px;
+    font-size: 24px;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     min-height: 60px;
-    width: 100%;
+    width:400px;
     font-size: 20px;
   }
 `;
 
 export const SubscribeForm = styled.form`
-  width: 490px;
+  width: 400px;
   min-height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
 
-  @media screen and (${BREAKPOINTS.tablet}){
-   width:400px;
-   flex-direction: column;
+  @media screen and (${BREAKPOINTS.tablet}) {
+    width: 400px;
+    flex-direction: column;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     flex-direction: column;
     min-height: 100px;
     width: 400px;
   }
 `;
+
 export const FooterInformation = styled.div`
   width: 100%;
   min-height: 100px;
@@ -156,6 +159,7 @@ export const InfoTitle = styled.p`
     width: 400px;
   }
 `;
+
 export const FooterIcons = styled.div`
   width: 400px;
   min-height: 50px;
@@ -167,4 +171,5 @@ export const FooterIcons = styled.div`
 export const Icon = styled.img`
   width: 15px;
   height: 15px;
+  mix-blend-mode: multiply;
 `;

@@ -1,15 +1,16 @@
-import Button from "../../../common/button";
-import CategoryCard from "../../../compoents/category-card";
-import Join from "../../../compoents/join";
-import { category } from "../home/category";
-import { blogs } from "./blog";
-
-import * as S from "./styled";
 import { useTranslation } from "react-i18next";
-import BlogCard from "./../../../compoents/blog-cards/index";
+import * as S from "./styled";
+import Button from "/src/common/button/index";
+import { blogs } from "./blog";
+import BlogCard from "/src/compoents/blog-cards";
+import { category } from "../home/data";
+import Join from "/src/compoents/join";
+import CategoryCard from "/src/compoents/category-card";
+import { routesHref } from "/src/utils/constants";
 
 const Blog = () => {
   const { t } = useTranslation();
+  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   return (
     <S.BlogContainer>
       <S.HeaderContainer>
@@ -18,7 +19,10 @@ const Blog = () => {
           <S.HeaderSubtitle>{t("home.subTitle")}</S.HeaderSubtitle>
           <S.AuthorsName>{t("home.post.authorInfo")}</S.AuthorsName>
           <S.Description>{t("home.post.information")}</S.Description>
-          <Button title={t("btn.readMore")} variant="primary" />
+          <S.Link to={`/${lngKey}${routesHref.aboutUs}`}>
+            {" "}
+            <Button title={t("btn.readMore")} variant="primary" />
+          </S.Link>
         </S.HeaderContainerLeft>
         <S.HeaderContainerRight></S.HeaderContainerRight>
       </S.HeaderContainer>

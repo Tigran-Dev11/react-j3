@@ -3,6 +3,7 @@ import { COLORS } from "../../../assets/style/colors";
 import { FONTS } from "../../../assets/style/fonts";
 import { IMAGES } from "../../../assets/images";
 import { BREAKPOINTS } from "../../../assets/style/breakpoints";
+import { NavLink } from "react-router-dom";
 
 export const BlogContainer = styled.div`
   width: 100%;
@@ -36,6 +37,7 @@ export const HeaderContainerLeft = styled.div`
   gap: 10px;
   padding: 10px;
 `;
+
 export const HeaderTitle = styled.p`
   width: 160px;
   min-height: 20px;
@@ -47,6 +49,7 @@ export const HeaderTitle = styled.p`
   text-align: left;
   color: ${COLORS.darkBlue};
 `;
+
 export const HeaderSubtitle = styled.h2`
   width: 400px;
   min-height: 20px;
@@ -58,6 +61,7 @@ export const HeaderSubtitle = styled.h2`
   text-align: left;
   color: ${COLORS.darkBlue};
 `;
+
 export const AuthorsName = styled.p`
   width: 200px;
   min-height: 20px;
@@ -67,10 +71,12 @@ export const AuthorsName = styled.p`
   line-height: 20px;
   text-align: left;
   color: ${COLORS.grey};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     color: ${COLORS.darkBlue};
   }
 `;
+
 export const Description = styled.p`
   width: 400px;
   min-height: 56px;
@@ -79,10 +85,12 @@ export const Description = styled.p`
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     color: ${COLORS.darkBlue};
   }
 `;
+
 export const HeaderContainerRight = styled.div`
   width: 520px;
   min-height: 400px;
@@ -95,11 +103,14 @@ export const HeaderContainerRight = styled.div`
     display: none;
   }
 `;
+
 export const CategorySection = styled.div`
   width: 100%;
   min-height: 280px;
   display: flex;
   justify-content: space-around;
+  padding:20px 0;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     flex-wrap: wrap;
     gap: 5px;
@@ -116,6 +127,7 @@ export const AboutDescriptions = styled.h2`
   letter-spacing: -2px;
   text-align: left;
   color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     font-size: 28px;
   }
@@ -128,6 +140,7 @@ export const BlogPostsContainer = styled.div`
   flex-direction: column;
   padding: 10px;
 `;
+
 export const BlogPostsTitle = styled.h1`
   width: 100%;
   height: 64px;
@@ -140,6 +153,7 @@ export const BlogPostsTitle = styled.h1`
   text-align: left;
   border-bottom: 1px solid ${COLORS.grey};
 `;
+
 export const BlogCardContainer = styled.div`
   width: 1000px;
   min-height: 600px;
@@ -147,3 +161,7 @@ export const BlogCardContainer = styled.div`
   flex-direction: column;
   gap: 10px;
 `;
+
+export const Link = styled(NavLink)`
+text-decoration: none;
+`

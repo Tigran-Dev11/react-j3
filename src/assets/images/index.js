@@ -1,68 +1,72 @@
-import headerBackground from "./header-background.jpeg";
-import facebookIcon from "./facebook-icon.jpeg";
-import instagramIcon from "./instragram-icon.jpeg";
-import twitterIcon from "./twitter-icon.jpeg";
-import linkdinIcon from "./linkdin-icon.jpeg";
-import postBackroundImg from "./post-background.jpeg";
-import businesIcon from "./busines-icon.jpeg";
-import economyIcon from "./economy-icon.jpeg";
-import technologyIcon from "./technology-icon.jpeg";
-import startUpIcon from "./startup-icon.jpeg";
-import startUpBackground from "./startup-background.jpeg";
-import authorFloyd from "./author-floyd.jpeg";
-import authorJenni from "./author-jenni.jpeg";
-import authorlessile from "./author-lessile.jpeg";
-import logoLightDark from "./logo-light-dark.jpeg";
-import loremLogo from "./logo-lorem.jpeg";
-import logoRound from "./logo-round.jpeg";
-import logoSquare from "./logo-square.jpeg";
-import logoFeatureIn from "./logo-feature-in.jpeg";
-import blogHeaderBg from "./blog-header-bbg.jpeg";
-import authorDianne from "./author-dianne.jpeg";
-import burgerMenuIcon from "./burger-menu.jpeg";
-import logoBurger from "./logo-burger.jpeg";
-import blogPostFirst from "./blogPostFirst.jpeg";
-import blogPostSecond from "./blogPostSecond.jpeg";
-import blogPostThird from "./blogPostThird.jpeg";
-import blogPostFourth from "./blogPostFourth.jpeg";
-import aboutPostLeftBg from "./about-post-left-bg.jpeg";
-import aboutPostRightBg from "./about-post-right-bg.jpeg";
-import authorRobertFox from "./author-robertFox.jpeg";
-import authorJacobJones from "./author-jacobJones.jpeg";
-import authorGuyHawkin from "./author-guyHawkins.jpeg";
-import authorEleanorPena from "./author-eleanorPena.jpeg";
+import headerBackground from "./header-background.webp"
+import facebookIcon from "./fb-icon.webp";
+import instagramIcon from "./instagram-icon.webp";
+import twitterIcon from "./twitter-icon.webp";
+import linkdinIcon from "./linkdin-icon.webp";
+import postBackgroundImg from "./post-background.webp";
+import businesIcon from "./busines-icon.webp";
+import economyIcon from "./economy-icon.webp";
+import technologyIcon from "./technology-icon.webp";
+import startUpIcon from "./startup-icon.webp";
+import startUpBackground from "./startup-background.webp";
+import authorFloyd from "./author-floyd.webp";
+import authorJenni from "./author-jenni.webp";
+import authorlessile from "./author-lessile.webp";
+import logoLightDark from "./logo-light-dark.webp";
+import loremLogo from "./logo-lorem.webp";
+import logoRound from "./logo-round.webp";
+import logoSquare from "./logo-square.webp";
+import logoFeatureIn from "./logo-feature-in.webp";
+import blogHeaderBg from "./blog-header-bg.webp";
+import authorDianne from "./author-dianne.webp";
+import burgerMenuIcon from "./burger-menu.webp";
+import logoBurger from "./logo-burger.webp";
+import blogPostFirst from "./blogPostFirst.webp";
+import blogPostSecond from "./blogPostSecond.webp";
+import blogPostThird from "./blogPostThird.webp";
+import blogPostFourth from "./blogPostFourth.webp";
+import aboutPostLeftBg from "./about-post-left-bg.webp";
+import aboutPostRightBg from "./about-post-right-bg.webp";
+import authorRobertFox from "./author-robertFox.webp";
+import authorJacobJones from "./author-jacobJones.webp";
+import authorGuyHawkin from "./author-guyHawkins.webp";
+import authorEleanorPena from "./author-eleanorPena.webp";
+import closeIcon from "./close-icon.webp";
+
 export const IMAGES = {
-  authorRobertFox,
-  authorJacobJones,
-  authorGuyHawkin,
-  authorEleanorPena,
-  logoBurger,
-  blogPostFirst,
-  blogPostFourth,
-  blogPostSecond,
-  logoFeatureIn,
-  blogPostThird,
-  logoLightDark,
-  loremLogo,
-  logoRound,
-  logoSquare,
-  burgerMenuIcon,
-  headerBackground,
-  facebookIcon,
-  instagramIcon,
-  twitterIcon,
-  linkdinIcon,
-  postBackroundImg,
-  businesIcon,
-  economyIcon,
-  technologyIcon,
-  startUpIcon,
-  startUpBackground,
-  authorFloyd,
-  authorDianne,
-  authorJenni,
-  authorlessile,
-  blogHeaderBg,
-  aboutPostLeftBg,
-  aboutPostRightBg,
-};
+    closeIcon,
+    headerBackground,
+    facebookIcon,
+    instagramIcon,
+    twitterIcon,
+    linkdinIcon,
+    postBackgroundImg,
+    businesIcon,
+    economyIcon,
+    technologyIcon,
+    startUpIcon,
+    startUpBackground,
+    authorFloyd,
+    authorJenni,
+    authorlessile,
+    logoLightDark,
+    loremLogo,
+    logoRound,
+    logoSquare,
+    logoFeatureIn,
+    blogHeaderBg,
+    authorDianne,
+    burgerMenuIcon,
+    logoBurger,
+    blogPostFirst,
+    blogPostSecond,
+    blogPostThird,
+    blogPostFourth,
+    aboutPostLeftBg,
+    aboutPostRightBg,
+    authorRobertFox,
+    authorJacobJones,
+    authorGuyHawkin,
+    authorEleanorPena
+
+}

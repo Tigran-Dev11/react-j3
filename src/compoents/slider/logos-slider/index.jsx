@@ -2,7 +2,7 @@
 
 import Slider from "react-slick";
 import * as S from "./styled";
-import { logos } from "../../../pages/client/home/logo";
+import { logos } from "/src/pages/client/home/data";
 
 const SliderLogos = () => {
   const settings = {

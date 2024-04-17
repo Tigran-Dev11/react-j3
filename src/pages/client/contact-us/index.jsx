@@ -1,10 +1,28 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import Input from "../../../common/input";
-import Button from "../../../common/button/index";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { SCHEME } from "/src/validation";
+import Input from "/src/common/input";
+import Button from "/src/common/button";
 
 const ContactUs = () => {
   const { t } = useTranslation();
+
+  const {
+    register,
+    reset,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(SCHEME.messageScheme),
+  });
+
+  const SendMessage = (data) => {
+    localStorage.setItem("Message", JSON.stringify(data));
+    reset();
+  };
+
   return (
     <S.Container>
       <S.HeaderContainer>
@@ -36,12 +54,30 @@ const ContactUs = () => {
           </S.AboutWorkingDescription>
         </S.AboutWorkingRight>
       </S.AboutWorking>
-      <S.FormContainer>
-        <Input type="text" variant="secondary" placeholder={"Name"} />
-        <Input type="email  " variant="secondary" placeholder={"Email"} />
-        <Input type="text" variant="secondary" placeholder={"Query Related"} />
+      <S.FormContainer onSubmit={handleSubmit(SendMessage)}>
+        <Input
+          type="text"
+          variant="secondary"
+          placeholder={"Name"}
+          error={errors?.name?.message}
+          register={register("name")}
+        />
+        <Input
+          type="email"
+          variant="secondary"
+          placeholder={"Email"}
+          error={errors?.email?.message}
+          register={register("email")}
+        />
+        <Input
+          type="text"
+          variant="secondary"
+          placeholder={"Query Related"}
+          error={errors?.text?.message}
+          register={register("text")}
+        />
         <S.TextArea placeholder="Message"></S.TextArea>
-        <Button title={t("btn.sendMessage")} variant />
+        <Button title={t("btn.sendMessage")} variant="primary" />
       </S.FormContainer>
     </S.Container>
   );

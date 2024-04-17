@@ -12,16 +12,18 @@ export const NavBar = styled.div`
   align-items: center;
   gap: 15px;
   background-color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     justify-content: space-between;
+    padding:0 10px;
   }
 `;
+
 export const Title = styled.h4`
 width:20px; 
 height20px;
 color: ${COLORS.white};
 font-family: ${FONTS.inter};
-
 `;
 
 export const LinkContainer = styled.div`
@@ -30,17 +32,20 @@ export const LinkContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     display: none;
   }
 `;
+
 export const Link = styled(NavLink)`
   text-decoration: none;
   font-size: 18px;
   font-weight: 800;
   color: ${COLORS.white};
-  font-family:${FONTS.inter};
+  font-family: ${FONTS.inter};
   transition: font-size 0.2s ease;
+
   &:hover {
     color: ${COLORS.lightGrey};
     font-size: 26px;
@@ -54,6 +59,7 @@ export const BtnSwitcherContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 20px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     display: none;
   }
@@ -69,7 +75,6 @@ export const MenuContainer = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     display: flex;
   }
-  
 `;
 
 export const MenuIcon = styled.img`
@@ -85,44 +90,48 @@ export const MenuIcon = styled.img`
   z-index: 1;
   width: 30px;
   height: 30px;
-  border-radius:5px;
-  mix-blend-mode:darken;
+  border-radius: 5px;
+  mix-blend-mode: darken;
 `;
 
 export const BurgerMenuContainer = styled.div`
   width: 100%;
-  min-height:calc(100vh - 80px);
+  height: calc(100% - 80px);
   background-color: ${COLORS.white};
   position: fixed;
-  z-index:4;
+  z-index: 4;
   top: 80;
   right: 0;
   bottom: 0;
-  left:0
+  left: 0;
   background-color: ${COLORS.white};
-  display: ${(props) => (props.isOpen ? 'block' : 'none')};
+  display: ${(props) => (props.isOpen ? "block" : "none")};
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
   transition: transform 0.3s ease;
-  transform: ${(props) => (props.isOpen ? 'translateX(0)' : 'translateX(100%)')}; 
+  transform: ${(props) =>
+    props.isOpen ? "translateX(0)" : "translateX(100%)"};
 `;
 
 export const BurgerMenuLinkContainer = styled.div`
   min-height: 400px;
+  width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 20px;
-
-
 `;
+
 export const BurgerMenuLink = styled(NavLink)`
   text-decoration: none;
   font-size: 26px;
   font-weight: 800;
   color: ${COLORS.darkGrey};
   font-family: ${FONTS.inter};
+
   &:hover {
     color: ${COLORS.yellow};
   }
 `;
-

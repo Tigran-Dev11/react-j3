@@ -1,7 +1,6 @@
-import  * as  yup from "yup"
+import * as yup from "yup";
 
 export const loginScheme = yup.object({
-email:yup.string().required().min(6),
-password:yup.string().required().min(6)
-
-})
+  email: yup.string().required().min(6),
+  password: yup.string().required().min(6),
+});

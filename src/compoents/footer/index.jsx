@@ -1,32 +1,32 @@
 import { useTranslation } from "react-i18next";
-import { routesHref } from "../../utils/constants";
 import * as S from "./styled";
-import Input from "../../common/input";
-import Button from "../../common/button";
-import { IMAGES } from "../../assets/images";
-import { yupResolver } from "@hookform/resolvers/yup";
-import { SCHEME } from "../../validation";
 import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import { SCHEME } from "/src/validation";
+import { routesHref } from "/src/utils/constants";
+import Input from "/src/common/input";
+import { IMAGES } from "/src/assets/images";
+import Button from "./../../common/button/index";
 
 const Footer = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   const {
     register,
+    reset,
     handleSubmit,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(SCHEME.registerScheme),
   });
-  const onSubmit = (data) => {
+  const SendMail = (data) => {
     console.log(data);
+    reset();
   };
   return (
     <S.FooterContainer>
       <S.FooterHeader>
-        <S.Title>
-           &#123;Finsweet
-        </S.Title>
+        <S.Title>&#123;Finsweet</S.Title>
         <S.LinkContainer>
           <S.Link to={`/${lngKey}${routesHref.aboutUs}`}>
             {t("nav.aboutUs")}
@@ -41,13 +41,13 @@ const Footer = () => {
       </S.FooterHeader>
       <S.SubscriberContainer>
         <S.SubscribeTitle>{t("footer.subscribeTitle")}</S.SubscribeTitle>
-        <S.SubscribeForm onSubmit={handleSubmit(onSubmit)}   >
+        <S.SubscribeForm onSubmit={handleSubmit(SendMail)}>
           <Input
             type="email"
             placeholder="Enter your email"
             variant="primary"
-            register={register}
-            error={errors.email}  
+            register={register("email")}
+            error={errors?.email?.message}
           />
           <Button title={t("btn.subscribe")} variant="primary" />
         </S.SubscribeForm>

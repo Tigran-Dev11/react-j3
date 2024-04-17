@@ -1,6 +1,4 @@
 /* eslint-disable react/prop-types */
-
-
 import * as S from "./styled";
 const BlogCard = ({item}) => {
 

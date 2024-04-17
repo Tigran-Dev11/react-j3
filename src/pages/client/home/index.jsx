@@ -1,18 +1,17 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import PostCard from "../../../compoents/post-card";
-import CategoryCard from "../../../compoents/category-card";
-import Button from "../../../common/button";
-import Join from "./../../../compoents/join/index";
-import { category } from "./category";
-import { posts } from "./post";
+import Button from '/src/common/button/index';
+import { routesHref } from "/src/utils/constants";
+import { category, posts } from "./data";
+import PostCard from '/src/compoents/post-card/index';
+import SliderLogos from '/src/compoents/slider/logos-slider/index';
+import Join from "/src/compoents/join";
+import CategoryCard from "/src/compoents/category-card";
 import SilderAuthors from "../../../compoents/slider/authors-slider";
-import SliderLogos from './../../../compoents/slider/logos-slider/index';
-
-
 
 const Home = () => {
   const { t } = useTranslation();
+  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   return (
     <S.HomeContainer>
       <S.HomeHeader>
@@ -21,7 +20,9 @@ const Home = () => {
           <S.SubTitle>{t("home.subTitle")}</S.SubTitle>
           <S.AuthorInfo>{t("home.authorInfo")}</S.AuthorInfo>
           <S.Information>{t("home.information")}</S.Information>
-          <Button title={t("btn.readMore")} variant="primary" />
+          <S.Link to={`/${lngKey}${routesHref.blog}`}>
+            <Button title={t("btn.readMore")} variant="primary" />
+          </S.Link>
         </S.HomeHeaderContainer>
       </S.HomeHeader>
       <S.PostContainer>
@@ -32,7 +33,9 @@ const Home = () => {
           <S.PostInfoContainer>
             <S.PostInformation>{t("home.post.information")}</S.PostInformation>
             <S.PostDescription>{t("home.post.description")}</S.PostDescription>
-            <Button title={t("btn.readMore")} variant="primary" />
+            <S.Link to={`/${lngKey}${routesHref.blog}`}>
+              <Button title={t("btn.readMore")} variant="primary" />
+            </S.Link>
           </S.PostInfoContainer>
         </S.PostLeftContainer>
         <S.PostRightContainer>
@@ -54,7 +57,9 @@ const Home = () => {
               {t("home.posts.aboutUsDescription")}
             </S.AboutDescriptions>
             <S.AboutText>{t("home.post.information")}</S.AboutText>
-            <S.Link>{t("btn.learnMore")} &#62;</S.Link>
+            <S.Link to={`/${lngKey}${routesHref.aboutUs}`}>
+              {t("btn.learnMore")}
+            </S.Link>
           </S.AboutSectionLeft>
           <S.AboutSectionRight>
             <S.AboutTitles>{t("btn.ourMision")}</S.AboutTitles>
@@ -81,17 +86,20 @@ const Home = () => {
             {t("home.startUp.description")}
           </S.AboutDescriptions>
           <S.PostDescription>{t("home.posts.lorem")}</S.PostDescription>
-          <Button title={t("btn.discoverOurStory")} variant="primary" />
+          <S.Link to={`/${lngKey}${routesHref.aboutUs}`}>
+            {" "}
+            <Button title={t("btn.discoverOurStory")} variant="primary" />
+          </S.Link>
         </S.StartUpContainerRight>
       </S.StartUpContainer>
       <S.AuthorContainer>
-        <S.AboutDescriptions>{t("home.category.title")}</S.AboutDescriptions>
+        <S.AboutDescriptions>{t("authors.title")}</S.AboutDescriptions>
         <S.AuthorSection>
-        <SilderAuthors/>
+  <SilderAuthors/>
         </S.AuthorSection>
       </S.AuthorContainer>
       <S.LogoContainer>
-        <SliderLogos/>
+        <SliderLogos />
       </S.LogoContainer>
       <S.BlogContainer>
         <S.BlogContainerLeft>

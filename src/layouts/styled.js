@@ -1,3 +1,5 @@
+
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const AdminContainer = styled.div`
@@ -11,11 +13,13 @@ export const AdminHeader = styled.header`
   height: 100px;
   border: 1px solid;
 `;
+
 export const Navbar = styled.nav`
   width: 300px;
   min-height: 100vh;
   border: 1px solid;
 `;
+
 export const AdminRighySection = styled.div`
   width: calc(100% - 300px);
   height: 100%;
@@ -23,3 +27,7 @@ export const AdminRighySection = styled.div`
   display: flex;
   flex-direction: column;
 `;
+
+export const Link = styled(NavLink)`
+text-decoration: none;
+`

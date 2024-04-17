@@ -1,14 +1,18 @@
 import { ADMIN_ROUTES, CLIENTS_ROUTES } from "../utils/constants";
-import ClienLayout from "../layouts/clien-layout";
-import Home from "./../pages/client/home";
-import AboutUs from "./../pages/client/about";
-import Blog from "../pages/client/blogs";
-import ContactUs from "./../pages/client/contact-us";
-import PrivacyPolicy from "./../pages/client/Privacy-policy";
-import Registr from "./../pages/client/registr";
-import AdminLayout from "../layouts/admin-layout";
-import Dashboard from "../pages/admin/dashboard";
-import Login from "../pages/client/login";
+
+import Home from "/src/pages/client/home";
+import AboutUs from "/src/pages/client/about";
+import Blog from "/src/pages/client/blogs";
+import ContactUs from "/src/pages/client/contact-us";
+import PrivacyPolicy from "/src/pages/client/Privacy-policy";
+import Registr from "/src/pages/client/registr";
+import AdminLayout from "/src/layouts/admin-layout";
+import Login from "/src/pages/client/login";
+import CategorySingle from "/src/pages/client/category-single";
+import ClienLayout from "/src/layouts/clien-layout";
+import AuthorSingle from "/src/pages/client/author-single";
+import Dashborad from "../pages/admin/dashboard";
+
 
 export const routes = [
   {
@@ -39,8 +43,17 @@ export const routes = [
         component: Registr,
         path: CLIENTS_ROUTES.registr,
       },
-      { component: Login, 
+      {
+        component: Login,
         path: CLIENTS_ROUTES.login,
+      },
+      {
+        component: CategorySingle,
+        path: CLIENTS_ROUTES.categorySingle,
+      },
+      {
+        component: AuthorSingle,
+        path: CLIENTS_ROUTES.authorSingle,
       },
     ],
   },
@@ -50,8 +63,8 @@ export const routes = [
     path: ADMIN_ROUTES.admin,
     children: [
       {
-        component: Dashboard,
-        path: ADMIN_ROUTES.dashboard,
+        component: Dashborad,
+        path: ADMIN_ROUTES.dashboard
       },
     ],
   },

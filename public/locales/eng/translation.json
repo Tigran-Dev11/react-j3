@@ -119,5 +119,15 @@
       "title": "Our team of creatives",
       "blog": "Why we started this Blog"
     }
+  },
+  "registr":{
+    "title": "Welcome our page"
+
+  },
+  "authors":{
+    "title": "List of Authors",
+    "description": " Hello My Name is"
   }
+
+  
 }

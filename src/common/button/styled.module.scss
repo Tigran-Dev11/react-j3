@@ -8,14 +8,15 @@
   text-align: center;
   border: none;
   font-size: 12px;
+
   &:hover {
     color: #232536;
     font-weight: 600;
-    &::after{
-      content: ">";
-    } 
-  }
 
+    &::after {
+      content: ">";
+    }
+  }
 }
 
 .secondary {
@@ -39,6 +40,7 @@
   cursor: pointer;
   font-family: "Poppins", sans-serif;
   border: none;
+
   @media screen and (max-width: 768px) {
     width: 350px;
     height: 50px;

@@ -20,6 +20,7 @@ export const AboutHeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
+
 export const AboutHeader = styled.header`
   width: 100%;
   height: 450px;
@@ -30,6 +31,7 @@ export const AboutHeader = styled.header`
   position: absolute;
   z-index: 1;
   bottom: 0;
+  
   @media screen and (${BREAKPOINTS.mobile}) {
     top: 0;
   }
@@ -53,6 +55,7 @@ export const AboutHeaderInfo = styled.div`
     background: none;
   }
 `;
+
 export const AboutHeaderTitle = styled.p`
     font-size: 20px;
     width: 300px;
@@ -64,11 +67,13 @@ export const AboutHeaderTitle = styled.p`
     line-height: 20px;
     letter-spacing: 3px;
     text-align: left;
+
     @media screen and (${BREAKPOINTS.mobile}) {
         width: 100%;
         font-size: 14px;
       }
   `;
+
 export const AboutHeaderSubTitle = styled.h3`
   width: 100%;
   min-height: 192px;
@@ -86,6 +91,7 @@ export const AboutHeaderSubTitle = styled.h3`
     min-height: 100px;
   }
 `;
+
 export const AboutHeaderBottomContainer = styled.div`
   width: 100%;
   min-height: 440px;
@@ -112,11 +118,13 @@ export const AboutHeaderBottomLeft = styled.div`
     min-height: 250px;
   }
 `;
+
 export const AboutHeaderBottomRight = styled.div`
   width: 45%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     min-height: 250px;
@@ -132,24 +140,28 @@ export const AboutHeaderInformation = styled.p`
   font-weight: 400;
   line-height: 28px;
   text-align: left;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     font-size: 14px;
   }
 `;
+
 export const AuthorsContainer = styled.div`
   width: 1400px;
   min-height: 350px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 600px;
-   justify-content:center;
-   gap:10px;
+    justify-content:center;
+    gap:10px;
   
   }
 `;
+
 export const AboutPostSection = styled.div`
   width: 100%;
   min-height: 400px;
@@ -176,11 +188,13 @@ export const AboutPostContainerLeft = styled.div`
   min-height: 320px;
   display: flex;
   flex-direction: column;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     min-height: 200px;
   }
 `;
+
 export const AboutPostContainerRight = styled.div`
   width: 680px;
   min-height: 400px;
@@ -195,6 +209,7 @@ export const AboutPostContainerRight = styled.div`
     display: none;
   }
 `;
+
 export const AboutPostContainerRightBottom = styled.div`
   width: 680px;
   min-height: 400px;
@@ -204,6 +219,7 @@ export const AboutPostContainerRightBottom = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     display: none;
   }

@@ -35,6 +35,7 @@ export const HeaderSubtitle = styled.h3`
   letter-spacing: 3px;
   text-align: center;
   color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
   }
@@ -50,11 +51,13 @@ export const HeaderTitle = styled.h1`
   letter-spacing: -2px;
   text-align: center;
   color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     font-size: 30px;
   }
 `;
+
 export const HeaderDescription = styled.p`
   width: 770px;
   min-height: 56px;
@@ -64,6 +67,7 @@ export const HeaderDescription = styled.p`
   line-height: 28px;
   text-align: center;
   color: ${COLORS.grey};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     min-height: 60px;
@@ -81,18 +85,19 @@ export const AboutWorking = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
-    min-height:300px;
+    min-height: 300px;
     flex-direction: column;
     padding: 20px 0;
- 
   }
 `;
+
 export const AboutWorkingLeft = styled.div`
   width: 300px;
   min-height: 150px;
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 50%;
   }
@@ -107,6 +112,7 @@ export const AboutWorkingTitle = styled.p`
   line-height: 20px;
   text-align: left;
   color: ${COLORS.lightPurple};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     font-weight: 700;
@@ -124,6 +130,7 @@ export const AboutWorkingDescription = styled.p`
   line-height: 28px;
   text-align: left;
   color: ${COLORS.lightPurple};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
   }
@@ -139,6 +146,7 @@ export const AboutWorkingSubtitle = styled.h5`
   line-height: 32px;
   text-align: left;
   border-top: 1px solid ${COLORS.lightGrey};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     font-size: 14px;
@@ -146,16 +154,19 @@ export const AboutWorkingSubtitle = styled.h5`
     color: ${COLORS.lightPurple};
   }
 `;
+
 export const AboutWorkingRight = styled.div`
   width: 300px;
   min-height: 150px;
   display: flex;
   flex-direction: column;
-  padding:0 20px; 
+  padding: 0 20px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 50%;
   }
 `;
+
 export const FormContainer = styled.form`
   width: 770px;
   min-height: 500px;
@@ -163,19 +174,20 @@ export const FormContainer = styled.form`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
   }
 `;
+
 export const TextArea = styled.textarea`
-width:400px;
-min-height:120px;
-padding: 20px;
-@media screen and (${BREAKPOINTS.mobile}){
-    width:350px;
-    min-height:50px;
-}
+  width: 400px;
+  min-height: 120px;
+  padding: 20px;
 
-
-`
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 350px;
+    min-height: 50px;
+  }
+`;

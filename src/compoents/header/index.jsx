@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
+import { routesHref } from "/src/utils/constants";
 import LanguageSwitcher from "../languag-switcher";
-import { routesHref } from "../../utils/constants";
-import Button from "../../common/button";
-import BurgerMenu from "./burger-menu";
+import BurgerMenu from './burger-menu';
+import Button from "/src/common/button";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -29,7 +29,7 @@ const Header = () => {
         </S.Link>
         <LanguageSwitcher />
       </S.BtnSwitcherContainer>
-      <BurgerMenu />
+     <BurgerMenu/>
     </S.NavBar>
   );
 };

@@ -13,9 +13,9 @@ export const CardItems = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     flex-direction: column;
-    
   }
 `;
+
 export const CardImg = styled.img`
   width: 400px;
   min-height: 300px;
@@ -49,11 +49,13 @@ export const CardCategory = styled.p`
   font-weight: 600;
   letter-spacing: 3px;
   text-align: left;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 300px;
     font-size: 18px;
   }
 `;
+
 export const CardTitle = styled.h2`
 width:500px;
 min-height:90px;
@@ -66,8 +68,8 @@ font-weight: 700;
 width:400px;
   font-size:20px;
 }
-
 `;
+
 export const CardSubtitle = styled.h3`
 width:350px;
 min-height:56px;
@@ -78,8 +80,8 @@ font-size: 16px;
 font-weight: 400;
 line-height: 28px;
 text-align: left;
-@media screen and (${BREAKPOINTS.mobile}) {
 
+@media screen and (${BREAKPOINTS.mobile}){
   font-size:20px;
 }
 `;

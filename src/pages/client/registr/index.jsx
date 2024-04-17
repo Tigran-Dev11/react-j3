@@ -1,14 +1,21 @@
 import { useForm } from "react-hook-form";
-import { SCHEME } from "../../../validation";
+
 import * as S from "./styled";
 import { yupResolver } from "@hookform/resolvers/yup";
-import Button from "../../../common/button";
+
 import { useTranslation } from "react-i18next";
-import Input from "../../../common/input";
-import { routesHref } from "./../../../utils/constants";
+import { useNavigate } from "react-router-dom";
+import { routesHref } from "/src/utils/constants";
+import { SCHEME } from "/src/validation";
+import Input from "/src/common/input";
+import Button from "/src/common/button/index";
 
 const Registr = () => {
+  
+  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
   const {
     register,
     reset,
@@ -17,13 +24,16 @@ const Registr = () => {
   } = useForm({
     resolver: yupResolver(SCHEME.registerScheme),
   });
-  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
+
   const saveUser = (data) => {
     localStorage.setItem("registrData", JSON.stringify(data));
     reset();
+    navigate(`/${lngKey}${routesHref.login}`);
   };
+
   return (
     <S.RegistrContainer>
+      <S.RegistrTitle>{t("registr.title")}</S.RegistrTitle>
       <S.RegisterForm onSubmit={handleSubmit(saveUser)}>
         <Input
           type="text"

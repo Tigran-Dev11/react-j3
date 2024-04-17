@@ -1,9 +1,11 @@
-const Dashboard = () => {
+
+import * as S from "./styled"
+const Dashborad = () => {
     return (
-      <div>
-        Dashboard
-      </div>
-    )
-  };
-  
-  export default Dashboard;
+        <S.Container>
+           Dashboard 
+        </S.Container>
+    );
+}
+
+export default Dashborad;

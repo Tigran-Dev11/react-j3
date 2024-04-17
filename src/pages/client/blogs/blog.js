@@ -1,5 +1,5 @@
 import {v4 as uuid} from "uuid"
-import { IMAGES } from './../../../assets/images/index';
+import { IMAGES } from '/src/assets/images/index';
 
 export const blogs=(t)=>[
     {

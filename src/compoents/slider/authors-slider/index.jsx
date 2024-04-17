@@ -1,20 +1,25 @@
 /* eslint-disable react/prop-types */
-import AuthorCard from "../../author-card";
+
 import * as S from "./styled";
 import Slider from "react-slick";
-import { authors } from "./../../../pages/client/home/author";
 import { useTranslation } from "react-i18next";
+import useBreakpoints from "/src/hooks/use-breakpoints/index";
+import { authors } from "/src/pages/client/home/data";
+import AuthorCard from "../../author-card";
 
 const SilderAuthors = () => {
-    const {t}= useTranslation()
+  const { t } = useTranslation();
+  const slidesToShow = useBreakpoints();
+
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 2,
-    autoplay: false,
+    slidesToShow: slidesToShow,
+    slidesToScroll: slidesToShow,
+    autoplay: true,
   };
+
   return (
     <S.SliderContainer>
       <Slider {...settings}>

@@ -11,19 +11,27 @@ export const HeaderContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: ${COLORS.lightPurple};
+ 
 `;
 
 export const HeaderTitle = styled.h1`
-  width: 300px;
+  width: 500px;
   min-height: 60px;
   display: flex;
   font-family: ${FONTS.sen};
   font-size: 48px;
   font-weight: 700;
   line-height: 64px;
-  letter-spacing: -2px;
   text-align: center;
   color: ${COLORS.darkBlue};
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 400px;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    
+  }
 `;
 
 export const HeaderSubtitle = styled.p`
@@ -34,7 +42,16 @@ export const HeaderSubtitle = styled.p`
   font-weight: 400;
   line-height: 28px;
   text-align: center;
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 250px;
+    min-height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    
+  }
 `;
+
 export const InformationContainer = styled.div`
   width: 100%;
   min-height: 700px;
@@ -43,6 +60,7 @@ export const InformationContainer = styled.div`
   justify-content: center;
   align-items: center;
   gap: 10px;
+  padding:10px 0;
 `;
 
 export const InformationTitle = styled.h1`
@@ -52,17 +70,17 @@ export const InformationTitle = styled.h1`
   font-size: 36px;
   font-weight: 700;
   line-height: 64px;
-  letter-spacing: -2px;
   color: ${COLORS.darkBlue};
 
   @media screen and (${BREAKPOINTS.mobile}) {
-    width: 100%;
+    width: 390px;
     min-height: 40px;
     line-height: 40px;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
   }
 `;
+
 export const InformationSubtitle = styled.p`
   width: 770px;
   min-height: 300px;
@@ -71,8 +89,9 @@ export const InformationSubtitle = styled.p`
   font-weight: 400;
   line-height: 28px;
   color: ${COLORS.grey};
+  
   @media screen and (${BREAKPOINTS.mobile}) {
-    width: 100%;
-    font-size: 20px;
+    width: 390px;
+    font-size: 16px;
   }
 `;

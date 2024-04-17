@@ -12,7 +12,7 @@ export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 `;
 
 export const HomeHeader = styled.div`
@@ -26,6 +26,12 @@ export const HomeHeader = styled.div`
   flex-direction: column;
   justify-content: center;
   gap: 15px;
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100%;
+    min-height: 450px;
+    justify-content: space-around;
+  }
 `;
 
 export const HomeHeaderContainer = styled.div`
@@ -34,6 +40,13 @@ export const HomeHeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+  gap: 10px;
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100%;
+    min-height: 450px;
+    justify-content: space-around;
+  }
 `;
 
 export const Title = styled.h4`
@@ -90,6 +103,7 @@ export const Information = styled.p`
   font-family: ${FONTS.inter};
   line-height: 28px;
   color: ${COLORS.white};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
     min-height: 40px;
@@ -119,6 +133,7 @@ export const PostContainer = styled.div`
     padding: 0;
   }
 `;
+
 export const PostLeftContainer = styled.div`
   width: 600px;
   min-height: 700px;
@@ -136,20 +151,22 @@ export const PostLeftContainer = styled.div`
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     align-items: center;
-    padding: 2px;
+    gap: 15px;
   }
 `;
 
 export const PostBackground = styled.div`
   width: 550px;
   min-height: 350px;
-  background-image: url(${IMAGES.postBackroundImg});
+  background-image: url(${IMAGES.postBackgroundImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 100%;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
   }
@@ -163,24 +180,29 @@ export const PostTitel = styled.h2`
   line-height: 48px;
   font-family: ${FONTS.sen};
   padding: 0 20px;
+
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 90%;
     font-size: 28px;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
     font-size: 20px;
   }
 `;
+
 export const PostAuthor = styled.p`
   width: 570px;
   height: 20px;
   font-weight: 400;
   color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 90%;
     padding: 0 10px;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
   }
@@ -192,14 +214,17 @@ export const PostInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 90%;
     padding: 0 10px;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
   }
 `;
+
 export const PostInformation = styled.h4`
   width: 570px;
   min-height: 20px;
@@ -212,6 +237,7 @@ export const PostInformation = styled.h4`
     width: 1200px;
     padding: 0 4px;
   }
+  
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
   }
@@ -224,6 +250,7 @@ export const PostDescription = styled.p`
   line-height: 28px;
   font-family: ${FONTS.inter};
   color: ${COLORS.lightGrey};
+
   @media screen and (${BREAKPOINTS.tablet}) {
     width: 90%;
   }
@@ -253,16 +280,19 @@ export const PostRightTitel = styled.h2`
   line-height: 48px;
   font-family: ${FONTS.sen};
   padding: 0 20px;
+
   @media screen and (${BREAKPOINTS.tablet}) {
     font-size: 28px;
     width: 90%;
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
     text-align: center;
     justify-content: center;
   }
 `;
+
 export const AboutContainer = styled.div`
   width: 100%;
   min-height: 520px;
@@ -270,6 +300,7 @@ export const AboutContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `;
+
 export const ColorsLine = styled.div`
   width: 1200px;
   min-height: 20px;
@@ -281,11 +312,13 @@ export const ColorsLine = styled.div`
     width: 100%;
   }
 `;
+
 export const ColorsLineLeft = styled.div`
   width: 700px;
   min-height: 20px;
   background-color: ${COLORS.yellow};
 `;
+
 export const ColorsLineRight = styled.div`
   width: 300px;
   min-height: 20px;
@@ -307,6 +340,7 @@ export const AboutSection = styled.div`
     padding: 0 20px;
   }
 `;
+
 export const AboutSectionLeft = styled.div`
   width: 500px;
   min-height: 300px;
@@ -327,10 +361,12 @@ export const AboutTitles = styled.p`
   text-align: left;
   color: ${COLORS.darkBlue};
 `;
+
 export const AboutText = styled.p`
   width: 500px;
   min-height: 20px;
   font-family: "Inter" sans-serif;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     display: none;
   }
@@ -340,15 +376,14 @@ export const AboutDescriptions = styled.h2`
   width: 400px;
   min-height: 30px;
   font-family: "Sen", sans-serif;
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   line-height: 38px;
-  letter-spacing: -2px;
-  text-align: left;
   color: ${COLORS.darkBlue};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     font-size: 22px;
-    widtH:350px;
+    width: 350px;
   }
 `;
 
@@ -377,13 +412,15 @@ export const CategoriContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
- justify-content: space-around;
+  justify-content: space-around;
 `;
+
 export const CategorySection = styled.div`
   width: 100%;
   min-height: 200px;
   display: flex;
   justify-content: space-around;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     flex-wrap: wrap;
     gap: 5px;
@@ -396,10 +433,12 @@ export const StartUpContainer = styled.div`
   display: flex;
   align-items: center;
   position: relative;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     min-height: 500px;
   }
 `;
+
 export const StartUpContainerLeft = styled.div`
   width: 900px;
   min-height: 600px;
@@ -411,10 +450,11 @@ export const StartUpContainerLeft = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 500px;
-    min-height: 600px;  
+    min-height: 600px;
     top: 0;
   }
 `;
+
 export const StartUpContainerRight = styled.div`
   width: 450px;
   min-height: 500px;
@@ -423,47 +463,50 @@ export const StartUpContainerRight = styled.div`
   background-color: ${COLORS.white};
   right: 100px;
   bottom: 0;
-  padding: 0 20px;
+  padding: 10px 20px;
 
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 370px;
     min-height: 250px;
     left: 0;
     top: 0;
-    background:none;
+    background: none;
   }
 `;
+
 export const AuthorContainer = styled.div`
   width: 100%;
   min-height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
 
   @media screen and (${BREAKPOINTS.mobile}) {
     margin-top: 100px;
     justify-content: space-around;
   }
 `;
- 
 
 export const AuthorSection = styled.div`
   width: 100%;
-  min-height: 280px;
+  min-height: 350px;
   display: flex;
   justify-content: space-around;
-  @media screen and (${BREAKPOINTS.mobile}) {
-    flex-wrap: wrap;
-    gap: 5px;
 
+  @media screen and (${BREAKPOINTS.mobile}) {
+    justify-content: center;
+    align-items: center;
   }
 `;
+
 export const LogoContainer = styled.div`
   width: 100%;
-  min-height: 52px;
+  min-height: 30px;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 400px;
     justify-content: space-between;
@@ -472,7 +515,7 @@ export const LogoContainer = styled.div`
 
 export const BlogContainer = styled.div`
   width: 100%;
-  min-height: 370px;
+  min-height: 400px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -480,8 +523,10 @@ export const BlogContainer = styled.div`
 
   @media screen and (${BREAKPOINTS.mobile}) {
     flex-direction: column;
+    padding: 10px;
   }
 `;
+
 export const BlogContainerLeft = styled.div`
   width: 380px;
   min-height: 300px;
@@ -489,6 +534,7 @@ export const BlogContainerLeft = styled.div`
   flex-direction: column;
   gap: 15px;
   border-right: 1px solid ${COLORS.lightGrey};
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     min-height: 150px;
@@ -497,23 +543,26 @@ export const BlogContainerLeft = styled.div`
     border-bottom: 1px solid ${COLORS.lightGrey};
   }
 `;
+
 export const AboutBlog = styled.p`
   width: 280px;
   min-height: 100px;
 `;
+
 export const BlogContainerRight = styled.div`
   width: 500px;
   min-height: 300px;
   display: flex;
   flex-direction: column;
-
   gap: 15px;
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     min-height: 150px;
     align-items: center;
   }
 `;
+
 export const BlogAbout = styled.h4`
 width:450px;
 min-height:150px;
@@ -522,10 +571,10 @@ font-family: ${FONTS.sen};
 font-size: 24px;
 font-weight: 700;
 line-height: 32px;
+
 @media  screen and (${BREAKPOINTS.mobile}){
 width:100%;
 font-size:18px;
 text-align:center;
 }
-
 `;

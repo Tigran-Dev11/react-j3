@@ -12,21 +12,22 @@ export const AuthorCardContainer = styled.div`
   align-items: center;
   justify-content: center;
   gap: 5px;
-  margin-top:10px;
-  cursor:pointer;
+  margin-top: 10px;
+  cursor: pointer;
 
   &:hover {
     background-color: ${COLORS.milk};
   }
-  @media screen and (${BREAKPOINTS.tablet}){
-    width:280px;
-    min-height:180px;
-}
-@media screen and (${BREAKPOINTS.mobile}){
-    width:150px;
-    min-height:150px;
-   
-} 
+
+  @media screen and (${BREAKPOINTS.tablet}) {
+    width: 280px;
+    min-height: 180px;
+  }
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 300px;
+    min-height: 250px;
+  }
 `;
 
 export const AuthorCardImg = styled.img`
@@ -34,15 +35,17 @@ export const AuthorCardImg = styled.img`
   height: 128px;
   border-radius: 50%;
 
-  @media screen and (${BREAKPOINTS.tablet}){
-    width:100px;
+  @media screen and (${BREAKPOINTS.tablet}) {
+    width: 100px;
+    height: 100px;
+  }
+
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100px;
     height:100px;
-}
-@media screen and (${BREAKPOINTS.mobile}){
-  width:80px;
-  height:80px;
-}
+  }
 `;
+
 export const AuthorCardName = styled.h3`
   width: 140px;
   min-height: 40px;
@@ -52,18 +55,20 @@ export const AuthorCardName = styled.h3`
   line-height: 40px;
   letter-spacing: -1px;
   text-align: center;
-  @media screen and (${BREAKPOINTS.tablet}){
-    width:200px;
-    min-height:20px;
-    line-height:5px;
- 
-}
-@media screen and (${BREAKPOINTS.mobile}){
-    width:150px;
-    min-height:20px;
-    font-size:14px;
-}
+
+  @media screen and (${BREAKPOINTS.tablet}) {
+    width: 200px;
+    min-height: 20px;
+    line-height: 5px;
+  }
+  
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 150px;
+    min-height: 20px;
+    font-size: 14px;
+  }
 `;
+
 export const AuthorCardDescription = styled.p`
   width: 240px;
   min-height: 20px;
@@ -73,36 +78,37 @@ export const AuthorCardDescription = styled.p`
   line-height: 20px;
   text-align: center;
 
-  @media screen and (${BREAKPOINTS.mobile}){
-    width:120px;
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 120px;
     font-size: 12px;
-
-}
+  }
 `;
+
 export const SocialMediaLink = styled.div`
   width: 200px;
   min-height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:10px;
+  gap: 10px;
 
-  @media screen and (${BREAKPOINTS.mobile}){
-    width:100px;
-    min-height:20px;
-}
-
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100px;
+    min-height: 20px;
+  }
 `;
 export const IconsContainer = styled.div`
-width: 200px;
-min-height: 20px;
+  width: 200px;
+  min-height: 20px;
 
-@media screen and (${BREAKPOINTS.mobile}){
-  width:100px;
-  min-height:20px;
-}
-`
+  @media screen and (${BREAKPOINTS.mobile}) {
+    width: 100px;
+    min-height: 20px;
+  }
+`;
 
 export const Icons = styled.img`
   width: 15px;
-  height: 15px;`
+  height: 15px;
+  mix-blend-mode:multiply;
+`;

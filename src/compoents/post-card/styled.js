@@ -9,8 +9,10 @@ export const PostCardContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 20px;
+  padding:20px;
   cursor: pointer;
+  gap:15px;
+
   &:hover {
     width: 420px;
     min-height: 200px;
@@ -18,29 +20,34 @@ export const PostCardContainer = styled.div`
     transition: 0.3s ease-in-out;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   }
+
   @media screen and (${BREAKPOINTS.mobile}) {
     width: 100%;
     align-items: center;
+
     &:hover {
       width: 300px;
       min-height: 150px;
-      padding:0 10px;
+      padding:20px;
+      
     }
   }
 `;
+
 export const PostAuthor = styled.p`
   width: 100%;
   height: 20px;
   font-weight: 400;
   font-size: 14px;
   color: ${COLORS.darkBlue};
-
+ 
   &:hover {
     font-size: 20px;
     color: ${COLORS.lightPurple};
     font-weight: 600;
   }
 `;
+
 export const PostInformation = styled.h4`
   width: 100%;
   min-height: 50px;

@@ -1,8 +1,8 @@
 import { useTranslation } from "react-i18next";
 import * as S from "./styled";
-import Join from "../../../compoents/join";
+import { authors } from "../home/data";
 import AuthorCard from "../../../compoents/author-card";
-import { authors } from "../home/author";
+import Join from "../../../compoents/join";
 
 const AboutUs = () => {
   const { t } = useTranslation();

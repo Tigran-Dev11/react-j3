@@ -1,9 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import * as S from "./styled";
-import { IMAGES } from "../../assets/images";
 import { useTranslation } from "react-i18next";
-import { routesHref } from "../../utils/constants";
-import classNames from "classnames";
+import { IMAGES } from "/src/assets/images";
+import { routesHref } from "/src/utils/constants";
 
 const BurgerMenu = () => {
   const { t } = useTranslation();
@@ -12,16 +11,29 @@ const BurgerMenu = () => {
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
   return (
     <S.MenuContainer>
       <S.MenuIcon
-        src={IMAGES.burgerMenuIcon}
+        src={isOpen ? IMAGES.closeIcon : IMAGES.burgerMenuIcon}
         alt="burger-icon"
         onClick={openMenu}
-        className={classNames("burger-icon", { open: isOpen })}
       ></S.MenuIcon>
-      <S.BurgerMenuContainer  isOpen={isOpen} onClick={openMenu}>
-        <S.BurgerMenuLinkContainer >
+      <S.BurgerMenuContainer
+        className={"open"}
+        isOpen={isOpen}
+        onClick={openMenu}
+      >
+        <S.BurgerMenuLinkContainer>
           <S.BurgerMenuLink to={`/${lngKey}${routesHref.home}`}>
             {t("nav.home")}
           </S.BurgerMenuLink>
