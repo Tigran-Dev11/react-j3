@@ -1,12 +1,14 @@
 
-import * as S from "./styled"
+
+import * as S from "./styled";
+
 const Dashborad = () => {
-    console.log('dashborad');
-    return (
-        <S.Container>
-           Dashboard 
-        </S.Container>
-    );
-}
+
+  return (
+    <S.Container>
+
+    </S.Container>
+  );
+};
 
 export default Dashborad;

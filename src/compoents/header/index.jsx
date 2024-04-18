@@ -4,10 +4,21 @@ import { routesHref } from "/src/utils/constants";
 import LanguageSwitcher from "../languag-switcher";
 import BurgerMenu from './burger-menu';
 import Button from "/src/common/button";
+import useLogout from "../../hooks/use-logOut";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate()
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
+  const isLogin = sessionStorage.getItem("isLogin");
+  const handleLogout = useLogout();
+
+  const buttonTitle = !isLogin ? t("btn.subscribe") : t("btn.logOut");
+  const buttonAction = isLogin ? handleLogout : () => {
+    navigate(`/${lngKey}${routesHref.registr}`);
+  };
+  
   return (
     <S.NavBar>
       <S.Title>
@@ -24,9 +35,7 @@ const Header = () => {
         </S.Link>
       </S.LinkContainer>
       <S.BtnSwitcherContainer>
-        <S.Link to={`/${lngKey}${routesHref.registr}`} >
-          <Button variant="secondary" title={t("btn.subscribe")} />
-        </S.Link>
+          <Button variant="secondary" title={buttonTitle} onClick={buttonAction} />
         <LanguageSwitcher />
       </S.BtnSwitcherContainer>
      <BurgerMenu/>

@@ -1,24 +1,16 @@
-import {
-  NavLink,
-  Outlet,
-  useLocation,
-  redirect,
-  useNavigate
-} from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import * as S from "./styled";
-import { adminRoutesHref } from "../utils/constants";
 import { useEffect } from "react";
+import Button from "../common/button";
+import useLogout from "../hooks/use-logOut";
 
 const AdminLayout = () => {
-  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
-
   let location = useLocation();
-
   const navigate = useNavigate();
 
+  const logout = useLogout();
   useEffect(() => {
     const params = location.pathname?.split("/");
-
     if (
       params[params.length - 1] === "admin" ||
       (params[params.length - 2] === "admin" &&
@@ -30,19 +22,17 @@ const AdminLayout = () => {
   return (
     <>
       <S.AdminContainer>
-        <S.Navbar>
-          <NavLink to={`/${lngKey}${adminRoutesHref.dashboard}`}>
-            Dashboard
-          </NavLink>
+        <S.Navbar>create user
+        <Button title={"Log Out"} variant="primary" onClick={logout} /> 
         </S.Navbar>
-      </S.AdminContainer>
-      <S.AdminRighySection>
-        <S.AdminHeader>header</S.AdminHeader>
-        <div>
-          test
+        <S.AdminRighySection>
+          <S.AdminHeader>
+            User Crud
+           
+          </S.AdminHeader>
           <Outlet />
-        </div>
-      </S.AdminRighySection>
+        </S.AdminRighySection>
+      </S.AdminContainer>
     </>
   );
 };

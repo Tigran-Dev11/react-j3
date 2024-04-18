@@ -8,11 +8,11 @@ import Input from "/src/common/input";
 import Button from "/src/common/button";
 import { SCHEME } from "/src/validation";
 import { adminRoutesHref } from '/src/utils/constants';
+import { useEffect } from "react";
 
 const Login = () => {
   const navigate = useNavigate();
   const { t } = useTranslation();
-  const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   const {
     register,
     handleSubmit,
@@ -21,12 +21,19 @@ const Login = () => {
     resolver: yupResolver(SCHEME.loginScheme),
   });
 
+  useEffect(() => {
+    const isLogin = sessionStorage.getItem('isLogin');
+    if (isLogin) {
+      navigate("/"); 
+    }
+  }, [navigate]); 
+
   const handleLogin = (data) => {
     const savedLogin = import.meta.env.VITE_LOGIN;
     const savedPassword = import.meta.env.VITE_PASSWORD;
-
+    sessionStorage.setItem('isLogin', 'true');
     if (data.email === savedLogin && data.password === savedPassword) {
-      navigate(`/${lngKey}${adminRoutesHref.dashboard}`);
+      navigate(`${adminRoutesHref.dashboard}`);
       console.log("admin");
     } else {
       navigate("/");

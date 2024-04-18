@@ -17,7 +17,8 @@
     "learnMore": "Learn More",
     "ourMision": "Our Mision",
     "createAccount": "Create Account",
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "logOut": "Log Out"
   },
   "footer": {
     "subscribeTitle": "Subscribe to our news letter to get latest updates and news",
