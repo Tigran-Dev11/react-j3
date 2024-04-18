@@ -7,8 +7,11 @@ import useLogout from "../hooks/use-logOut";
 const AdminLayout = () => {
   let location = useLocation();
   const navigate = useNavigate();
-
   const logout = useLogout();
+
+  const toCreateUser = () => {
+    navigate("/arm/admin/create-user");
+  };
   useEffect(() => {
     const params = location.pathname?.split("/");
     if (
@@ -22,13 +25,13 @@ const AdminLayout = () => {
   return (
     <>
       <S.AdminContainer>
-        <S.Navbar>create user
-        <Button title={"Log Out"} variant="primary" onClick={logout} /> 
+        <S.Navbar>
+          <Button title={"Log Out"} variant="primary" onClick={logout} />
         </S.Navbar>
         <S.AdminRighySection>
           <S.AdminHeader>
             User Crud
-           
+            <Button title={"Create User"} variant="primary"  onClick={toCreateUser}/>
           </S.AdminHeader>
           <Outlet />
         </S.AdminRighySection>

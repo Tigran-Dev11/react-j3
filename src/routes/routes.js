@@ -12,7 +12,10 @@ import CategorySingle from "/src/pages/client/category-single";
 import ClienLayout from "/src/layouts/clien-layout";
 import AuthorSingle from "/src/pages/client/author-single";
 import Dashborad from "../pages/admin/dashboard";
-import User from "../pages/admin/user";
+import User from "../pages/admin/user/user-list";
+import CreateUser from "../pages/admin/user/create-user";
+
+
 
 export const routes = [
   {
@@ -69,6 +72,11 @@ export const routes = [
       {
         component: User,
         path: "/:lng/admin/user"
+      },
+
+      {
+        component:CreateUser,
+        path: "/:lng/admin/create-user"
       }
     ]
   }

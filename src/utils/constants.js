@@ -29,9 +29,22 @@ export const CLIENTS_ROUTES = {
 export const adminRoutesHref = {
   admin: ":lng/admin",
   dashboard: "/:lng/admin/dashboard",
+  user: ":lng/admin/user",
+  userEdit: "/:lng/admin/user/:user-id",
+  createUser:"/:lng/admin/create-user"
 };
 
 export const ADMIN_ROUTES = {
   admin: adminRoutesHref.admin,
   dashboard: adminRoutesHref.dashboard,
+  user: adminRoutesHref.user,
+  userEdit: adminRoutesHref.userEdit,
+  createUser: adminRoutesHref.createUser
+};
+
+export const FETCH_STATUS = {
+  IDL: "idl",
+  PENDING: "pending",
+  SUCCESS: "success",
+  FAILED: "failed"
 };
