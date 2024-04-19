@@ -9,6 +9,7 @@ grid-template-columns: auto auto auto auto;
 padding: 10px;
 gap:10px;
 border:1px solid;
+overflow-x: scroll;
 
 @media screen and (${BREAKPOINTS.mobile}) {
   width: 100%;

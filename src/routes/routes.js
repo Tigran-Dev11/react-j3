@@ -14,6 +14,7 @@ import AuthorSingle from "/src/pages/client/author-single";
 import Dashborad from "../pages/admin/dashboard";
 import User from "../pages/admin/user/user-list";
 import CreateUser from "../pages/admin/user/create-user";
+import EditUser from "../pages/admin/user/edit-user";
 
 
 
@@ -71,12 +72,16 @@ export const routes = [
       },
       {
         component: User,
-        path: "/:lng/admin/user"
+        path:ADMIN_ROUTES.user,
       },
 
       {
         component:CreateUser,
-        path: "/:lng/admin/create-user"
+        path: ADMIN_ROUTES.createUser
+      },
+      {
+        component: EditUser,
+        path: ADMIN_ROUTES.userEdit,
       }
     ]
   }

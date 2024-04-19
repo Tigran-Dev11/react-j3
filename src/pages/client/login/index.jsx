@@ -33,7 +33,7 @@ const Login = () => {
     const savedPassword = import.meta.env.VITE_PASSWORD;
     sessionStorage.setItem('isLogin', 'true');
     if (data.email === savedLogin && data.password === savedPassword) {
-      navigate(`${adminRoutesHref.dashboard}`);
+      navigate(`${adminRoutesHref.user}`);
       console.log("admin");
     } else {
       navigate("/");

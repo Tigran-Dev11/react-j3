@@ -29,8 +29,8 @@ export const CLIENTS_ROUTES = {
 export const adminRoutesHref = {
   admin: ":lng/admin",
   dashboard: "/:lng/admin/dashboard",
-  user: ":lng/admin/user",
-  userEdit: "/:lng/admin/user/:user-id",
+  user: "/:lng/admin/user",
+  userEdit: "/:lng/admin/edit-user/:user-id",
   createUser:"/:lng/admin/create-user"
 };
 

@@ -26,12 +26,18 @@ const AdminLayout = () => {
     <>
       <S.AdminContainer>
         <S.Navbar>
+         <S.Title>Work Space</S.Title> 
           <Button title={"Log Out"} variant="primary" onClick={logout} />
         </S.Navbar>
         <S.AdminRighySection>
           <S.AdminHeader>
-            User Crud
-            <Button title={"Create User"} variant="primary"  onClick={toCreateUser}/>
+            <S.Title> User Crud</S.Title>
+
+            <Button
+              title={"Create User"}
+              variant="primary"
+              onClick={toCreateUser}
+            />
           </S.AdminHeader>
           <Outlet />
         </S.AdminRighySection>

@@ -3,14 +3,17 @@ import * as S from "./styled";
 import { useTranslation } from "react-i18next";
 import { IMAGES } from "/src/assets/images";
 import { routesHref } from "/src/utils/constants";
+import classNames from "classnames";
 
 const BurgerMenu = () => {
   const { t } = useTranslation();
   const lngKey = localStorage.getItem("i18nextLng") ?? "arm";
   const [isOpen, setIsOpen] = useState(false);
+
   const openMenu = () => {
     setIsOpen(!isOpen);
   };
+
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -21,6 +24,7 @@ const BurgerMenu = () => {
       document.body.style.overflow = "auto";
     };
   }, [isOpen]);
+
   return (
     <S.MenuContainer>
       <S.MenuIcon
@@ -29,9 +33,9 @@ const BurgerMenu = () => {
         onClick={openMenu}
       ></S.MenuIcon>
       <S.BurgerMenuContainer
-        className={"open"}
         isOpen={isOpen}
         onClick={openMenu}
+        className={classNames("burger-menu", { open: isOpen })}
       >
         <S.BurgerMenuLinkContainer>
           <S.BurgerMenuLink to={`/${lngKey}${routesHref.home}`}>
