@@ -1,0 +1,134 @@
+{
+  "arm": "Arm",
+  "eng": "En",
+  "nav": {
+    "home": "Home",
+    "blog": "Blog",
+    "aboutUs": "About Us",
+    "contactUs": "Contact Us",
+    "privacyPolicy": " Privacy Policy"
+  },
+  "btn": {
+    "subscribe": "Subscribe",
+    "readMore": "Read More",
+    "discoverOurStory": "Discover Our Story >",
+    "joinNow": "Join Now",
+    "sendMessage": "Send Message",
+    "learnMore": "Learn More",
+    "ourMision": "Our Mision",
+    "createAccount": "Create Account",
+    "signIn": "Sign In",
+    "logOut": "Log Out"
+  },
+  "footer": {
+    "subscribeTitle": "Subscribe to our news letter to get latest updates and news",
+    "infoTitle": "Finstreet 118 2561 Fintown Hello@finsweet.com  020 7993 2905"
+  },
+  "home": {
+    "title": "Posted on startup",
+    "subTitle": "Step-by-step guide to choosing great font pairs",
+    "authorInfo": "By James West  |  May 23, 2022 ",
+    "information": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+    "post": {
+      "title": "Featured Post",
+      "authorInfo": "By John Doe   l   May 23, 2022",
+      "information": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+      "allTitle": "All Posts"
+    },
+    "posts": {
+      "date": "By John Deo   l   Aug 23, 2021",
+      "description": "8 Figma design systems that you can download for free today.",
+      "aboutUsDescription": "We are a community of content writers who share their learnings",
+      "ourMisisonDescription": "Creating valuable content for creatives all around the world",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+
+    "startUp": {
+      "title": "Why we started ",
+      "description": "It started out as a simple idea and evolved into our passion"
+    },
+    "author": {
+      "name": {
+        "floydMiles": "Floyd Miles",
+        "dianneRussell": "Dianne Russell",
+        "jenniWilson": "Jenni Wilson",
+        "lessileAlexandr": "Lessile Alexander",
+        "guyHawkin": "Guy Hawkin",
+        "eleanorPena": "Eleanor Pena",
+        "jacobJones":"Jacob Jones",
+        "robertFox": "Robbert Fox"
+      },
+      "content": "Content Writer @Company"
+    },
+    "category": {
+      "title": "Choose A Catagory",
+      "busines": "Business",
+      "technology": "Technology",
+      "economy": "Economy",
+      "startUp": "Start Up"
+    },
+    "blog": {
+      "title": "TESTIMONIALs",
+      "description": "What people say about our blog",
+      "lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+      "about": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    },
+    "join": {
+      "title": "Join our team to be a part of our story",
+      "description": "Join our community to get latest updates and news"
+    }
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Last Updated  on 27th January 2022"
+  },
+  "contactUs": {
+    "subtitle": "Contact Us",
+    "title": "Let’s Start a Conversation",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.",
+    "about": {
+      "title": "Working hours",
+      "subtitle": "Monday To Friday 9:00 AM to 8:00 PM ",
+      "description": "Our Support Team is available 24/7",
+      "contactUs": {
+        "title": "Contact Us",
+        "subtitle": "020 7993 2905",
+        "description": "hello@finsweet.com"
+      }
+    }
+  },
+  "blog": {
+    "subTitle": {
+      "design": "Design tips for designers that cover everything you need",
+      "webDesign": "How to build rapport with your web design clients",
+      "logoDesign": "Logo design trends to avoid in 2022",
+      "figmaDesign": "8 Figma design systems you can download for free today",
+      "uiDesign": "Font sizes in UI design: The complete guide to follow"
+    }
+  },
+  "aboutUs": {
+    "subTitle": "We are a team of content writers who share their learnings",
+    "mission": {
+      "description": "Creating valuable content for creatives all around the world"
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "A platform that empowers individuals to improve"
+    },
+    "post": {
+      "title": "Our team of creatives",
+      "blog": "Why we started this Blog"
+    }
+  },
+  "registr":{
+    "title": "Welcome our page"
+
+  },
+  "authors":{
+    "title": "List of Authors",
+    "description": " Hello My Name is"
+  }
+
+  
+}
