@@ -30,7 +30,7 @@ export const adminRoutesHref = {
   admin: ":lng/admin",
   dashboard: "/:lng/admin/dashboard",
   user: "/:lng/admin/user",
-  userEdit: "/:lng/admin/edit-user/:user-id",
+  userEdit: "/:lng/admin/user/:user-id",
   createUser:"/:lng/admin/create-user"
 };
 
@@ -48,3 +48,4 @@ export const FETCH_STATUS = {
   SUCCESS: "success",
   FAILED: "failed"
 };
+''
